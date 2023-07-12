@@ -1,0 +1,42 @@
+/*==================================== FONTS ====================================*/
+/*==================================== FONTS ====================================*/
+
+@font-face {
+	font-family: 'Gotham-Pro';
+	src: url('../fonts/Gotham-Pro/gothampro_bold.woff2') format('woff2'),
+		url('../fonts/Gotham-Pro/gothampro_bold.woff') format('woff'),
+		url('../fonts/Gotham-Pro/gothampro_bold.ttf') format('truetype'),
+		url('../fonts/Gotham-Pro/gothampro_bold.otf') format('otf');
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Gotham-Pro';
+	src: url('../fonts/Gotham-Pro/gothampro.woff2') format('woff2'),
+		url('../fonts/Gotham-Pro/gothampro.woff') format('woff'),
+		url('../fonts/Gotham-Pro/gothampro.ttf') format('truetype'),
+		url('../fonts/Gotham-Pro/gothampro.otf') format('otf');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Neris';
+	src: url('../fonts/Neris/Neris-Black.woff2') format('woff2'),
+		url('../fonts/Neris/Neris-Black.woff') format('woff'),
+		url('../fonts/Neris/Neris-Black.ttf') format('truetype'),
+		url('../fonts/Neris/Neris-Black.otf') format('otf');
+	font-style: normal;
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: 'Neris';
+	src: url('../fonts/Neris/Neris-LightItalic.woff2') format('woff2'),
+		url('../fonts/Neris/Neris-LightItalic.woff') format('woff'),
+		url('../fonts/Neris/Neris-LightItalic.ttf') format('truetype'),
+		url('../fonts/Neris/Neris-LightItalic.otf') format('otf');
+	font-style: italic;
+	font-weight: 300;
+}
