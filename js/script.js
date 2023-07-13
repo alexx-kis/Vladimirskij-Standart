@@ -1,5 +1,26 @@
 'use strict';
 
+/*==================================== MENU ====================================*/
+
+; (function () {
+	let burger = document.querySelector('.burger');
+	let menu = document.querySelector('.header__menu');
+	let menuText1 = document.querySelector('.header__button-text-1');
+	let menuText2 = document.querySelector('.header__button-text-2');
+	
+	let overlay = document.querySelector('.header__overlay');
+	
+	burger.addEventListener('click', function () {
+		overlay.classList.toggle('header__overlay--show');
+		burger.classList.toggle('burger--open');
+		menuText2.classList.toggle('header__button-text-2--open');
+		menuText1.classList.toggle('header__button-text-1--open');
+		menu.classList.toggle('header__menu--open');
+	});
+	
+	
+})();
+
 $(function () {
 	$('.cat__slider').slick({
 		arrows: false,
