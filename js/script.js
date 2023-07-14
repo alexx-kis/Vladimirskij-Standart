@@ -142,10 +142,7 @@ if (animItems.length > 0) {
 
 			if ((pageYOffset > animItemOffset - animItemPoint) && (pageYOffset < (animItemOffset + animItemHeight))) {
 				animItem.classList.add('anim-item--active');
-				if (animItem.classList.contains('sm__drop-1') || animItem.classList.contains('cat__drop')) {
-					animItem.classList.add('animation');
-				}
-				
+
 			} else {
 				if (!animItem.classList.contains('anim-no-hide')) {
 					animItem.classList.remove('anim-item--active');
@@ -161,4 +158,22 @@ if (animItems.length > 0) {
 		}
 	}
 }
+
+/*==================================== PARALLAX ====================================*/
+
+let leaf1 = document.querySelector('.ms__leaf-1');
+let leaf2 = document.querySelector('.ms__leaf-2');
+let leaf3 = document.querySelector('.ms__leaf-3');
+let leaf4 = document.querySelector('.ms__leaf-4');
+let leaf5 = document.querySelector('.ms__leaf-5');
+
+window.addEventListener('mousemove', function (e) {
+	let x = e.clientX / window.innerWidth;
+	let y = e.clientY / window.innerHeight;
+	leaf1.style.transform = 'translate(+' + x * 50 + 'px, +' + y * 50 + 'px)';
+	leaf2.style.transform = 'translate(+' + x * 50 + 'px, +' + y * 50 + 'px)';
+	leaf3.style.transform = 'translate(+' + x * 50 + 'px, +' + y * 50 + 'px)';
+	leaf4.style.transform = 'translate(+' + x * 50 + 'px, +' + y * 50 + 'px)';
+	leaf5.style.transform = 'translate(+' + x * 50 + 'px, +' + y * 50 + 'px)';
+});
 

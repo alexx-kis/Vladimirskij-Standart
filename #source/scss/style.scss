@@ -260,9 +260,77 @@ html {
 .ms {
 	padding-top: 140px;
 	background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(255, 235, 182, 0.56) 0%, rgba(255, 235, 182, 0.00) 93.23%), url('../img/3.mjaso-sochnyje/ms-bg.png') no-repeat center / cover;
-	display: flex;
-	justify-content: space-between;
 	height: 1344px;
+	display: flex;
+	position: relative;
+	z-index: -1;
+
+	&__drops1 {
+		position: absolute;
+		top: 680px;
+		left: 10px;
+	}
+
+	&__drop1 {
+		position: absolute;
+		top: 32px;
+		left: -46px;
+		transition: all 1s .5s;
+		transform: scale(0);
+		transition: all .3s 0.5s cubic-bezier(0.56, 1.67, 0.77, 2);
+	}
+
+	&__drop2 {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		transition: all 1s 1s;
+		transform: scale(0);
+		transition: all .3s 1s cubic-bezier(0.56, 1.67, 0.77, 2);
+		;
+	}
+
+	&__drop3 {
+		position: absolute;
+		top: 52px;
+		left: 39px;
+		opacity: 0;
+		transform: scale(0);
+		transition: all .3s 1.5s cubic-bezier(0.56, 1.67, 0.77, 2);
+	}
+
+	&__drops2 {
+		position: absolute;
+		top: 790px;
+		left: 630px;
+	}
+
+	&__drop4 {
+		position: absolute;
+		top: 32px;
+		left: -46px;
+		opacity: 0;
+		transform: scale(0);
+		transition: all .3s 1.5s cubic-bezier(0.56, 1.67, 0.77, 2);
+	}
+
+	&__drop5 {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		opacity: 0;
+		transform: scale(0);
+		transition: all .3s 1.7s cubic-bezier(0.56, 1.67, 0.77, 2);
+	}
+
+	&__drop6 {
+		position: absolute;
+		top: 52px;
+		left: 39px;
+		opacity: 0;
+		transform: scale(0);
+		transition: all .3s 2s cubic-bezier(0.56, 1.67, 0.77, 2);
+	}
 
 	&__img1 {
 		position: absolute;
@@ -339,10 +407,54 @@ html {
 		position: absolute;
 		top: -11px;
 		right: -645px;
-		// align-self: flex-end;
 		transition: all 1s 1s;
 		opacity: 0;
 		transform: translate(100px, 0);
+	}
+
+
+
+	&__leaf-1 {
+		position: absolute;
+		top: -9px;
+		left: -448px;
+		transition: opacity .5s 1s;
+		opacity: 0;
+	}
+
+	&__leaf-2 {
+		position: absolute;
+		top: 80px;
+		left: -12px;
+		transition: opacity .5s 1s;
+		opacity: 0;
+	}
+
+	&__leaf-3 {
+		position: absolute;
+		top: 600px;
+		left: -207px;
+		z-index: 4;
+		transition: opacity .5s 1s;
+		opacity: 0;
+	}
+
+	&__leaf-4 {
+		z-index: -1;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		transition: opacity .5s 1s;
+		opacity: 0;
+	}
+
+	&__leaf-5 {
+		z-index: -1;
+		position: absolute;
+		top: 590px;
+		right: -273px;
+		transition: opacity .3s 1s;
+		opacity: 0;
 	}
 }
 
@@ -410,6 +522,8 @@ html {
 
 	&__stamp {
 		margin-bottom: 72px;
+		transition: all 1s;
+		transform: scale(0);
 		animation: stamp 8s linear infinite;
 	}
 
@@ -421,6 +535,9 @@ html {
 		font-style: italic;
 		font-weight: 300;
 		line-height: normal;
+		transition: all 1s;
+		opacity: 0;
+		transform: translate(0, 100px);
 	}
 
 	&__pelmen-1 {
@@ -497,8 +614,9 @@ html {
 
 	&__stamp {
 		margin-bottom: 65px;
-		transition: all 2s;
 		opacity: 0;
+		transform: scale(0);
+		transition: all 1s;
 		animation: stamp 8s linear infinite;
 	}
 
@@ -531,7 +649,6 @@ html {
 		position: relative;
 		justify-content: center;
 		align-items: center;
-		// background: url(<path-to-image>), transparent 50% / cover no-repeat;
 		position: absolute;
 		top: -300px;
 		right: -792px;
@@ -564,27 +681,8 @@ html {
 		top: 250px;
 		left: -192px;
 		z-index: -2;
-		transition: all .3s 2s;
+		transition: all .3s 2s cubic-bezier(0.56, 1.67, 0.77, 1.67);
 		transform: scale(0);
-	}
-
-	.animation {
-		animation: drop .4s 1s forwards;
-
-	}
-
-	@keyframes drop {
-		0% {
-			transform: scale(0);
-		}
-
-		80% {
-			transform: scale(1.2);
-		}
-
-		100% {
-			transform: scale(1);
-		}
 	}
 }
 
@@ -609,25 +707,7 @@ html {
 		top: 50px;
 		right: -5px;
 		transform: scale(0);
-		transition: all .3s 2s;
-	}
-
-	.animation {
-		animation: drop .4s 1s forwards;
-	}
-
-	@keyframes drop {
-		0% {
-			transform: scale(0);
-		}
-
-		80% {
-			transform: scale(1.2);
-		}
-
-		100% {
-			transform: scale(1);
-		}
+		transition: all .5s 1s cubic-bezier(0.56, 1.67, 0.77, 1.67);
 	}
 
 	&__slider-outer {
