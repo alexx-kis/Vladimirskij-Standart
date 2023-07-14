@@ -201,6 +201,7 @@ html {
   margin-right: 40px;
   width: 100px;
   text-align: right;
+  text-shadow: 0px 0px 2px #000;
 }
 .header__button-text-1 {
   position: absolute;
@@ -356,6 +357,8 @@ html {
   width: 100%;
   height: 2px;
   background: #fff;
+  -webkit-box-shadow: 0px 0px 2px #000;
+          box-shadow: 0px 0px 2px #000;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -605,6 +608,13 @@ html {
 }
 .ss__logo {
   margin-bottom: 106px;
+  opacity: 0;
+  -webkit-transform: translate(0, -200px);
+      -ms-transform: translate(0, -200px);
+          transform: translate(0, -200px);
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 .ss__stamp {
   margin-bottom: 72px;
@@ -855,9 +865,40 @@ html {
   position: absolute;
   top: 50px;
   right: -5px;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.3s 2s;
+  -o-transition: all 0.3s 2s;
+  transition: all 0.3s 2s;
+}
+.cat .animation {
+  -webkit-animation: drop 0.4s 1s forwards;
+          animation: drop 0.4s 1s forwards;
+}
+@keyframes drop {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 .cat__slider-outer {
   position: relative;
+  opacity: 0;
+  -webkit-transform: translate(-1000px, 0);
+      -ms-transform: translate(-1000px, 0);
+          transform: translate(-1000px, 0);
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 .cat__arrow {
   position: absolute;
@@ -1052,6 +1093,13 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  opacity: 0;
+  -webkit-transform: translate(0, 100px);
+      -ms-transform: translate(0, 100px);
+          transform: translate(0, 100px);
 }
 .footer__column {
   margin-right: 10px;
@@ -1090,7 +1138,7 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 211.7%;
-  margin-bottom: 35px;
+  margin-bottom: 5px;
 }
 .footer__column-email {
   color: #225AAA;
@@ -1119,12 +1167,26 @@ html {
   top: -330px;
   right: 190px;
   z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 1s 1s;
+  -o-transition: all 1s 1s;
+  transition: all 1s 1s;
+  -webkit-transform: translate(-100px, 100px);
+      -ms-transform: translate(-100px, 100px);
+          transform: translate(-100px, 100px);
 }
 .footer__img-2 {
   position: absolute;
   top: 122px;
   left: -73px;
   z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 1s 1.5s;
+  -o-transition: all 1s 1.5s;
+  transition: all 1s 1.5s;
+  -webkit-transform: translate(10px, 10px);
+      -ms-transform: translate(10px, 10px);
+          transform: translate(10px, 10px);
 }
 
 /*==================================== MEDIA ====================================*/

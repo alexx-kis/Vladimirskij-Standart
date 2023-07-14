@@ -142,7 +142,7 @@ if (animItems.length > 0) {
 
 			if ((pageYOffset > animItemOffset - animItemPoint) && (pageYOffset < (animItemOffset + animItemHeight))) {
 				animItem.classList.add('anim-item--active');
-				if(animItem.classList.contains('sm__drop-1')) {
+				if (animItem.classList.contains('sm__drop-1') || animItem.classList.contains('cat__drop')) {
 					animItem.classList.add('animation');
 				}
 				
