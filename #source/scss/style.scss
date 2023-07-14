@@ -485,11 +485,16 @@ html {
 
 	&__logo {
 		margin-bottom: 63px;
+		transition: all .5s;
+		opacity: 0;
+		transform: translate(0, -100px);
 	}
 
 	&__stamp {
 		margin-bottom: 65px;
-		// animation: stamp 8s linear infinite;
+		transition: all 2s;
+		opacity: 0;
+		animation: stamp 8s linear infinite;
 	}
 
 	&__text {
@@ -501,6 +506,9 @@ html {
 		font-weight: 300;
 		line-height: normal;
 		max-width: 730px;
+		transition: all .5s;
+		opacity: 0;
+		transform: translate(0, 100px);
 	}
 
 	&__img-1 {
@@ -508,6 +516,9 @@ html {
 		top: -190px;
 		left: -265px;
 		z-index: -1;
+		transition: all 1s;
+		opacity: 0;
+		transform: translate(-100px, -100px);
 	}
 
 	&__img-2 {
@@ -520,11 +531,17 @@ html {
 		top: -300px;
 		right: -792px;
 		z-index: -1;
+		transition: all 1s 2s;
+		opacity: 0;
+		transform: translate(100px, 0);
 	}
 
 	&__img-2-shadow {
 		position: absolute;
 		z-index: -1;
+		background-blend-mode: multiply;
+		opacity: .5;
+
 	}
 
 	&__img-3 {
@@ -532,6 +549,9 @@ html {
 		top: 325px;
 		left: -130px;
 		z-index: -1;
+		transition: all .5s;
+		opacity: 0;
+		transform: translate(-100px, 100px);
 	}
 
 	&__drop-1 {
@@ -539,6 +559,27 @@ html {
 		top: 250px;
 		left: -192px;
 		z-index: -2;
+		transition: all .3s 2s;
+		transform: scale(0);
+	}
+
+	.animation {
+		animation: drop .4s 1s forwards;
+
+	}
+
+	@keyframes drop {
+		0% {
+			transform: scale(0);
+		}
+
+		80% {
+			transform: scale(1.2);
+		}
+
+		100% {
+			transform: scale(1);
+		}
 	}
 }
 
