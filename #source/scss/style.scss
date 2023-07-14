@@ -69,9 +69,10 @@ html {
 		margin-right: 40px;
 		width: 100px;
 		text-align: right;
-		
+
 		&-1 {
 			position: absolute;
+
 			&--open {
 				visibility: hidden;
 				opacity: 0;
@@ -82,6 +83,7 @@ html {
 			position: absolute;
 			visibility: hidden;
 			opacity: 0;
+
 			&--open {
 				visibility: visible;
 				opacity: 1;
@@ -126,6 +128,7 @@ html {
 		visibility: hidden;
 		opacity: 0;
 		transition: all .5s;
+
 		&--open {
 			visibility: visible;
 			opacity: 1;
@@ -215,6 +218,7 @@ html {
 			width: 80px;
 
 		}
+
 		.burger__line:last-child {
 			transform: rotate(-45deg) translateY(-10px);
 			width: 80px;
@@ -232,7 +236,20 @@ html {
 	justify-content: center;
 	align-items: center;
 
-	&__heading {}
+	&__heading {
+		opacity: 0;
+		animation: hero-heading 2s forwards;
+	}
+
+	@keyframes hero-heading {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
 }
 
 /*==================================== MS ====================================*/
@@ -250,6 +267,9 @@ html {
 		z-index: -1;
 		top: 170px;
 		left: -390px;
+		transition: all 1s;
+		opacity: 0;
+		transform: translate(-100px, 0);
 	}
 
 	&__inner {
@@ -272,6 +292,9 @@ html {
 		font-weight: 900;
 		line-height: normal;
 		text-transform: uppercase;
+		opacity: 0;
+		transform: translate(0, -100px);
+		transition: all .5s;
 
 		.comma {
 			display: inline;
@@ -291,6 +314,9 @@ html {
 
 	&__logo {
 		margin-bottom: 53px;
+		opacity: 0;
+		transform: scale(0);
+		transition: all .5s;
 	}
 
 	&__text {
@@ -301,6 +327,9 @@ html {
 		font-style: italic;
 		font-weight: 300;
 		line-height: normal;
+		opacity: 0;
+		transform: translate(0, 100px);
+		transition: all .5s;
 	}
 
 	&__img2 {
@@ -309,6 +338,9 @@ html {
 		top: -11px;
 		right: -645px;
 		// align-self: flex-end;
+		transition: all 1s 1s;
+		opacity: 0;
+		transform: translate(100px, 0);
 	}
 }
 
@@ -317,7 +349,7 @@ html {
 /*==================================== SS ====================================*/
 
 .ss {
-	background: radial-gradient(40.82% 41.08% at 50.03% 50.03%, #FFE072 26.23%, rgba(255, 235, 182, 0.00) 92.95%) -542px 100px, url('../img/4.slivochno-sochnyje/ss-bg.png') no-repeat 0 0 / auto 100%;
+	background: radial-gradient(40.82% 41.08% at 50.03% 50.03%, #FFE072 26.23%, rgba(255, 235, 182, 0.00) 92.95%) -542px 100px, url('../img/4.slivochno-sochnyje/ss-bg.png') no-repeat 0 0 / 100% 100%;
 	background-blend-mode: multiply;
 	z-index: 3;
 	margin-top: -570px;
@@ -340,6 +372,9 @@ html {
 		top: -100px;
 		left: -652px;
 		z-index: 0;
+		transition: all 1s .3s;
+		opacity: 0;
+		transform: translate(-100px, 0px);
 	}
 
 	&__img1 {
@@ -347,6 +382,9 @@ html {
 		top: -30px;
 		left: -530px;
 		z-index: -1;
+		transition: all 1s;
+		opacity: 0;
+		transform: translate(-100px, -100px);
 	}
 
 	&__img2 {
@@ -356,6 +394,9 @@ html {
 		top: 560px;
 		left: -400px;
 		z-index: -1;
+		transition: all 1s .5s;
+		opacity: 0;
+		transform: translate(-100px, 100px);
 	}
 
 	&__logo {
@@ -364,6 +405,7 @@ html {
 
 	&__stamp {
 		margin-bottom: 72px;
+		animation: stamp 8s linear infinite;
 	}
 
 	&__text {
@@ -381,13 +423,22 @@ html {
 		top: 8px;
 		right: -98px;
 		z-index: -1;
+		transition: all .2s 2s linear;
+		opacity: 0;
+		transform: scale(0);
+		transform: translate(61px, 240px);
 	}
+
 
 	&__pelmen-2 {
 		position: absolute;
 		top: 58px;
 		right: -248px;
 		z-index: -1;
+		transition: all .2s 2.1s linear;
+		opacity: 0;
+		transform: scale(0);
+		transform: translate(10px, 240px);
 	}
 
 	&__img3 {
@@ -395,6 +446,9 @@ html {
 		top: 40px;
 		right: -708px;
 		z-index: -1;
+		transition: all 1s 1s;
+		opacity: 0;
+		transform: translate(100px, 40px);
 	}
 
 	&__leaf-5 {
@@ -402,6 +456,9 @@ html {
 		top: 595px;
 		right: -173px;
 		z-index: -2;
+		transition: all 1s 1.5s;
+		opacity: 0;
+		transform: translate(100px, -10px);
 	}
 }
 
@@ -432,6 +489,7 @@ html {
 
 	&__stamp {
 		margin-bottom: 65px;
+		// animation: stamp 8s linear infinite;
 	}
 
 	&__text {
@@ -489,7 +547,7 @@ html {
 /*==================================== CAT ====================================*/
 
 .cat {
-	background: url('../img/6.cat/cat-bg.png') no-repeat center / 100% 100%;
+	background: url('../img/6.cat/cat-bg.png') no-repeat 0 / 100% 100%;
 	padding-top: 338px;
 	padding-bottom: 350px;
 	margin-top: -338px;
@@ -498,6 +556,12 @@ html {
 
 	.container {
 		max-width: 1280px;
+	}
+
+	&__drop {
+		position: absolute;
+		top: 50px;
+		right: -5px;
 	}
 
 
@@ -535,15 +599,15 @@ html {
 
 
 		&--1 {
-			background: url('../img/6.cat/card-1-bg.png') no-repeat center;
+			background: url('../img/6.cat/card-1-bg.png') no-repeat center / contain;
 		}
 
 		&--2 {
-			background: url('../img/6.cat/card-2-bg.png') no-repeat center;
+			background: url('../img/6.cat/card-2-bg.png') no-repeat center / contain;
 		}
 
 		&--3 {
-			background: url('../img/6.cat/card-3-bg.png') no-repeat center;
+			background: url('../img/6.cat/card-3-bg.png') no-repeat center / contain;
 		}
 	}
 
@@ -723,6 +787,14 @@ html {
 
 	&__column {
 		margin-right: 10px;
+
+		&--first {
+			display: flex;
+
+			.footer__list {
+				margin-right: 60px;
+			}
+		}
 	}
 
 	&__list {}
@@ -757,6 +829,7 @@ html {
 		font-style: normal;
 		font-weight: 400;
 		line-height: 211.7%;
+		margin-bottom: 35px;
 	}
 
 	&__column-email {
@@ -774,7 +847,7 @@ html {
 		justify-content: space-between;
 		align-items: center;
 		max-width: 135px;
-		margin: 0 auto;
+		margin: 40px auto;
 	}
 
 	&__socials-item {}
@@ -793,6 +866,7 @@ html {
 		position: absolute;
 		top: 122px;
 		left: -73px;
+		z-index: -1;
 	}
 }
 
@@ -804,3 +878,18 @@ html {
 /*==================================== ANIMATION ====================================*/
 /*==================================== ANIMATION ====================================*/
 
+@keyframes stamp {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.anim-item--active {
+	opacity: 1;
+	transform: translate(0);
+	transform: scale(1);
+}
