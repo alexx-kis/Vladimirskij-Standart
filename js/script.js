@@ -21,6 +21,10 @@
 
 })();
 
+
+/*==================================== SLIDER ====================================*/
+
+
 $(function () {
 	$('.cat__slider').slick({
 		arrows: false,
@@ -68,96 +72,103 @@ $('.cat__arrow-next').on('click', function (e) {
 
 /*------------------------------ POP-UP SLIDER------------------------------*/
 
-$(function () {
-	$('.pop-up__slider').slick({
-		arrows: false,
-		slidesToShow: 1,
-		infinite: true,
-		dragable: false,
-		waitForAnimate: false,
-		// responsive:
-		// 	[
-		// 		{
-		// 			breakpoint: 1100,
-		// 			settings: {
-		// 				slidesToShow: 3,
-		// 			}
-		// 		},
-		// 		{
-		// 			breakpoint: 750,
-		// 			settings: {
-		// 				slidesToShow: 2,
-		// 			}
-		// 		},
-		// 		{
-		// 			breakpoint: 550,
-		// 			settings: {
-		// 				slidesToShow: 1,
-		// 				dragable: true,
-		// 			}
-		// 		},
-		// 	],
-		arrows: false,
-		dots: false,
-		// appendDots: ('.block__dots'),
-		waitForAnimate: false,
-	})
-})
 
-$('.pop-up__slide-arrow--prev').on('click', function (e) {
-	$('.pop-up__slider').slick('slickPrev')
-})
-$('.pop-up__slide-arrow--next').on('click', function (e) {
-	$('.pop-up__slider').slick('slickNext')
-})
 
-/*------------------------------ POP-UP MODAL ------------------------------*/
-
-// ; (function () {
-// 	let link1 = document.querySelector('.');
-
-// })();
+	let slider = document.querySelector('.cat__slider');
+	let popUpSlider = document.querySelector('.cat__pop-up');
+	let popUpOverlay = document.querySelector('.pop-up-overlay');
+	
+	
+	slider.addEventListener('click', function () {
+		popUpSlider.classList.add('cat__pop-up--active');
+		popUpOverlay.classList.add('pop-up-overlay--show');
+		popUpOverlay.classList.add('pop-up-overlay--show');
+	});
+	popUpOverlay.addEventListener('click', function () {
+		popUpSlider.classList.remove('cat__pop-up--active');
+		popUpOverlay.classList.remove('pop-up-overlay--show');
+	});
+	
+	let slideIndex = 1;
+	showSlides(slideIndex);
+	
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+	
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+	
+	function showSlides(n) {
+		let i;
+		let slides = document.getElementsByClassName("pop-up__slide");
+		let dots = document.getElementsByClassName("cat__slide");
+	
+		if (n > slides.length) {
+			slideIndex = 1
+		}
+		if (n < 1) {
+			slideIndex = slides.length
+		}
+	
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+			slides[i].classList.remove('pop-up__slide--active');
+			
+		}
+	
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" __active", "");
+		}
+	
+		slides[slideIndex - 1].style.display = "block";
+		dots[slideIndex - 1].className += " __active";
+	}
 
 
 
 /*==================================== Animation ====================================*/
 
-let animItems = document.querySelectorAll('.anim-item');
-
-if (animItems.length > 0) {
-	window.addEventListener('scroll', animOnScroll); //событие при котором будет происходить анимация
-	function animOnScroll() {		//создаём функцию
-		for (let i = 0; i < animItems.length; i++) {
-			let animItem = animItems[i];			// получаем каждый элемент в цикле
-			let animItemHeight = animItem.offsetHeight; //получаем высоту этого элемента
-			let animItemOffset = offset(animItem).top;	//позиция элемента относительно верха
-			let animStart = 4 //коэффициент, который будет регулировать момент старта анимации
-			//Настройка момента старта анимации:
-			let animItemPoint = window.innerHeight - (animItemHeight / animStart);
-
-			//Бывает, что элемент выше окна, поэтому нужно проверить:
-			if (animItemHeight > window.innerHeight) {
-				animItemPoint = window.innerHeight - (window.innerHeight / animStart);
-			}
-
-			if ((pageYOffset > animItemOffset - animItemPoint) && (pageYOffset < (animItemOffset + animItemHeight))) {
-				animItem.classList.add('anim-item--active');
-
-			} else {
-				if (!animItem.classList.contains('anim-no-hide')) {
-					animItem.classList.remove('anim-item--active');
+; (function () {
+	
+	let animItems = document.querySelectorAll('.anim-item');
+	
+	if (animItems.length > 0) {
+		window.addEventListener('scroll', animOnScroll); 
+		function animOnScroll() {	
+			for (let i = 0; i < animItems.length; i++) {
+				let animItem = animItems[i];		
+				let animItemHeight = animItem.offsetHeight; 
+				let animItemOffset = offset(animItem).top;
+				let animStart = 4 
+				let animItemPoint = window.innerHeight - (animItemHeight / animStart);
+	
+				if (animItemHeight > window.innerHeight) {
+					animItemPoint = window.innerHeight - (window.innerHeight / animStart);
 				}
-			}
-
-			function offset(elem) {
-				let rect = elem.getBoundingClientRect(),
-					scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-					scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-				return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+	
+				if ((pageYOffset > animItemOffset - animItemPoint) && (pageYOffset < (animItemOffset + animItemHeight))) {
+					animItem.classList.add('anim-item--active');
+	
+				} else {
+					if (!animItem.classList.contains('anim-no-hide')) {
+						animItem.classList.remove('anim-item--active');
+					}
+				}
+	
+				function offset(elem) {
+					let rect = elem.getBoundingClientRect(),
+						scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+						scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+					return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+				}
 			}
 		}
 	}
-}
+
+})();
+
 
 /*==================================== PARALLAX ====================================*/
 
