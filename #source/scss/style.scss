@@ -420,7 +420,6 @@ html {
 		left: -448px;
 		transition: opacity .5s 1s;
 		opacity: 0;
-		//comment
 	}
 
 	&__leaf-2 {
@@ -492,6 +491,8 @@ html {
 		transform: translate(-100px, 0px);
 	}
 
+
+
 	&__img1 {
 		position: absolute;
 		top: -30px;
@@ -526,6 +527,13 @@ html {
 		transition: all 1s;
 		transform: scale(0);
 		animation: stamp 8s linear infinite;
+
+
+	}
+
+	&__stamp-inner {
+		transition: all 1s;
+		transform: scale(0);
 	}
 
 	&__text {
@@ -583,6 +591,30 @@ html {
 		opacity: 0;
 		transform: translate(100px, -10px);
 	}
+
+	&__leaf-2 {
+		position: absolute;
+		top: 693px;
+		left: -344px;
+		transition: opacity .5s 1s;
+		opacity: 0;
+	}
+
+	&__leaf-3 {
+		position: absolute;
+		top: 174px;
+		right: -420px;
+		transition: opacity .5s 1s;
+		opacity: 0;
+	}
+
+	&__leaf-4 {
+		position: absolute;
+		top: 529px;
+		right: -538px;
+		transition: opacity .5s 1s;
+		opacity: 0;
+	}
 }
 
 
@@ -596,7 +628,7 @@ html {
 	padding-top: 360px;
 	padding-bottom: 400px;
 	margin-top: -200px;
-	z-index: -2;
+	z-index: -3;
 	position: relative;
 
 	&__inner {
@@ -621,6 +653,11 @@ html {
 		animation: stamp 8s linear infinite;
 	}
 
+	&__stamp-inner {
+		transition: all 1s;
+		transform: scale(0);
+	}
+
 	&__text {
 		color: #FFF;
 		text-align: center;
@@ -633,6 +670,7 @@ html {
 		transition: all .5s;
 		opacity: 0;
 		transform: translate(0, 100px);
+		z-index: 0;
 	}
 
 	&__img-1 {
@@ -640,7 +678,7 @@ html {
 		top: -190px;
 		left: -265px;
 		z-index: -1;
-		transition: all 1s;
+		transition: all 1s .5s;
 		opacity: 0;
 		transform: translate(-100px, -100px);
 	}
@@ -675,6 +713,7 @@ html {
 		transition: all .5s;
 		opacity: 0;
 		transform: translate(-100px, 100px);
+		z-index: -2;
 	}
 
 	&__drop-1 {
@@ -684,6 +723,41 @@ html {
 		z-index: -2;
 		transition: all .3s 2s cubic-bezier(0.56, 1.67, 0.77, 1.67);
 		transform: scale(0);
+		z-index: -3;
+	}
+
+	&__leaf-1 {
+		position: absolute;
+		top: 80px;
+		left: -251px;
+		transition: opacity .5s 1s;
+		opacity: 0;
+	}
+
+	&__leaf-2 {
+		position: absolute;
+		top: 295px;
+		left: 139px;
+		transition: opacity .5s 1s;
+		opacity: 0;
+		z-index: -1;
+	}
+
+	&__leaf-3 {
+		position: absolute;
+		top: -175px;
+		right: 60px;
+		transition: opacity .5s 1s;
+		opacity: 0;
+	}
+
+	&__leaf-4 {
+		position: absolute;
+		top: 370px;
+		right: -247px;
+		transition: opacity .5s 1s;
+		opacity: 0;
+		z-index: -1;
 	}
 }
 
@@ -1042,6 +1116,16 @@ html {
 
 	100% {
 		transform: rotate(360deg);
+	}
+}
+
+@keyframes magnify {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
 	}
 }
 
