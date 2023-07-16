@@ -412,6 +412,9 @@ html {
     opacity: 1;
   }
 }
+.hero__button {
+  display: none;
+}
 
 /*==================================== MS ====================================*/
 /*==================================== MS ====================================*/
@@ -1132,6 +1135,8 @@ html {
   margin: 0 auto;
 }
 
+/*==================================== POP UP ====================================*/
+/*==================================== POP UP ====================================*/
 .cat__pop-up {
   position: absolute;
   z-index: 100;
@@ -1771,6 +1776,7 @@ html {
   }
   .header__menu {
     padding-top: 140px;
+    padding-bottom: 80px;
   }
   .header__menu-link {
     font-size: 45px;
@@ -2093,8 +2099,33 @@ html {
 }
 /*------------------------------ 430 ------------------------------*/
 @media (max-width: 430px) {
+  .hero__heading {
+    margin-bottom: 80px;
+  }
   .hero__heading img {
     width: 340px;
+  }
+  .hero__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 223px;
+    margin: 0 auto;
+  }
+  .hero__button-icon {
+    margin-right: 11px;
+  }
+  .hero__button-text {
+    color: #fff;
+    font-family: "Gotham-Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
   }
   .ms__logo img {
     width: 340px;
