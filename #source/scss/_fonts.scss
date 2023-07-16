@@ -13,6 +13,15 @@
 
 @font-face {
 	font-family: 'Gotham-Pro';
+	src: url('../fonts/Gotham-Pro/gothampro_medium.woff2') format('woff2'),
+		url('../fonts/Gotham-Pro/gothampro_medium.woff') format('woff'),
+		url('../fonts/Gotham-Pro/gothampro_medium.ttf') format('truetype'),
+		url('../fonts/Gotham-Pro/gothampro_medium.otf') format('otf');
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Gotham-Pro';
 	src: url('../fonts/Gotham-Pro/gothampro.woff2') format('woff2'),
 		url('../fonts/Gotham-Pro/gothampro.woff') format('woff'),
 		url('../fonts/Gotham-Pro/gothampro.ttf') format('truetype'),
