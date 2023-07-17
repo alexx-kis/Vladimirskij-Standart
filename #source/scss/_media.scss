@@ -1250,9 +1250,13 @@
 		}
 
 		&__menu {
-			&__menu {
-				padding-top: 40px;
-			}
+
+				padding-top: 80px;
+
+		}
+
+		&__menu-item {
+			margin-bottom: 20px;
 		}
 
 		&__menu-link {
@@ -1566,6 +1570,9 @@
 	.header {
 		&__menu-list {
 			margin-bottom: 30px;
+		}
+		&__menu-item {
+			margin-bottom: 20px;
 		}
 		&__menu-link {
 			font-size: 30px;

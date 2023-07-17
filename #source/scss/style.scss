@@ -99,7 +99,6 @@ html {
 	&__overlay {
 		position: absolute;
 		background: rgba(255, 255, 255, 0.847);
-		background: #6e6767;
 		top: 0px;
 		left: 0px;
 		right: 0px;
@@ -147,11 +146,10 @@ html {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		// flex: 0 1 700px;
 	}
 
 	&__menu-item {
-		margin-bottom: 18px;
+		margin-bottom: 40px;
 	}
 
 	&__menu-link {

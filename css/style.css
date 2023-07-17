@@ -228,7 +228,6 @@ html {
 .header__overlay {
   position: absolute;
   background: rgba(255, 255, 255, 0.847);
-  background: #6e6767;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -291,7 +290,7 @@ html {
           justify-content: space-between;
 }
 .header__menu-item {
-  margin-bottom: 18px;
+  margin-bottom: 40px;
 }
 .header__menu-link {
   color: #225AAA;
@@ -2346,8 +2345,11 @@ html {
   .header__inner {
     height: 65px;
   }
-  .header__menu__menu {
-    padding-top: 40px;
+  .header__menu {
+    padding-top: 80px;
+  }
+  .header__menu-item {
+    margin-bottom: 20px;
   }
   .header__menu-link {
     font-size: 30px;
@@ -2565,6 +2567,9 @@ html {
 @media (max-height: 675px) {
   .header__menu-list {
     margin-bottom: 30px;
+  }
+  .header__menu-item {
+    margin-bottom: 20px;
   }
   .header__menu-link {
     font-size: 30px;
