@@ -74,89 +74,96 @@ $('.cat__arrow-next').on('click', function (e) {
 
 
 
-	let slider = document.querySelector('.cat__slider');
-	let popUpSlider = document.querySelector('.cat__pop-up');
-	let popUpOverlay = document.querySelector('.pop-up-overlay');
-	
-	
-	slider.addEventListener('click', function () {
-		popUpSlider.classList.add('cat__pop-up--active');
-		popUpOverlay.classList.add('pop-up-overlay--show');
-		popUpOverlay.classList.add('pop-up-overlay--show');
-	});
-	popUpOverlay.addEventListener('click', function () {
-		popUpSlider.classList.remove('cat__pop-up--active');
-		popUpOverlay.classList.remove('pop-up-overlay--show');
-	});
-	
-	let slideIndex = 1;
-	showSlides(slideIndex);
-	
-	function plusSlides(n) {
-		showSlides(slideIndex += n);
+let slider = document.querySelector('.cat__slider');
+let popUpSlider = document.querySelector('.cat__pop-up');
+let popUpOverlay = document.querySelector('.pop-up-overlay');
+let back = document.querySelector('.pop-up__slide-back');
+
+
+
+slider.addEventListener('click', function () {
+	popUpSlider.classList.add('cat__pop-up--active');
+	popUpOverlay.classList.add('pop-up-overlay--show');
+	popUpOverlay.classList.add('pop-up-overlay--show');
+});
+popUpOverlay.addEventListener('click', function () {
+	popUpSlider.classList.remove('cat__pop-up--active');
+	popUpOverlay.classList.remove('pop-up-overlay--show');
+});
+
+back.addEventListener('click', function () {
+	popUpSlider.classList.remove('cat__pop-up--active');
+	popUpOverlay.classList.remove('pop-up-overlay--show');
+});
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+	showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+	showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+	let i;
+	let slides = document.getElementsByClassName("pop-up__slide");
+	let dots = document.getElementsByClassName("cat__slide");
+
+	if (n > slides.length) {
+		slideIndex = 1
 	}
-	
-	function currentSlide(n) {
-		showSlides(slideIndex = n);
+	if (n < 1) {
+		slideIndex = slides.length
 	}
-	
-	function showSlides(n) {
-		let i;
-		let slides = document.getElementsByClassName("pop-up__slide");
-		let dots = document.getElementsByClassName("cat__slide");
-	
-		if (n > slides.length) {
-			slideIndex = 1
-		}
-		if (n < 1) {
-			slideIndex = slides.length
-		}
-	
-		for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";
-			slides[i].classList.remove('pop-up__slide--active');
-			
-		}
-	
-		for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" __active", "");
-		}
-	
-		slides[slideIndex - 1].style.display = "block";
-		dots[slideIndex - 1].className += " __active";
+
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+		slides[i].classList.remove('pop-up__slide--active');
+
 	}
+
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" __active", "");
+	}
+
+	slides[slideIndex - 1].style.display = "block";
+	dots[slideIndex - 1].className += " __active";
+}
 
 
 
 /*==================================== Animation ====================================*/
 
 ; (function () {
-	
+
 	let animItems = document.querySelectorAll('.anim-item');
-	
+
 	if (animItems.length > 0) {
-		window.addEventListener('scroll', animOnScroll); 
-		function animOnScroll() {	
+		window.addEventListener('scroll', animOnScroll);
+		function animOnScroll() {
 			for (let i = 0; i < animItems.length; i++) {
-				let animItem = animItems[i];		
-				let animItemHeight = animItem.offsetHeight; 
+				let animItem = animItems[i];
+				let animItemHeight = animItem.offsetHeight;
 				let animItemOffset = offset(animItem).top;
-				let animStart = 4 
+				let animStart = 4
 				let animItemPoint = window.innerHeight - (animItemHeight / animStart);
-	
+
 				if (animItemHeight > window.innerHeight) {
 					animItemPoint = window.innerHeight - (window.innerHeight / animStart);
 				}
-	
+
 				if ((pageYOffset > animItemOffset - animItemPoint) && (pageYOffset < (animItemOffset + animItemHeight))) {
 					animItem.classList.add('anim-item--active');
-	
+
 				} else {
 					if (!animItem.classList.contains('anim-no-hide')) {
 						animItem.classList.remove('anim-item--active');
 					}
 				}
-	
+
 				function offset(elem) {
 					let rect = elem.getBoundingClientRect(),
 						scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
