@@ -99,7 +99,7 @@ html {
 	&__overlay {
 		position: absolute;
 		background: rgba(255, 255, 255, 0.847);
-		background: #000;
+		background: #6e6767;
 		top: 0px;
 		left: 0px;
 		right: 0px;
@@ -108,6 +108,7 @@ html {
 		visibility: hidden;
 		opacity: 0;
 		transition: all .5s;
+		z-index: -1;
 
 		&--show {
 			visibility: visible;
@@ -117,12 +118,12 @@ html {
 
 	&__menu {
 		padding: 200px 20px 20px;
-		position: fixed;
+		position: absolute;
 		top: 0px;
-		left: 0px;
-		right: 0px;
 		bottom: 0px;
-		height: 100%;
+		right: 0;
+		left: 0;
+		height: 100vh;
 		visibility: hidden;
 		opacity: 0;
 		transition: all .5s;
@@ -146,11 +147,11 @@ html {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		flex: 0 1 700px;
+		// flex: 0 1 700px;
 	}
 
 	&__menu-item {
-		margin-bottom: 10px;
+		margin-bottom: 18px;
 	}
 
 	&__menu-link {
