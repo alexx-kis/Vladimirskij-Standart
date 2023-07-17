@@ -700,13 +700,16 @@ html {
 		opacity: 0;
 		transform: translate(100px, 0);
 	}
-
+	
 	&__img-2-shadow {
+		mix-blend-mode: multiply;
 		position: absolute;
-		z-index: -1;
-		background-blend-mode: multiply;
-		opacity: .5;
-
+		top: -300px;
+		right: -792px;
+		z-index: -2;
+		transition: all 1s 2s;
+		opacity: 0;
+		transform: translate(100px, 0);
 	}
 
 	&__img-3 {
