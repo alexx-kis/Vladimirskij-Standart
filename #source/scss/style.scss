@@ -933,6 +933,46 @@ html {
 		margin: 0 auto;
 	}
 
+	&__dots {
+		display: none;
+	}
+
+	&__dots .slick-dots {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__dots li {
+		margin-right: 12px;
+	}
+
+	&__dots li:last-child {
+		margin-right: 0;
+	}
+
+	&__dots button {
+		font-size: 0;
+		background-color: transparent;
+		width: 30px;
+		height: 30px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__dots button::before {
+		content: "";
+		height: 3px;
+		width: 100%;
+		background-color: #B3B7BC;
+		border-radius: 3px;
+	}
+
+	&__dots .slick-active button::before {
+		background-color: #424551;
+		transition: all .3s;
+	}
+
 }
 
 /*==================================== POP UP ====================================*/
@@ -1284,7 +1324,7 @@ html {
 		top: -70px;
 		left: -67px;
 		transform-origin: right bottom;
-		animation: content 1s ease 1s;
+		animation: content 3s ease 1s infinite;
 	}
 
 	&__img-text {
@@ -1318,16 +1358,19 @@ html {
 			transform: rotate(0deg);
 		}
 
-		25% {
+		10% {
 			transform: rotate(-4deg);
 		}
 
-		50% {
+		20% {
 			transform: rotate(4deg);
 		}
 
-		100% {
+		30% {
 			transform: rotate(0deg);
+		}
+
+		100% {
 		}
 	}
 }

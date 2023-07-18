@@ -57,8 +57,8 @@ $(function () {
 				// },
 			],
 		arrows: false,
-		dots: false,
-		// appendDots: ('.block__dots'),
+		dots: true,
+		appendDots: ('.cat__dots'),
 		waitForAnimate: false,
 	})
 })
@@ -83,7 +83,6 @@ $('.cat__arrow-next').on('click', function (e) {
 
 		slider.addEventListener('click', function () {
 			popUpSlider.classList.add('cat__pop-up--active');
-			popUpOverlay.classList.add('pop-up-overlay--show');
 			popUpOverlay.classList.add('pop-up-overlay--show');
 		});
 		popUpOverlay.addEventListener('click', function () {
@@ -139,46 +138,46 @@ function showSlides(n) {
 
 
 
-/*==================================== Animation ====================================*/
+	/*==================================== Animation ====================================*/
 
-; (function () {
+	; (function () {
 
-	let animItems = document.querySelectorAll('.anim-item');
+		let animItems = document.querySelectorAll('.anim-item');
 
-	if (animItems.length > 0) {
-		window.addEventListener('scroll', animOnScroll);
-		function animOnScroll() {
-			for (let i = 0; i < animItems.length; i++) {
-				let animItem = animItems[i];
-				let animItemHeight = animItem.offsetHeight;
-				let animItemOffset = offset(animItem).top;
-				let animStart = 4
-				let animItemPoint = window.innerHeight - (animItemHeight / animStart);
+		if (animItems.length > 0) {
+			window.addEventListener('scroll', animOnScroll);
+			function animOnScroll() {
+				for (let i = 0; i < animItems.length; i++) {
+					let animItem = animItems[i];
+					let animItemHeight = animItem.offsetHeight;
+					let animItemOffset = offset(animItem).top;
+					let animStart = 4
+					let animItemPoint = window.innerHeight - (animItemHeight / animStart);
 
-				if (animItemHeight > window.innerHeight) {
-					animItemPoint = window.innerHeight - (window.innerHeight / animStart);
-				}
-
-				if ((pageYOffset > animItemOffset - animItemPoint) && (pageYOffset < (animItemOffset + animItemHeight))) {
-					animItem.classList.add('anim-item--active');
-
-				} else {
-					if (!animItem.classList.contains('anim-no-hide')) {
-						animItem.classList.remove('anim-item--active');
+					if (animItemHeight > window.innerHeight) {
+						animItemPoint = window.innerHeight - (window.innerHeight / animStart);
 					}
-				}
 
-				function offset(elem) {
-					let rect = elem.getBoundingClientRect(),
-						scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-						scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-					return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+					if ((pageYOffset > animItemOffset - animItemPoint) && (pageYOffset < (animItemOffset + animItemHeight))) {
+						animItem.classList.add('anim-item--active');
+
+					} else {
+						if (!animItem.classList.contains('anim-no-hide')) {
+							animItem.classList.remove('anim-item--active');
+						}
+					}
+
+					function offset(elem) {
+						let rect = elem.getBoundingClientRect(),
+							scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+							scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+						return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+					}
 				}
 			}
 		}
-	}
 
-})();
+	})();
 
 
 /*==================================== PARALLAX ====================================*/
