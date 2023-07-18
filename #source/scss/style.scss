@@ -4,7 +4,7 @@
 @import "fonts";
 
 html {
-	scroll-behavior: smooth;
+	// scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -19,7 +19,6 @@ html {
 	margin: 0 auto;
 	height: 100%;
 }
-
 
 /*==================================== HEADER ====================================*/
 /*==================================== HEADER ====================================*/
@@ -474,6 +473,7 @@ html {
 	height: 1525px;
 
 	&__inner {
+		// padding-top: 100px;
 		z-index: 0;
 		position: relative;
 		display: flex;

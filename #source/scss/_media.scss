@@ -131,6 +131,10 @@
 /*------------------------------ 1350 ------------------------------*/
 
 @media (max-width: 1350px) {
+
+	.ss {
+		padding-top: 428px;
+	}
 	.cat {
 		&__pop-up {
 			width: 1000px;
@@ -320,10 +324,11 @@
 
 @media (max-width: 980px) {
 	.ms {
-		height: 1480px;
+		height: 1130px;
 	}
 
 	.ss {
+		margin-top: -260px;
 		padding-top: 460px;
 		height: 1365px;
 	}
@@ -674,7 +679,6 @@
 
 @media (max-width: 740px) {
 	.ms {
-		height: 1370px;
 
 		&__heading {
 			font-size: 60px;
@@ -829,6 +833,7 @@
 			display: block;
 			margin-top: 20px;
 		}
+
 		&__dots .slick-dots {
 			display: flex;
 			justify-content: center;
@@ -1328,7 +1333,7 @@
 	}
 
 	.ms {
-		height: 1170px;
+		height: 763px;
 		padding-top: 81px;
 
 		&__heading {
@@ -1399,8 +1404,9 @@
 	}
 
 	.ss {
-		padding-top: 220px;
-		height: 700px;
+		margin-top: -163px;
+		padding-top: 187px;
+		height: 750px;
 
 		&__logo {
 			img {
@@ -1409,8 +1415,35 @@
 		}
 
 		&__stamp {
-			img {
-				width: 115px;
+			&-outline {
+				img {
+					width: 115px;
+				}
+			}
+
+			&-border {
+				img {
+					width: 103px;
+				}
+			}
+
+			&-content {
+				top: -50px;
+				left: -47px;
+
+				img {
+					width: 75.5px;
+				}
+			}
+
+			&-text {
+				top: -23px;
+				left: -37px;
+
+				img {
+					width: 85px;
+					height: 70px;
+				}
 			}
 		}
 
@@ -1491,8 +1524,9 @@
 	}
 
 	.sm {
-		padding-top: 320px;
-		padding-bottom: 380px;
+		margin-top: -40px;
+		padding-top: 140px;
+		padding-bottom: 80px;
 
 		&__logo {
 
@@ -1503,8 +1537,36 @@
 		}
 
 		&__stamp {
-			img {
-				width: 115px;
+			&-outline {
+				img {
+					width: 115px;
+				}
+			}
+
+			&-border {
+				img {
+					width: 103px;
+				}
+			}
+
+			&-content {
+				top: -49px;
+				left: -47px;
+
+				img {
+					width: 78px;
+					height: 80px;
+				}
+			}
+
+			&-text {
+				top: -35px;
+				left: -43px;
+
+				img {
+					width: 91px;
+					height: 82px;
+				}
 			}
 		}
 
@@ -1565,6 +1627,10 @@
 			}
 		}
 
+	}
+
+	.cat {
+		margin-top: -128px;
 	}
 
 	.footer {
