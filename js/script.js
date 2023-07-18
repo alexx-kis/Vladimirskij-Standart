@@ -77,8 +77,7 @@ $('.cat__arrow-next').on('click', function (e) {
 		let slider = document.querySelector('.cat__slider');
 		let popUpSlider = document.querySelector('.cat__pop-up');
 		let popUpOverlay = document.querySelector('.pop-up-overlay');
-		let back = document.querySelector('.pop-up__slide-back');
-
+		let backs = document.querySelectorAll('.pop-up__slide-back');
 
 
 		slider.addEventListener('click', function () {
@@ -90,10 +89,12 @@ $('.cat__arrow-next').on('click', function (e) {
 			popUpOverlay.classList.remove('pop-up-overlay--show');
 		});
 
-		back.addEventListener('click', function () {
-			popUpSlider.classList.remove('cat__pop-up--active');
-			popUpOverlay.classList.remove('pop-up-overlay--show');
-		});
+		for (let back of backs) {
+			back.addEventListener('click', function () {
+				popUpSlider.classList.remove('cat__pop-up--active');
+				popUpOverlay.classList.remove('pop-up-overlay--show');
+			});
+		}
 
 	})();
 
@@ -251,6 +252,14 @@ window.onload = function () {
 /*==================================== SCROLL ====================================*/
 
 
+if (window.innerWidth <= 768) {
+	document.querySelector('.sm').classList.remove('scroll');
+	document.querySelector('.hero').classList.remove('scroll');
+	document.querySelector('.ss').classList.remove('scroll');
+	document.querySelector('.ms').classList.remove('scroll');
+	document.querySelector('.cat').classList.remove('scroll');
+
+}
 $.scrollify({
 	section: ".scroll",
 	// sectionName: "section-name",
