@@ -70,33 +70,33 @@ $('.cat__arrow-next').on('click', function (e) {
 	$('.cat__slider').slick('slickNext')
 })
 
-/*------------------------------ POP-UP SLIDER------------------------------*/
+	/*------------------------------ POP-UP SLIDER------------------------------*/
 
-; (function () {
-	
-	let slider = document.querySelector('.cat__slider');
-	let popUpSlider = document.querySelector('.cat__pop-up');
-	let popUpOverlay = document.querySelector('.pop-up-overlay');
-	let back = document.querySelector('.pop-up__slide-back');
-	
-	
-	
-	slider.addEventListener('click', function () {
-		popUpSlider.classList.add('cat__pop-up--active');
-		popUpOverlay.classList.add('pop-up-overlay--show');
-		popUpOverlay.classList.add('pop-up-overlay--show');
-	});
-	popUpOverlay.addEventListener('click', function () {
-		popUpSlider.classList.remove('cat__pop-up--active');
-		popUpOverlay.classList.remove('pop-up-overlay--show');
-	});
-	
-	back.addEventListener('click', function () {
-		popUpSlider.classList.remove('cat__pop-up--active');
-		popUpOverlay.classList.remove('pop-up-overlay--show');
-	});
-	
-})();
+	; (function () {
+
+		let slider = document.querySelector('.cat__slider');
+		let popUpSlider = document.querySelector('.cat__pop-up');
+		let popUpOverlay = document.querySelector('.pop-up-overlay');
+		let back = document.querySelector('.pop-up__slide-back');
+
+
+
+		slider.addEventListener('click', function () {
+			popUpSlider.classList.add('cat__pop-up--active');
+			popUpOverlay.classList.add('pop-up-overlay--show');
+			popUpOverlay.classList.add('pop-up-overlay--show');
+		});
+		popUpOverlay.addEventListener('click', function () {
+			popUpSlider.classList.remove('cat__pop-up--active');
+			popUpOverlay.classList.remove('pop-up-overlay--show');
+		});
+
+		back.addEventListener('click', function () {
+			popUpSlider.classList.remove('cat__pop-up--active');
+			popUpOverlay.classList.remove('pop-up-overlay--show');
+		});
+
+	})();
 
 
 let slideIndex = 1;
@@ -235,5 +235,18 @@ function showSlides(n) {
 		leaf4.style.transform = 'translate(+' + x * 50 + 'px, +' + y * 50 + 'px)';
 	});
 })();
+
+
+/*==================================== PRELOADER ====================================*/
+
+
+window.onload = function () {
+
+	setTimeout(function () {
+		document.querySelector('.preloader').style.display = "none";
+	}, 400);
+
+};
+
 
 

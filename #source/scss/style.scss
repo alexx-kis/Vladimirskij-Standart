@@ -20,6 +20,7 @@ html {
 	height: 100%;
 }
 
+
 /*==================================== HEADER ====================================*/
 /*==================================== HEADER ====================================*/
 
@@ -139,7 +140,7 @@ html {
 		justify-content: center;
 		height: 100%;
 	}
-	
+
 	&__menu-list {
 		text-align: center;
 		margin-bottom: 80px;
@@ -260,7 +261,8 @@ html {
 .ms {
 	padding-top: 140px;
 	background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(255, 235, 182, 0.56) 0%, rgba(255, 235, 182, 0.00) 93.23%), url('../img/3.mjaso-sochnyje/ms-bg.png') no-repeat center / cover;
-	height: 1344px;
+	// height: 1344px;
+
 	display: flex;
 	position: relative;
 	z-index: -1;
@@ -696,7 +698,7 @@ html {
 		opacity: 0;
 		transform: translate(100px, 0);
 	}
-	
+
 	&__img-2-shadow {
 		mix-blend-mode: multiply;
 		position: absolute;
@@ -976,13 +978,13 @@ html {
 		align-items: center;
 		justify-content: start;
 		width: 350px;
+
 		img {
 			width: 70%;
 		}
 	}
 
-	&__slide-icon {
-	}
+	&__slide-icon {}
 
 	&__slide-text {
 		font-size: 18px;
@@ -1156,6 +1158,101 @@ html {
 		transform: translate(10px, 10px);
 	}
 }
+
+
+/*==================================== PRELOADER ====================================*/
+/*==================================== PRELOADER ====================================*/
+
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgb(255, 255, 255);
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__img {
+		// height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		animation: scale .3s linear 0s forwards;
+	}
+
+	&__img-outline {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		animation: preloader 15s linear 0s infinite forwards;
+	}
+
+	&__img-border {
+		position: absolute;
+		animation: preloader 15s linear 0s infinite forwards;
+	}
+
+	&__img-content {
+		position: absolute;
+		top: -70px;
+		left: -67px;
+		transform-origin: right bottom;
+		animation: content 1s ease 1s;
+	}
+
+	&__img-text {
+		position: absolute;
+		top: -33px;
+		left: -52px;
+	}
+
+	@keyframes preloader {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes scale {
+		0% {
+			transform: scale(0);
+		}
+
+		100% {
+			transform: scale(2);
+		}
+	}
+
+	@keyframes content {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		25% {
+			transform: rotate(-4deg);
+		}
+
+		50% {
+			transform: rotate(4deg);
+		}
+
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+}
+
+
+
+
 
 /*==================================== MEDIA ====================================*/
 /*==================================== MEDIA ====================================*/
