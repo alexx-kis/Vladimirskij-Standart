@@ -674,7 +674,8 @@ html {
   background: -o-radial-gradient(50.03% 50.03%, 40.82% 41.08%, #FFE072 26.23%, rgba(255, 235, 182, 0) 92.95%) -542px 100px, url("../img/4.slivochno-sochnyje/ss-bg.png") no-repeat 0 0/100% 100%;
   background: radial-gradient(40.82% 41.08% at 50.03% 50.03%, #FFE072 26.23%, rgba(255, 235, 182, 0) 92.95%) -542px 100px, url("../img/4.slivochno-sochnyje/ss-bg.png") no-repeat 0 0/100% 100%;
   background-blend-mode: multiply;
-  z-index: 3;
+  position: relative;
+  z-index: 4;
   margin-top: -570px;
   padding-top: 548px;
   height: 1525px;
@@ -796,6 +797,11 @@ html {
   position: absolute;
   top: -70px;
   left: -65px;
+  z-index: 100;
+}
+.ss__stamp-content:hover {
+  -webkit-animation: swing 0.6s ease;
+          animation: swing 0.6s ease;
 }
 .ss__stamp-text {
   position: absolute;
@@ -920,7 +926,7 @@ html {
   padding-top: 360px;
   padding-bottom: 400px;
   margin-top: -200px;
-  z-index: -3;
+  z-index: 0;
   position: relative;
 }
 .sm__inner {
@@ -993,6 +999,11 @@ html {
   position: absolute;
   top: -67px;
   left: -66px;
+  z-index: 100;
+}
+.sm__stamp-content:hover {
+  -webkit-animation: swing 0.6s ease;
+          animation: swing 0.6s ease;
 }
 .sm__stamp-text {
   position: absolute;
@@ -2858,6 +2869,58 @@ html {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(9px);
+            transform: translateX(9px);
+  }
+  30% {
+    -webkit-transform: translateX(-9px);
+            transform: translateX(-9px);
+  }
+  40% {
+    -webkit-transform: translateX(6px);
+            transform: translateX(6px);
+  }
+  50% {
+    -webkit-transform: translateX(-6px);
+            transform: translateX(-6px);
+  }
+  65% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(9px);
+            transform: translateX(9px);
+  }
+  30% {
+    -webkit-transform: translateX(-9px);
+            transform: translateX(-9px);
+  }
+  40% {
+    -webkit-transform: translateX(6px);
+            transform: translateX(6px);
+  }
+  50% {
+    -webkit-transform: translateX(-6px);
+            transform: translateX(-6px);
+  }
+  65% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 .anim-item--active {
