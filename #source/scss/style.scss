@@ -261,7 +261,7 @@ html {
 .ms {
 	padding-top: 140px;
 	background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(255, 235, 182, 0.56) 0%, rgba(255, 235, 182, 0.00) 93.23%), url('../img/3.mjaso-sochnyje/ms-bg.png') no-repeat center / cover;
-	// height: 1344px;
+	height: 1344px;
 
 	display: flex;
 	position: relative;
@@ -528,8 +528,42 @@ html {
 		margin-bottom: 72px;
 		transition: all 1s;
 		transform: scale(0);
-		animation: stamp 8s linear infinite;
+		width: 160px;
+		height: 160px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
+		&-img {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+		}
+
+		&-outline {
+			position: absolute;
+			animation: rotate 8s linear infinite;
+		}
+
+		&-border {
+			position: absolute;
+			animation: rotate 8s linear infinite;
+		}
+
+		&-content {
+			position: absolute;
+			top: -70px;
+			left: -65px;
+		}
+
+		&-text {
+			position: absolute;
+			top: -34px;
+			left: -53px;
+		}
 
 	}
 
@@ -649,10 +683,45 @@ html {
 
 	&__stamp {
 		margin-bottom: 65px;
-		opacity: 0;
-		transform: scale(0);
 		transition: all 1s;
-		animation: stamp 8s linear infinite;
+		transform: scale(0);
+		width: 160px;
+		height: 160px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&-img {
+
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&-outline {
+			position: absolute;
+			animation: rotate 8s linear infinite;
+		}
+
+		&-border {
+			position: absolute;
+			animation: rotate 8s linear infinite;
+		}
+
+		&-content {
+			position: absolute;
+			top: -67px;
+			left: -66px;
+		}
+
+		&-text {
+			position: absolute;
+			top: -50px;
+			left: -63px;
+		}
+
 	}
 
 	&__stamp-inner {
@@ -1262,7 +1331,7 @@ html {
 /*==================================== ANIMATION ====================================*/
 /*==================================== ANIMATION ====================================*/
 
-@keyframes stamp {
+@keyframes rotate {
 	0% {
 		transform: rotate(0deg);
 	}

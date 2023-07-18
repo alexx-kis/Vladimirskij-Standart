@@ -419,6 +419,7 @@ html {
   padding-top: 140px;
   background: -o-radial-gradient(50.04% 53.43%, 48.13% 48.13%, rgba(255, 235, 182, 0.56) 0%, rgba(255, 235, 182, 0) 93.23%), url("../img/3.mjaso-sochnyje/ms-bg.png") no-repeat center/cover;
   background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(255, 235, 182, 0.56) 0%, rgba(255, 235, 182, 0) 93.23%), url("../img/3.mjaso-sochnyje/ms-bg.png") no-repeat center/cover;
+  height: 1344px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,8 +757,50 @@ html {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
-  -webkit-animation: stamp 8s linear infinite;
-          animation: stamp 8s linear infinite;
+  width: 160px;
+  height: 160px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ss__stamp-img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.ss__stamp-outline {
+  position: absolute;
+  -webkit-animation: rotate 8s linear infinite;
+          animation: rotate 8s linear infinite;
+}
+.ss__stamp-border {
+  position: absolute;
+  -webkit-animation: rotate 8s linear infinite;
+          animation: rotate 8s linear infinite;
+}
+.ss__stamp-content {
+  position: absolute;
+  top: -70px;
+  left: -65px;
+}
+.ss__stamp-text {
+  position: absolute;
+  top: -34px;
+  left: -53px;
 }
 .ss__stamp-inner {
   -webkit-transition: all 1s;
@@ -905,15 +948,56 @@ html {
 }
 .sm__stamp {
   margin-bottom: 65px;
-  opacity: 0;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  -webkit-animation: stamp 8s linear infinite;
-          animation: stamp 8s linear infinite;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  width: 160px;
+  height: 160px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sm__stamp-img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sm__stamp-outline {
+  position: absolute;
+  -webkit-animation: rotate 8s linear infinite;
+          animation: rotate 8s linear infinite;
+}
+.sm__stamp-border {
+  position: absolute;
+  -webkit-animation: rotate 8s linear infinite;
+          animation: rotate 8s linear infinite;
+}
+.sm__stamp-content {
+  position: absolute;
+  top: -67px;
+  left: -66px;
+}
+.sm__stamp-text {
+  position: absolute;
+  top: -50px;
+  left: -63px;
 }
 .sm__stamp-inner {
   -webkit-transition: all 1s;
@@ -2736,7 +2820,7 @@ html {
 }
 /*==================================== ANIMATION ====================================*/
 /*==================================== ANIMATION ====================================*/
-@-webkit-keyframes stamp {
+@-webkit-keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -2746,7 +2830,7 @@ html {
             transform: rotate(360deg);
   }
 }
-@keyframes stamp {
+@keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
