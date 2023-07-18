@@ -259,7 +259,7 @@ $.scrollify({
 	scrollSpeed: 1100,
 	offset: 0,
 	scrollbars: true,
-	standardScrollElements: "",
+	standardScrollElements: ".footer",
 	setHeights: false,
 	overflowScroll: true,
 	updateHash: true,
