@@ -237,6 +237,7 @@
 	&__heading {
 		opacity: 0;
 		animation: hero-heading 2s forwards;
+		height: 100%;
 	}
 
 	@keyframes hero-heading {
@@ -301,18 +302,19 @@
 /*==================================== MS ====================================*/
 
 .ms {
-	padding-top: 140px;
-	background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(255, 235, 182, 0.56) 0%, rgba(255, 235, 182, 0.00) 93.23%), url('../img/3.mjaso-sochnyje/ms-bg.png') no-repeat center / cover;
-	height: 1344px;
+	// padding-top: 140px;
+	background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(255, 235, 182, 0.56) 0%, rgba(255, 235, 182, 0.00) 93.23%), #ff8e96;
+	min-height: 100vh;
 
 	display: flex;
+	align-items: center;
 	position: relative;
-	z-index: -1;
+	z-index: 0;
 
 	&__drops1 {
 		position: absolute;
-		top: 680px;
-		left: 10px;
+		top: 380px;
+		left: -100px;
 	}
 
 	&__drop1 {
@@ -345,8 +347,8 @@
 
 	&__drops2 {
 		position: absolute;
-		top: 790px;
-		left: 630px;
+		top: 810px;
+		left: 230px;
 	}
 
 	&__drop4 {
@@ -379,7 +381,7 @@
 	&__img1 {
 		position: absolute;
 		z-index: -1;
-		top: 170px;
+		// top: 170px;
 		left: -390px;
 		transition: all 1s;
 		opacity: 0;
@@ -394,6 +396,8 @@
 		align-items: center;
 		justify-content: center;
 		max-width: 730px;
+		height: 100%;
+		padding: 30px 0;
 	}
 
 	&__heading {
@@ -449,7 +453,7 @@
 	&__img2 {
 		z-index: -1;
 		position: absolute;
-		top: -11px;
+		// top: -11px;
 		right: -645px;
 		transition: all 1s 1s;
 		opacity: 0;
@@ -460,24 +464,24 @@
 
 	&__leaf-1 {
 		position: absolute;
-		top: -9px;
-		left: -448px;
+		top: -149px;
+		left: -90px;
 		transition: opacity .5s 1s;
 		opacity: 0;
 	}
 
 	&__leaf-2 {
 		position: absolute;
-		top: 80px;
-		left: -12px;
+		top: -72px;
+		left: 400px;
 		transition: opacity .5s 1s;
 		opacity: 0;
 	}
 
 	&__leaf-3 {
 		position: absolute;
-		top: 600px;
-		left: -207px;
+		top: 401px;
+		left: 160px;
 		z-index: 4;
 		transition: opacity .5s 1s;
 		opacity: 0;
@@ -486,8 +490,8 @@
 	&__leaf-4 {
 		z-index: -1;
 		position: absolute;
-		top: 0px;
-		right: 0px;
+		top: -10px;
+		right: 590px;
 		transition: opacity .5s 1s;
 		opacity: 0;
 	}
@@ -496,7 +500,7 @@
 		z-index: -1;
 		position: absolute;
 		top: 590px;
-		right: -273px;
+		left: 330px;
 		transition: opacity .3s 1s;
 		opacity: 0;
 	}
@@ -507,16 +511,16 @@
 /*==================================== SS ====================================*/
 
 .ss {
-	background: radial-gradient(40.82% 41.08% at 50.03% 50.03%, #FFE072 26.23%, rgba(255, 235, 182, 0.00) 92.95%) -542px 100px, url('../img/4.slivochno-sochnyje/ss-bg.png') no-repeat 0 0 / 100% 100%;
-	background-blend-mode: multiply;
+	// background: radial-gradient(40.82% 41.08% at 50.03% 50.03%, #FFE072 26.23%, rgba(255, 235, 182, 0.00) 92.95%) -542px 100px, url('../img/4.slivochno-sochnyje/ss-bg.png') no-repeat 0 0 / 100% 100%;
+	background: #FFEBB6;
 	position: relative;
+	display: flex;
+	align-items: center;
 	z-index: 4;
-	margin-top: -570px;
-	padding-top: 548px;
-	height: 1525px;
+	min-height: 100vh;
 
 	&__inner {
-		// padding-top: 100px;
+		padding: 30px 0;
 		z-index: 0;
 		position: relative;
 		display: flex;
@@ -525,11 +529,12 @@
 		justify-content: center;
 		max-width: 730px;
 		margin: 0 auto;
+		height: 100%;
 	}
 
 	&__leaf-1 {
 		position: absolute;
-		top: -100px;
+		top: 100px;
 		left: -652px;
 		z-index: 0;
 		transition: all 1s .3s;
@@ -541,7 +546,7 @@
 
 	&__img1 {
 		position: absolute;
-		top: -30px;
+		top: -6px;
 		left: -530px;
 		z-index: -1;
 		transition: all 1s;
@@ -551,10 +556,8 @@
 
 	&__img2 {
 		position: absolute;
-		bottom: 0px;
-		left: 0px;
-		top: 560px;
-		left: -400px;
+		top: 540px;
+		left: -500px;
 		z-index: -1;
 		transition: all 1s .5s;
 		opacity: 0;
@@ -650,7 +653,7 @@
 
 	&__pelmen-2 {
 		position: absolute;
-		top: 58px;
+		top: 38px;
 		right: -248px;
 		z-index: -1;
 		transition: all .2s 2.1s linear;
@@ -661,7 +664,7 @@
 
 	&__img3 {
 		position: absolute;
-		top: 40px;
+		top: 4px;
 		right: -708px;
 		z-index: -1;
 		transition: all 1s 1s;
@@ -671,8 +674,8 @@
 
 	&__leaf-5 {
 		position: absolute;
-		top: 595px;
-		right: -173px;
+		top: 545px;
+		right: 527px;
 		z-index: -2;
 		transition: all 1s 1.5s;
 		opacity: 0;
@@ -681,15 +684,15 @@
 
 	&__leaf-2 {
 		position: absolute;
-		top: 693px;
-		left: -344px;
+		top: 683px;
+		left: -444px;
 		transition: opacity .5s 1s;
 		opacity: 0;
 	}
 
 	&__leaf-3 {
 		position: absolute;
-		top: 174px;
+		top: 125px;
 		right: -420px;
 		transition: opacity .5s 1s;
 		opacity: 0;
@@ -697,7 +700,7 @@
 
 	&__leaf-4 {
 		position: absolute;
-		top: 529px;
+		top: 500px;
 		right: -538px;
 		transition: opacity .5s 1s;
 		opacity: 0;
@@ -711,18 +714,20 @@
 
 .sm {
 	background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(78, 199, 251, 0.69) 0%, rgba(41, 197, 246, 0.00) 90.31%), #3996BC;
-
-	padding-top: 360px;
-	padding-bottom: 400px;
-	margin-top: -200px;
+	min-height: 100vh;
 	z-index: 0;
 	position: relative;
+	display: flex;
+	align-items: center;
 
 	&__inner {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
 		position: relative;
+		height: 100%;
+		padding: 30px 0;
 	}
 
 	&__logo {
@@ -802,8 +807,8 @@
 
 	&__img-1 {
 		position: absolute;
-		top: -190px;
-		left: -265px;
+		top: -145px;
+		left: -425px;
 		z-index: -1;
 		transition: all 1s .5s;
 		opacity: 0;
@@ -816,8 +821,8 @@
 		justify-content: center;
 		align-items: center;
 		position: absolute;
-		top: -300px;
-		right: -792px;
+		top: -180px;
+		right: -932px;
 		z-index: -1;
 		transition: all 1s 2s;
 		opacity: 0;
@@ -827,8 +832,8 @@
 	&__img-2-shadow {
 		mix-blend-mode: multiply;
 		position: absolute;
-		top: -300px;
-		right: -792px;
+		top: -180px;
+		right: -932px;
 		z-index: -2;
 		transition: all 1s 2s;
 		opacity: 0;
@@ -837,8 +842,8 @@
 
 	&__img-3 {
 		position: absolute;
-		top: 325px;
-		left: -130px;
+		top: 385px;
+		left: -290px;
 		z-index: -1;
 		transition: all .5s;
 		opacity: 0;
@@ -848,8 +853,8 @@
 
 	&__drop-1 {
 		position: absolute;
-		top: 250px;
-		left: -192px;
+		top: 270px;
+		left: -342px;
 		z-index: -2;
 		transition: all .3s 2s cubic-bezier(0.56, 1.67, 0.77, 1.67);
 		transform: scale(0);
@@ -859,15 +864,15 @@
 	&__leaf-1 {
 		position: absolute;
 		top: 80px;
-		left: -251px;
+		left: -431px;
 		transition: opacity .5s 1s;
 		opacity: 0;
 	}
 
 	&__leaf-2 {
 		position: absolute;
-		top: 295px;
-		left: 139px;
+		top: 365px;
+		left: 19px;
 		transition: opacity .5s 1s;
 		opacity: 0;
 		z-index: -1;
@@ -875,16 +880,16 @@
 
 	&__leaf-3 {
 		position: absolute;
-		top: -175px;
-		right: 60px;
+		top: -65px;
+		right: -100px;
 		transition: opacity .5s 1s;
 		opacity: 0;
 	}
 
 	&__leaf-4 {
 		position: absolute;
-		top: 370px;
-		right: -247px;
+		top: 520px;
+		right: -447px;
 		transition: opacity .5s 1s;
 		opacity: 0;
 		z-index: -1;
@@ -899,8 +904,9 @@
 	background: url('../img/6.cat/cat-bg.png') no-repeat 0 / 100% 100%;
 	padding-top: 338px;
 	padding-bottom: 350px;
-	margin-top: -338px;
+	// margin-top: -338px;
 	// z-index: -1;
+	// height: 100vh;
 	position: relative;
 
 	.container {
@@ -1222,7 +1228,7 @@
 	padding-bottom: 270px;
 	z-index: 2;
 	position: relative;
-	margin-top: -250px;
+	// margin-top: -250px;
 
 
 	&__inner {
