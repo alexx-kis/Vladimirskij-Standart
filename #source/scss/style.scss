@@ -304,7 +304,7 @@
 .ms {
 	// padding-top: 140px;
 	background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(255, 235, 182, 0.56) 0%, rgba(255, 235, 182, 0.00) 93.23%), #ff8e96;
-	min-height: 100vh;
+	height: 100vh;
 
 	display: flex;
 	align-items: center;
@@ -378,10 +378,9 @@
 		transition: all .3s 2s cubic-bezier(0.56, 1.67, 0.77, 2);
 	}
 
-	&__img1 {
+	&__img-left {
 		position: absolute;
 		z-index: -1;
-		// top: 170px;
 		left: -390px;
 		transition: all 1s;
 		opacity: 0;
@@ -389,8 +388,8 @@
 	}
 
 	&__inner {
-		z-index: 0;
 		position: relative;
+		z-index: 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -450,7 +449,7 @@
 		transition: all .5s;
 	}
 
-	&__img2 {
+	&__img-right {
 		z-index: -1;
 		position: absolute;
 		// top: -11px;
@@ -517,7 +516,7 @@
 	display: flex;
 	align-items: center;
 	z-index: 4;
-	min-height: 100vh;
+	height: 100vh;
 
 	&__inner {
 		padding: 30px 0;
@@ -714,7 +713,7 @@
 
 .sm {
 	background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(78, 199, 251, 0.69) 0%, rgba(41, 197, 246, 0.00) 90.31%), #3996BC;
-	min-height: 100vh;
+	height: 100vh;
 	z-index: 0;
 	position: relative;
 	display: flex;
@@ -749,7 +748,6 @@
 		align-items: center;
 
 		&-img {
-
 			position: relative;
 			display: flex;
 			align-items: center;
@@ -1431,6 +1429,7 @@
 /*==================================== MEDIA ====================================*/
 
 @import "media";
+@import "media2";
 
 /*==================================== ANIMATION ====================================*/
 /*==================================== ANIMATION ====================================*/
