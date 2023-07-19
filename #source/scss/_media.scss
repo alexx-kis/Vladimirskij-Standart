@@ -135,6 +135,7 @@
 	.ss {
 		padding-top: 428px;
 	}
+
 	.cat {
 		&__pop-up {
 			width: 1000px;
@@ -653,6 +654,19 @@
 		&__menu-list {
 			flex-basis: 400px;
 
+		}
+	}
+
+	.hero {
+		&__button {
+			display: flex;
+			align-items: center;
+			max-width: 223px;
+			margin: 30px auto 0;
+		}
+
+		&__video {
+			// display: none;
 		}
 	}
 
@@ -1208,27 +1222,6 @@
 			img {
 				width: 340px;
 			}
-		}
-
-		&__button {
-			display: flex;
-			align-items: center;
-			max-width: 223px;
-			margin: 0 auto;
-		}
-
-		&__button-icon {
-			margin-right: 11px;
-		}
-
-		&__button-text {
-			color: #fff;
-			font-family: "Gotham-Pro";
-			font-size: 24px;
-			font-style: normal;
-			font-weight: 400;
-			line-height: normal;
-			text-decoration-line: underline;
 		}
 	}
 

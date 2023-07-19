@@ -250,7 +250,51 @@ html {
 	}
 
 	&__button {
+	}
+	
+	&__button {
+		cursor: pointer;
 		display: none;
+	}
+
+	&__button-icon {
+		margin-right: 11px;
+	}
+
+	&__button-text {
+		color: #fff;
+		font-family: "Gotham-Pro";
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		text-decoration-line: underline;
+	}
+
+	&__video {
+		z-index: 1000;
+		transition: all .5s;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		object-fit: contain;
+		min-width: 100%;
+		background: #000;
+
+		video {
+			min-width: 100%;
+			min-height: 100%;
+			width: 100%;
+		}
+
+		&--off {
+			opacity: 0;
+			visibility: 0;
+			z-index: -100;
+		}
 	}
 }
 
@@ -1370,8 +1414,7 @@ html {
 			transform: rotate(0deg);
 		}
 
-		100% {
-		}
+		100% {}
 	}
 }
 

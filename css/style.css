@@ -406,7 +406,52 @@ h6 {
   }
 }
 .hero__button {
+  cursor: pointer;
   display: none;
+}
+.hero__button-icon {
+  margin-right: 11px;
+}
+.hero__button-text {
+  color: #fff;
+  font-family: "Gotham-Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+.hero__video {
+  z-index: 1000;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  min-width: 100%;
+  background: #000;
+}
+.hero__video video {
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+.hero__video--off {
+  opacity: 0;
+  visibility: 0;
+  z-index: -100;
 }
 
 /*==================================== MS ====================================*/
@@ -2200,6 +2245,16 @@ h6 {
     -ms-flex-preferred-size: 400px;
         flex-basis: 400px;
   }
+  .hero__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 223px;
+    margin: 30px auto 0;
+  }
   .ms__text {
     font-size: 26px;
   }
@@ -2613,28 +2668,6 @@ h6 {
   }
   .hero__heading img {
     width: 340px;
-  }
-  .hero__button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    max-width: 223px;
-    margin: 0 auto;
-  }
-  .hero__button-icon {
-    margin-right: 11px;
-  }
-  .hero__button-text {
-    color: #fff;
-    font-family: "Gotham-Pro";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration-line: underline;
   }
   .ms__logo img {
     width: 340px;

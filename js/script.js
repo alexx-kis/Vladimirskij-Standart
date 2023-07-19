@@ -278,3 +278,29 @@ $.scrollify({
 	afterResize: function () { },
 	afterRender: function () { }
 });
+
+
+/*==================================== VIDEO ====================================*/
+
+let videoBox = document.querySelector('.hero__video');
+let video = document.querySelector('.hero__video video');
+let videoBtn = document.querySelector('.hero__button');
+
+let timerId = setTimeout(function () {
+	videoBox.classList.add('hero__video--off');
+}, 15000);
+
+
+if (window.innerWidth <= 768) {
+	clearInterval(timerId);
+	videoBox.classList.add('hero__video--off');
+	video.removeAttribute('autoplay');
+
+	videoBtn.addEventListener('click', function (e) {
+		videoBox.classList.remove('hero__video--off');
+		video.setAttribute('autoplay', '');
+	});
+}
+
+
+
