@@ -258,14 +258,14 @@ window.onload = function () {
 /*==================================== SCROLL ====================================*/
 
 
-if (window.innerWidth <= 768) {
-	document.querySelector('.sm').classList.remove('scroll');
-	document.querySelector('.hero').classList.remove('scroll');
-	document.querySelector('.ss').classList.remove('scroll');
-	document.querySelector('.ms').classList.remove('scroll');
-	document.querySelector('.cat').classList.remove('scroll');
+// if (window.innerWidth <= 768) {
+// 	document.querySelector('.sm').classList.remove('scroll');
+// 	document.querySelector('.hero').classList.remove('scroll');
+// 	document.querySelector('.ss').classList.remove('scroll');
+// 	document.querySelector('.ms').classList.remove('scroll');
+// 	document.querySelector('.cat').classList.remove('scroll');
 
-}
+// }
 $.scrollify({
 	section: ".scroll",
 	// sectionName: "section-name",
