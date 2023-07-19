@@ -309,7 +309,7 @@
 	display: flex;
 	align-items: center;
 	position: relative;
-	z-index: 0;
+	z-index: 2;
 
 	&__drops1 {
 		position: absolute;
@@ -511,12 +511,29 @@
 
 .ss {
 	// background: radial-gradient(40.82% 41.08% at 50.03% 50.03%, #FFE072 26.23%, rgba(255, 235, 182, 0.00) 92.95%) -542px 100px, url('../img/4.slivochno-sochnyje/ss-bg.png') no-repeat 0 0 / 100% 100%;
-	background: #FFEBB6;
+	background: #ff8e96;
+	background: linear-gradient(#ff8e96 50%, #3996BC 50%);
 	position: relative;
 	display: flex;
 	align-items: center;
-	z-index: 4;
+	z-index: 2;
 	min-height: 100vh;
+
+	&__bg {
+		position: absolute;
+		z-index: 0;
+		border: 1px solid black;
+		top: -30vh;
+		bottom: -100px;
+		right: 0;
+		width: 100vw;
+		img {
+			width: 100%;
+			// height: 80vh;
+			height: 100%;
+
+		}
+	}
 
 	&__inner {
 		padding: 30px 0;

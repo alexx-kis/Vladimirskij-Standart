@@ -472,7 +472,7 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  z-index: 0;
+  z-index: 2;
 }
 .ms__drops1 {
   position: absolute;
@@ -719,7 +719,10 @@ h6 {
 /*==================================== SS ====================================*/
 /*==================================== SS ====================================*/
 .ss {
-  background: #FFEBB6;
+  background: #ff8e96;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ff8e96), color-stop(50%, #3996BC));
+  background: -o-linear-gradient(#ff8e96 50%, #3996BC 50%);
+  background: linear-gradient(#ff8e96 50%, #3996BC 50%);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -727,8 +730,21 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 4;
+  z-index: 2;
   min-height: 100vh;
+}
+.ss__bg {
+  position: absolute;
+  z-index: 0;
+  border: 1px solid black;
+  top: -30vh;
+  bottom: -100px;
+  right: 0;
+  width: 100vw;
+}
+.ss__bg img {
+  width: 100%;
+  height: 100%;
 }
 .ss__inner {
   padding: 30px 0;
@@ -1807,6 +1823,12 @@ h6 {
 }
 /*------------------------------ 1400 ------------------------------*/
 @media (max-width: 1400px) {
+  .ss__bg {
+    top: -22vh;
+  }
+  .ss__bg img {
+    width: auto;
+  }
   .ss__img1 {
     left: -410px;
   }
@@ -2051,6 +2073,12 @@ h6 {
   }
   .ms__heading span {
     font-size: 40px;
+  }
+  .ss__bg {
+    top: -16vh;
+  }
+  .ss__bg img {
+    width: auto;
   }
 }
 /*------------------------------ 980 ------------------------------*/
