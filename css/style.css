@@ -124,6 +124,10 @@ h6 {
   font-style: italic;
   font-weight: 300;
 }
+body {
+  overflow: hidden;
+}
+
 .wrapper {
   min-height: 100%;
   width: 100%;
@@ -595,9 +599,9 @@ h6 {
   line-height: normal;
   text-transform: uppercase;
   opacity: 0;
-  -webkit-transform: translate(0, -100px);
-      -ms-transform: translate(0, -100px);
-          transform: translate(0, -100px);
+  -webkit-transform: translate(0, 100px);
+      -ms-transform: translate(0, 100px);
+          transform: translate(0, 100px);
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
@@ -784,9 +788,9 @@ h6 {
 .ss__logo {
   margin-bottom: 106px;
   opacity: 0;
-  -webkit-transform: translate(0, -200px);
-      -ms-transform: translate(0, -200px);
-          transform: translate(0, -200px);
+  -webkit-transform: translate(0, 100px);
+      -ms-transform: translate(0, 100px);
+          transform: translate(0, 100px);
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
@@ -989,9 +993,9 @@ h6 {
   -o-transition: all 0.5s;
   transition: all 0.5s;
   opacity: 0;
-  -webkit-transform: translate(0, -100px);
-      -ms-transform: translate(0, -100px);
-          transform: translate(0, -100px);
+  -webkit-transform: translate(0, 100px);
+      -ms-transform: translate(0, 100px);
+          transform: translate(0, 100px);
 }
 .sm__stamp {
   margin-bottom: 65px;

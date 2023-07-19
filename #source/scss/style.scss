@@ -7,6 +7,10 @@ html {
 	// scroll-behavior: smooth;
 }
 
+body {
+	overflow: hidden;
+}
+
 .wrapper {
 	min-height: 100%;
 	width: 100%;
@@ -249,9 +253,8 @@ html {
 		}
 	}
 
-	&__button {
-	}
-	
+	&__button {}
+
 	&__button {
 		cursor: pointer;
 		display: none;
@@ -408,7 +411,7 @@ html {
 		line-height: normal;
 		text-transform: uppercase;
 		opacity: 0;
-		transform: translate(0, -100px);
+		transform: translate(0, 100px);
 		transition: all .5s;
 
 		.comma {
@@ -565,7 +568,7 @@ html {
 	&__logo {
 		margin-bottom: 106px;
 		opacity: 0;
-		transform: translate(0, -200px);
+		transform: translate(0, 100px);
 		transition: all 1s;
 	}
 
@@ -730,7 +733,7 @@ html {
 		margin-bottom: 63px;
 		transition: all .5s;
 		opacity: 0;
-		transform: translate(0, -100px);
+		transform: translate(0, 100px);
 	}
 
 	&__stamp {

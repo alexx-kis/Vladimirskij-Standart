@@ -33,19 +33,20 @@ $(function () {
 		dragable: false,
 		waitForAnimate: false,
 		responsive:
-			[
-				{
-					breakpoint: 1200,
-					settings: {
-						variableWidth: true,
-						slidesToShow: 3,
-					}
-				},
-				{
-					breakpoint: 650,
-					settings: {
-						variableWidth: true,
-						slidesToShow: 1,
+		[
+			{
+				breakpoint: 1200,
+				settings: {
+					variableWidth: true,
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 650,
+				settings: {
+					slidesToShow: 1,
+					verticalSwiping: true,
+						// settings: "unslick",
 					}
 				},
 				// {
@@ -57,11 +58,16 @@ $(function () {
 				// },
 			],
 		arrows: false,
-		dots: true,
-		appendDots: ('.cat__dots'),
+		// dots: true,
+		// appendDots: ('.cat__dots'),
 		waitForAnimate: false,
 	})
 })
+
+// if (window.innerWidth < 650) {
+// 	$(".cat__slider").slick('unslick');
+// 	sliderIsLive = false;
+// }
 
 $('.cat__arrow-prev').on('click', function (e) {
 	$('.cat__slider').slick('slickPrev')
@@ -286,13 +292,13 @@ let videoBox = document.querySelector('.hero__video');
 let video = document.querySelector('.hero__video video');
 let videoBtn = document.querySelector('.hero__button');
 
-let timerId = setTimeout(function () {
+
+video.addEventListener('ended', function () {
 	videoBox.classList.add('hero__video--off');
-}, 15000);
+});
 
 
 if (window.innerWidth <= 768) {
-	clearInterval(timerId);
 	videoBox.classList.add('hero__video--off');
 	video.removeAttribute('autoplay');
 
