@@ -291,10 +291,12 @@ $.scrollify({
 let videoBox = document.querySelector('.hero__video');
 let video = document.querySelector('.hero__video video');
 let videoBtn = document.querySelector('.hero__button');
+let body = document.querySelector('body');
 
 
 video.addEventListener('ended', function () {
 	videoBox.classList.add('hero__video--off');
+	body.classList.remove('noscroll');
 });
 
 
@@ -305,6 +307,8 @@ if (window.innerWidth <= 768) {
 	videoBtn.addEventListener('click', function (e) {
 		videoBox.classList.remove('hero__video--off');
 		video.setAttribute('autoplay', '');
+		body.classList.add('noscroll');
+		
 	});
 }
 

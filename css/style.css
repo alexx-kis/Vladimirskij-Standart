@@ -124,7 +124,7 @@ h6 {
   font-style: italic;
   font-weight: 300;
 }
-body {
+.noscroll {
   overflow: hidden;
 }
 
