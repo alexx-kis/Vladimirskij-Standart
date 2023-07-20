@@ -237,8 +237,6 @@
 		opacity: 0;
 		animation: hero-heading 2s forwards;
 		height: 100%;
-		// display: none;
-		cursor: pointer;
 		z-index: 101;
 		position: relative;
 	}
@@ -253,11 +251,16 @@
 		}
 	}
 
-	&__button {}
-
 	&__button {
+		position: relative;
+		z-index: 2;
 		cursor: pointer;
-		display: none;
+		display: flex;
+		align-items: center;
+		max-width: 223px;
+		margin: 30px auto 0;
+		transition: all .3s;
+
 	}
 
 	&__button-icon {
@@ -274,8 +277,27 @@
 		text-decoration-line: underline;
 	}
 
+	&__bg {
+		z-index: 0;
+		transition: all .5s;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		object-fit: cover;
+		background: #000;
+
+		video {
+			// width: 100vw;
+			height: 100vh;
+		}
+
+	}
+
 	&__video {
-		z-index: 100;
+		z-index: 0;
 		transition: all .5s;
 		display: flex;
 		justify-content: center;
@@ -1269,7 +1291,6 @@
 	padding-bottom: 270px;
 	z-index: 2;
 	position: relative;
-	// margin-top: -250px;
 
 
 	&__inner {
@@ -1366,7 +1387,7 @@
 		left: -73px;
 		z-index: -1;
 		opacity: 0;
-		transition: all 1s 1.5s;
+		transition: all 1s 1s;
 		transform: translate(10px, 10px);
 	}
 }

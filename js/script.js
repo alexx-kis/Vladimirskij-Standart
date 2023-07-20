@@ -281,28 +281,41 @@ let video = document.querySelector('.hero__video video');
 let videoBtn = document.querySelector('.hero__button');
 let body = document.querySelector('body');
 let logo = document.querySelector('.hero__heading');
+let heroBg = document.querySelector('.hero__bg');
 
 
-logo.addEventListener('click', function logo() {
-	video.play();
-	this.style.display = 'none';
-	videoBox.classList.remove('hero__video--off');
-});
+
+// logo.addEventListener('click', function logo() {
+// 	video.play();
+// 	this.style.display = 'none';
+// 	videoBox.classList.remove('hero__video--off');
+// 	video.setAttribute('controls', '');
+// 	videoBtn.style.display = 'none';
+// });
 
 video.addEventListener('ended', function () {
 	videoBox.classList.add('hero__video--off');
 	logo.style.display = 'block';
+	videoBtn.style.display = 'flex';
+	heroBg.style.display = 'block';
+	if (window.innerWidth <= 768) {
+		heroBg.style.display = 'none';
+	}
 });
 
 
+videoBtn.addEventListener('click', function (e) {
+	video.play();
+	logo.style.display = 'none';
+	videoBtn.style.display = 'none';
+	video.setAttribute('controls', '');
+	videoBox.classList.remove('hero__video--off');
+	heroBg.style.display = 'none';
+
+});
 if (window.innerWidth <= 768) {
 	videoBox.classList.add('hero__video--off');
-
-	videoBtn.addEventListener('click', function (e) {
-		video.play();
-		logo.style.display = 'none';
-		videoBox.classList.remove('hero__video--off');
-	});
+	heroBg.style.display = 'none';
 	logo.removeEventListener('click', logo);
 }
 

@@ -89,8 +89,11 @@
 
 		<main class="main">
 			<section class="main__hero hero scroll">
-				<div class="hero__video">
-					<video muted controls src="./video/FullHD_16-9_15.mp4" type="video/mp4">
+				<div class="hero__bg">
+					<video loop autoplay muted src="./video/video-bg.mp4"></video>
+				</div>
+				<div class="hero__video hero__video--off">
+					<video src="./video/video.mp4" type="video/mp4">
 					</video>
 				</div>
 				<div class="hero__video-btn"></div>
@@ -865,7 +868,7 @@
 						<p class="footer__column-email">mail@kolbasa-vs.ru</p>
 					</div>
 					<div class="footer__column">
-						<p class="footer__column-text">
+						<p class="footer__column-text footer__column-text-small">
 							СЛЕДУЙТЕ ЗА НАМИ В СОЦСЕТЯХ
 						</p>
 						<ul class="footer__socials-list">
