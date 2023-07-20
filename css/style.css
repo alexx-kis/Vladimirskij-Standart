@@ -790,9 +790,9 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 730px;
   margin: 0 auto;
   height: 75vh;
@@ -1034,7 +1034,7 @@ h6 {
   background: -o-radial-gradient(50.04% 53.43%, 48.13% 48.13%, rgba(78, 199, 251, 0.69) 0%, rgba(41, 197, 246, 0) 90.31%), #3996BC;
   background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(78, 199, 251, 0.69) 0%, rgba(41, 197, 246, 0) 90.31%), #3996BC;
   position: absolute;
-  z-index: -2;
+  z-index: -3;
   top: -22vh;
   bottom: -100px;
   right: 0;
@@ -2548,6 +2548,9 @@ h6 {
 }
 /*------------------------------ 550 ------------------------------*/
 @media (max-width: 550px) {
+  .text {
+    font-size: 20px;
+  }
   .hero__heading img {
     width: 400px;
   }

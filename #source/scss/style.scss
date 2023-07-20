@@ -561,7 +561,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
 		max-width: 730px;
 		margin: 0 auto;
 		height: 75vh;
@@ -760,7 +760,7 @@
 	&__bg {
 		background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(78, 199, 251, 0.69) 0%, rgba(41, 197, 246, 0.00) 90.31%), #3996BC;
 		position: absolute;
-		z-index: -2;
+		z-index: -3;
 		top: -22vh;
 		bottom: -100px;
 		right: 0;
