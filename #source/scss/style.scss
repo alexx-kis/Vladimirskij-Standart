@@ -17,6 +17,20 @@
 	height: 100%;
 }
 
+.logo {
+	padding-bottom: 20px;
+}
+
+.text {
+	font-size: 2.8vh;
+}
+
+.logo {
+	img {
+		width: 50vh;
+	}
+}
+
 /*==================================== HEADER ====================================*/
 /*==================================== HEADER ====================================*/
 
@@ -29,19 +43,34 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		position: relative;
 	}
 
-	&__logo {}
+	&__logo {
+		position: absolute;
+		top: 0px;
+	}
 
 	&__logo-rectangle {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		position: relative;
+		position: absolute;
+		top: 0px;
+
+		img {
+			width: 39vh;
+			max-width: 420px;
+		}
 	}
 
 	&__logo-text {
 		position: absolute;
+
+		img {
+			width: 26vh;
+			max-width: 280px;
+		}
 	}
 
 	&__button-box {
@@ -50,6 +79,9 @@
 		justify-content: space-between;
 		min-width: 160px;
 		z-index: 100;
+		position: absolute;
+		right: 0;
+		top: 6vh;
 	}
 
 	&__button-text {
@@ -239,6 +271,12 @@
 		height: 100%;
 		z-index: 101;
 		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			width: 90vh;
+		}
 	}
 
 	@keyframes hero-heading {
@@ -321,9 +359,8 @@
 /*==================================== MS ====================================*/
 
 .ms {
-	// padding-top: 140px;
 	background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(255, 235, 182, 0.56) 0%, rgba(255, 235, 182, 0.00) 93.23%), #ff8e96;
-	min-height: 100vh;
+	height: 100vh;
 
 	display: flex;
 	align-items: center;
@@ -332,76 +369,99 @@
 
 	&__drops1 {
 		position: absolute;
-		top: 380px;
-		left: -100px;
+		top: 38vh;
+		left: -10vh;
 	}
 
 	&__drop1 {
 		position: absolute;
-		top: 32px;
-		left: -46px;
+		top: 3.2vh;
+		left: -4.6vh;
 		transition: all 1s .5s;
 		transform: scale(0);
 		transition: all .3s 0.5s cubic-bezier(0.56, 1.67, 0.77, 2);
+
+		img {
+			width: 4vh;
+		}
 	}
 
 	&__drop2 {
 		position: absolute;
-		top: 0px;
-		left: 0px;
+		top: 0;
+		left: 0;
 		transition: all 1s 1s;
 		transform: scale(0);
 		transition: all .3s 1s cubic-bezier(0.56, 1.67, 0.77, 2);
-		;
+
+		img {
+			width: 7vh;
+		}
 	}
 
 	&__drop3 {
 		position: absolute;
-		top: 52px;
-		left: 39px;
+		top: 4.9vh;
+		left: 3.9vh;
 		opacity: 0;
 		transform: scale(0);
 		transition: all .3s 1.5s cubic-bezier(0.56, 1.67, 0.77, 2);
+
+		img {
+			width: 3.4vh;
+		}
 	}
 
 	&__drops2 {
 		position: absolute;
-		top: 730px;
-		left: 330px;
-
+		top: 70vh;
+		left: 25vh;
 	}
 
 	&__drop4 {
 		position: absolute;
-		top: 32px;
-		left: -46px;
+		top: 3.2vh;
+		left: -4.6vh;
 		opacity: 0;
 		transform: scale(0);
 		transition: all .3s 1.5s cubic-bezier(0.56, 1.67, 0.77, 2);
+
+		img {
+			width: 4vh;
+		}
 	}
 
 	&__drop5 {
 		position: absolute;
-		top: 0px;
-		left: 0px;
+		top: 0;
+		left: 0;
 		opacity: 0;
 		transform: scale(0);
 		transition: all .3s 1.7s cubic-bezier(0.56, 1.67, 0.77, 2);
+
+		img {
+			width: 7vh;
+		}
 	}
 
 	&__drop6 {
 		position: absolute;
-		top: 52px;
-		left: 39px;
+		top: 5.2vh;
+		left: 3.9vh;
 		opacity: 0;
 		transform: scale(0);
 		transition: all .3s 2s cubic-bezier(0.56, 1.67, 0.77, 2);
+
+		img {
+			width: 3.4vh;
+		}
 	}
 
 	&__img-left {
 		position: absolute;
 		z-index: -1;
-		left: -390px;
+		top: 27vh;
+		left: -38vh;
 		transition: all 1s;
 		opacity: 0;
 		transform: translate(-100px, 0);
@@ -413,25 +473,27 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
-		max-width: 730px;
+		justify-content: space-between;
+		max-width: 73vh;
 		height: 100%;
-		padding: 30px 0;
+		max-height: 80vh;
+		padding-top: 17.5vh;
+		padding-bottom: 50px;
 	}
 
 	&__heading {
 		text-align: center;
-		margin-bottom: 64px;
 		color: #FFF;
 		font-family: Neris;
-		font-size: 90px;
+		font-size: 8vh;
 		font-style: normal;
 		font-weight: 900;
-		line-height: normal;
+		line-height: 1;
 		text-transform: uppercase;
 		opacity: 0;
 		transform: translate(0, 100px);
 		transition: all .5s;
+		padding-bottom: 5vh;
 
 		.comma {
 			display: inline;
@@ -440,8 +502,8 @@
 		span {
 			display: flex;
 			justify-content: end;
-			font-size: 50px;
-			line-height: 20px;
+			font-size: 5vh;
+			line-height: 3vh;
 			text-align: right;
 			transform: translate(100px, 0);
 			text-transform: lowercase;
@@ -450,7 +512,6 @@
 	}
 
 	&__logo {
-		margin-bottom: 53px;
 		opacity: 0;
 		transform: scale(0);
 		transition: all .5s;
@@ -460,7 +521,7 @@
 		color: #FFF;
 		text-align: center;
 		font-family: Neris;
-		font-size: 30px;
+
 		font-style: italic;
 		font-weight: 300;
 		line-height: normal;
@@ -472,56 +533,88 @@
 	&__img-right {
 		z-index: -1;
 		position: absolute;
-		// top: -11px;
-		right: -645px;
+		right: -66vh;
+		top: 20vh;
 		transition: all 1s 1s;
 		opacity: 0;
 		transform: translate(100px, 0);
+	}
+
+	&__img1 {
+		img {
+			width: 48vh;
+		}
+	}
+
+	&__img2 {
+		img {
+			width: 90vh;
+		}
 	}
 
 
 
 	&__leaf-1 {
 		position: absolute;
-		top: -149px;
-		left: -90px;
+		top: -15vh;
+		left: -9vh;
 		transition: opacity .5s 1s;
 		opacity: 0;
+
+		img {
+			width: 37vh;
+		}
 	}
 
 	&__leaf-2 {
 		position: absolute;
-		top: -72px;
-		left: 400px;
+		top: -7.2vh;
+		left: 40vh;
 		transition: opacity .5s 1s;
 		opacity: 0;
+
+		img {
+			width: 15.3vh;
+		}
 	}
 
 	&__leaf-3 {
 		position: absolute;
-		top: 401px;
-		left: 160px;
+		top: 40vh;
+		left: 16vh;
 		z-index: 4;
 		transition: opacity .5s 1s;
 		opacity: 0;
+
+		img {
+			width: 19.5vh;
+		}
 	}
 
 	&__leaf-4 {
 		z-index: -1;
 		position: absolute;
-		top: -10px;
-		right: 590px;
+		top: -1vh;
+		right: 59vh;
 		transition: opacity .5s 1s;
 		opacity: 0;
+
+		img {
+			width: 13.7vh;
+		}
 	}
 
 	&__leaf-5 {
 		z-index: 1;
 		position: absolute;
-		top: 590px;
-		left: 330px;
+		top: 59vh;
+		left: 33vh;
 		transition: opacity .3s 1s;
 		opacity: 0;
+
+		img {
+			width: 24.4vh;
+		}
 	}
 }
 
@@ -535,13 +628,13 @@
 	position: relative;
 	display: flex;
 	align-items: center;
-	min-height: 100vh;
+	height: 100vh;
 
 	&__bg {
 		position: absolute;
 		z-index: 0;
 		top: -22vh;
-		bottom: -100px;
+		bottom: -10vh;
 		right: 0;
 		left: 0;
 		width: 100vw;
@@ -557,7 +650,7 @@
 		position: absolute;
 		z-index: -100;
 		top: -20vh;
-		bottom: -100px;
+		bottom: -10vh;
 		right: 0;
 		left: 0;
 		width: 100vw;
@@ -566,53 +659,60 @@
 	}
 
 	&__inner {
-		padding: 30px 0;
-		z-index: 0;
 		position: relative;
+		z-index: 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-evenly;
 		max-width: 730px;
-		margin: 0 auto;
-		height: 75vh;
-		max-height: 750px;
+		height: 100%;
+		padding-top: 175px;
+		padding-bottom: 50px;
 	}
 
 	&__leaf-1 {
 		position: absolute;
-		top: 100px;
-		left: -652px;
+		top: 10vh;
+		left: -65.2vh;
 		z-index: 0;
 		transition: all 1s .3s;
 		opacity: 0;
 		transform: translate(-100px, 0px);
+		img {
+			width: 28.7vh;
+		}
 	}
 
 
 
 	&__img1 {
 		position: absolute;
-		top: -6px;
-		left: -530px;
+		top: 18vh;
+		left: -53vh;
 		z-index: -1;
 		transition: all 1s;
 		opacity: 0;
 		transform: translate(-100px, -100px);
+		img {
+			width: 68.3vh;
+		}
 	}
 
 	&__img2 {
 		position: absolute;
-		top: 540px;
-		left: -500px;
+		top: 71vh;
+		left: -44vh;
 		z-index: -1;
 		transition: all 1s .5s;
 		opacity: 0;
 		transform: translate(-100px, 100px);
+		img {
+			width: 45.7vh;
+		}
 	}
 
 	&__logo {
-		// margin-bottom: 106px;
 		opacity: 0;
 		transform: translate(0, 100px);
 		transition: all 1s;
@@ -689,69 +789,90 @@
 
 	&__pelmen-1 {
 		position: absolute;
-		top: 8px;
-		right: -98px;
+		top: 26.8vh;
+		right: -9.8vh;
 		z-index: -1;
 		transition: all .2s 2s linear;
 		opacity: 0;
 		transform: scale(0);
 		transform: translate(61px, 240px);
+		img {
+			width: 11.1vh;
+		}
 	}
 
 
 	&__pelmen-2 {
 		position: absolute;
-		top: 38px;
-		right: -248px;
+		top: 28.8vh;
+		right: -25.8vh;
 		z-index: -1;
 		transition: all .2s 2.1s linear;
 		opacity: 0;
 		transform: scale(0);
 		transform: translate(10px, 240px);
+		img {
+			width: 15.1vh;
+		}
 	}
 
 	&__img3 {
 		position: absolute;
-		top: 4px;
-		right: -708px;
+		top: 23vh;
+		right: -70.8vh;
 		z-index: -1;
 		transition: all 1s 1s;
 		opacity: 0;
 		transform: translate(100px, 40px);
+		img {
+			width: 95.1vh;
+		}
 	}
 
 	&__leaf-5 {
 		position: absolute;
-		top: 557px;
-		right: -156px;
+		top: 80.7vh;
+		right: -15.6vh;
 		z-index: -2;
 		transition: all 1s 1.5s;
 		opacity: 0;
 		transform: translate(100px, -10px);
+		img {
+			width: 29.4vh;
+		}
 	}
 
 	&__leaf-2 {
 		position: absolute;
-		top: 683px;
-		left: -444px;
+		top: 88.3vh;
+		left: -40.4vh;
 		transition: opacity .5s 1s;
 		opacity: 0;
+		img {
+			width: 55.4vh;
+		}
 	}
 
 	&__leaf-3 {
 		position: absolute;
-		top: 125px;
-		right: -420px;
+		top: 40.5vh;
+		right: -39vh;
 		transition: opacity .5s 1s;
 		opacity: 0;
+		img {
+			width: 18.4vh;
+		}
 	}
 
 	&__leaf-4 {
 		position: absolute;
-		top: 500px;
-		right: -538px;
+		top: 78vh;
+		right: -53.8vh;
 		transition: opacity .5s 1s;
 		opacity: 0;
+		img {
+			width: 21.8vh;
+		}
 	}
 }
 
@@ -762,42 +883,42 @@
 
 .sm {
 	background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(78, 199, 251, 0.69) 0%, rgba(41, 197, 246, 0.00) 90.31%), #3996BC;
-	min-height: 100vh;
+	height: 100vh;
 	z-index: -1;
 	position: relative;
 	display: flex;
 	align-items: center;
 
-	&__bg {
-		background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(78, 199, 251, 0.69) 0%, rgba(41, 197, 246, 0.00) 90.31%), #3996BC;
-		position: absolute;
-		z-index: -3;
-		top: -22vh;
-		bottom: -100px;
-		right: 0;
-		left: 0;
-		width: 100vw;
+	// &__bg {
+	// 	background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(78, 199, 251, 0.69) 0%, rgba(41, 197, 246, 0.00) 90.31%), #3996BC;
+	// 	position: absolute;
+	// 	z-index: -3;
+	// 	top: -22vh;
+	// 	bottom: -100px;
+	// 	right: 0;
+	// 	left: 0;
+	// 	width: 100vw;
 
-		img {
-			width: 100%;
-			height: 100%;
+	// 	img {
+	// 		width: 100%;
+	// 		height: 100%;
 
-		}
-	}
+	// 	}
+	// }
 
 	&__inner {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
-		position: relative;
-		height: 75vh;
-		max-height: 750px;
-		padding: 30px 0;
+		justify-content: space-evenly;
+		max-width: 730px;
+		height: 100%;
+		padding-top: 175px;
+		padding-bottom: 50px;
 	}
 
 	&__logo {
-		// margin-bottom: 63px;
 		transition: all .5s;
 		opacity: 0;
 		transform: translate(0, 100px);
@@ -873,7 +994,7 @@
 
 	&__img-1 {
 		position: absolute;
-		top: -145px;
+		top: 6vh;
 		left: -425px;
 		z-index: -1;
 		transition: all 1s .5s;
@@ -882,13 +1003,9 @@
 	}
 
 	&__img-2 {
-		display: flex;
-		position: relative;
-		justify-content: center;
-		align-items: center;
 		position: absolute;
-		top: -180px;
-		right: -932px;
+		top: 0vh;
+		right: -936px;
 		z-index: -1;
 		transition: all 1s 2s;
 		opacity: 0;
@@ -898,8 +1015,8 @@
 	&__img-2-shadow {
 		mix-blend-mode: multiply;
 		position: absolute;
-		top: -180px;
-		right: -932px;
+		top: 0vh;
+		right: -936px;
 		z-index: -2;
 		transition: all 1s 2s;
 		opacity: 0;
@@ -908,7 +1025,7 @@
 
 	&__img-3 {
 		position: absolute;
-		top: 385px;
+		top: 56vh;
 		left: -290px;
 		z-index: -1;
 		transition: all .5s;
@@ -919,7 +1036,7 @@
 
 	&__drop-1 {
 		position: absolute;
-		top: 270px;
+		top: 500px;
 		left: -342px;
 		z-index: -2;
 		transition: all .3s 2s cubic-bezier(0.56, 1.67, 0.77, 1.67);
@@ -929,7 +1046,7 @@
 
 	&__leaf-1 {
 		position: absolute;
-		top: 80px;
+		top: 315px;
 		left: -431px;
 		transition: opacity .5s 1s;
 		opacity: 0;
@@ -937,7 +1054,7 @@
 
 	&__leaf-2 {
 		position: absolute;
-		top: 365px;
+		top: 535px;
 		left: 19px;
 		transition: opacity .5s 1s;
 		opacity: 0;
@@ -946,15 +1063,15 @@
 
 	&__leaf-3 {
 		position: absolute;
-		top: -65px;
-		right: -100px;
+		top: 115px;
+		right: -80px;
 		transition: opacity .5s 1s;
 		opacity: 0;
 	}
 
 	&__leaf-4 {
 		position: absolute;
-		top: 520px;
+		top: 674px;
 		right: -447px;
 		transition: opacity .5s 1s;
 		opacity: 0;
@@ -967,14 +1084,15 @@
 /*==================================== CAT ====================================*/
 
 .cat {
-	padding-top: 338px;
-	padding-bottom: 350px;
+	// padding-top: 338px;
+	// padding-bottom: 350px;
 	position: relative;
+	height: 100vh;
 
 	&__bg {
 		position: absolute;
 		z-index: 0;
-		top: -20vh;
+		top: -9vh;
 		bottom: -100px;
 		right: 0;
 		left: 0;
@@ -1002,9 +1120,16 @@
 		max-width: 1280px;
 	}
 
+	&__inner {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
 	&__drop {
 		position: absolute;
-		top: -90px;
+		top: -30px;
 		right: -5px;
 		transform: scale(0);
 		transition: all .5s 1s cubic-bezier(0.56, 1.67, 0.77, 1.67);
@@ -1122,7 +1247,7 @@
 	&__pop-up {
 		position: absolute;
 		z-index: 100;
-		top: 60%;
+		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		width: 1280px;
