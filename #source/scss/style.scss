@@ -522,7 +522,7 @@
 	&__bg {
 		position: absolute;
 		z-index: 0;
-		top: -30vh;
+		top: -22vh;
 		bottom: -100px;
 		right: 0;
 		left: 0;
@@ -590,7 +590,7 @@
 	}
 
 	&__stamp {
-		// margin-bottom: 72px;
+		margin-bottom: 14px;
 		padding: 30px;
 		transition: all 1s;
 		transform: scale(0);
@@ -758,7 +758,7 @@
 	}
 
 	&__stamp {
-		// margin-bottom: 65px;
+		margin-bottom: 14px;
 		padding: 30px;
 		transition: all 1s;
 		transform: scale(0);
@@ -1469,7 +1469,6 @@
 /*==================================== MEDIA ====================================*/
 
 @import "media";
-@import "media2";
 
 /*==================================== ANIMATION ====================================*/
 /*==================================== ANIMATION ====================================*/

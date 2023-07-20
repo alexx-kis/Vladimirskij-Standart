@@ -736,7 +736,7 @@ h6 {
 .ss__bg {
   position: absolute;
   z-index: 0;
-  top: -30vh;
+  top: -22vh;
   bottom: -100px;
   right: 0;
   left: 0;
@@ -817,6 +817,7 @@ h6 {
   transition: all 1s;
 }
 .ss__stamp {
+  margin-bottom: 14px;
   padding: 30px;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
@@ -1028,6 +1029,7 @@ h6 {
           transform: translate(0, 100px);
 }
 .sm__stamp {
+  margin-bottom: 14px;
   padding: 30px;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
@@ -1840,10 +1842,10 @@ h6 {
 /*------------------------------ 1400 ------------------------------*/
 @media (max-width: 1400px) {
   .ss__bg {
-    top: -22vh;
+    top: -20vh;
   }
   .ss__bg img {
-    width: auto;
+    width: 100%;
   }
   .ss__img1 {
     left: -410px;
