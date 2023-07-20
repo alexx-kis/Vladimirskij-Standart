@@ -2075,7 +2075,8 @@ h6 {
     font-size: 40px;
   }
   .ss__bg {
-    top: -16vh;
+    top: -10vh;
+    bottom: -6vh;
   }
   .ss__bg img {
     width: auto;
@@ -2712,6 +2713,9 @@ h6 {
 }
 /*------------------------------ 430 ------------------------------*/
 @media (max-width: 430px) {
+  .logo img {
+    width: 350px;
+  }
   .hero__heading {
     margin-bottom: 80px;
   }

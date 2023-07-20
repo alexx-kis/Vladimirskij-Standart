@@ -396,7 +396,8 @@
 	.ss {
 
 		&__bg {
-			top: -16vh;
+			top: -10vh;
+			bottom: -6vh;
 
 			img {
 				width: auto;
@@ -1289,6 +1290,13 @@
 /*------------------------------ 430 ------------------------------*/
 
 @media (max-width: 430px) {
+
+	.logo {
+		img {
+			width: 350px;
+		}
+	}
+
 	.hero {
 		&__heading {
 			margin-bottom: 80px;
