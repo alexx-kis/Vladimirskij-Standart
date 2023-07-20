@@ -502,7 +502,7 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  z-index: 2;
+  z-index: 0;
 }
 .ms__drops1 {
   position: absolute;
@@ -749,10 +749,6 @@ h6 {
 /*==================================== SS ====================================*/
 /*==================================== SS ====================================*/
 .ss {
-  background: #ff8e96;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ff8e96), color-stop(50%, #3996BC));
-  background: -o-linear-gradient(#ff8e96 50%, #3996BC 50%);
-  background: linear-gradient(#ff8e96 50%, #3996BC 50%);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -760,7 +756,6 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 2;
   min-height: 100vh;
 }
 .ss__bg {
@@ -775,6 +770,18 @@ h6 {
 .ss__bg img {
   width: 100%;
   height: 100%;
+}
+.ss__bg2 {
+  position: absolute;
+  z-index: -100;
+  top: -20vh;
+  bottom: -100px;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ff8e96), color-stop(50%, #3996BC));
+  background: -o-linear-gradient(#ff8e96 50%, #3996BC 50%);
+  background: linear-gradient(#ff8e96 50%, #3996BC 50%);
 }
 .ss__inner {
   padding: 30px 0;
@@ -1021,7 +1028,7 @@ h6 {
   background: -o-radial-gradient(50.04% 53.43%, 48.13% 48.13%, rgba(78, 199, 251, 0.69) 0%, rgba(41, 197, 246, 0) 90.31%), #3996BC;
   background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(78, 199, 251, 0.69) 0%, rgba(41, 197, 246, 0) 90.31%), #3996BC;
   min-height: 100vh;
-  z-index: 0;
+  z-index: -1;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2874,8 +2881,8 @@ h6 {
   }
   .ms__drops2 {
     position: absolute;
-    top: 550px;
-    left: 280px;
+    top: 290px;
+    left: 170px;
     width: 60%;
   }
   .ms__drops2 img {

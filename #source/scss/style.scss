@@ -328,7 +328,7 @@
 	display: flex;
 	align-items: center;
 	position: relative;
-	z-index: 2;
+	z-index: 0;
 
 	&__drops1 {
 		position: absolute;
@@ -530,12 +530,11 @@
 /*==================================== SS ====================================*/
 
 .ss {
-	background: #ff8e96;
-	background: linear-gradient(#ff8e96 50%, #3996BC 50%);
+	// background: #ff8e96;
+	// background: linear-gradient(#ff8e96 50%, #3996BC 50%);
 	position: relative;
 	display: flex;
 	align-items: center;
-	z-index: 2;
 	min-height: 100vh;
 
 	&__bg {
@@ -552,6 +551,18 @@
 			height: 100%;
 
 		}
+	}
+
+	&__bg2 {
+		position: absolute;
+		z-index: -100;
+		top: -20vh;
+		bottom: -100px;
+		right: 0;
+		left: 0;
+		width: 100vw;
+		background: linear-gradient(#ff8e96 50%,
+				#3996BC 50%);
 	}
 
 	&__inner {
@@ -752,7 +763,7 @@
 .sm {
 	background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(78, 199, 251, 0.69) 0%, rgba(41, 197, 246, 0.00) 90.31%), #3996BC;
 	min-height: 100vh;
-	z-index: 0;
+	z-index: -1;
 	position: relative;
 	display: flex;
 	align-items: center;
