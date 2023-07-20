@@ -45,29 +45,15 @@ $(function () {
 				breakpoint: 650,
 				settings: {
 					slidesToShow: 1,
-					verticalSwiping: true,
-						// settings: "unslick",
 					}
 				},
-				// {
-				// 	breakpoint: 550,
-				// 	settings: {
-				// 		slidesToShow: 1,
-				// 		dragable: true,
-				// 	}
-				// },
 			],
 		arrows: false,
-		// dots: true,
-		// appendDots: ('.cat__dots'),
+		dots: true,
+		appendDots: ('.cat__dots'),
 		waitForAnimate: false,
 	})
 })
-
-// if (window.innerWidth < 650) {
-// 	$(".cat__slider").slick('unslick');
-// 	sliderIsLive = false;
-// }
 
 $('.cat__arrow-prev').on('click', function (e) {
 	$('.cat__slider').slick('slickPrev')
@@ -268,12 +254,12 @@ window.onload = function () {
 // }
 $.scrollify({
 	section: ".scroll",
-	// sectionName: "section-name",
 	interstitialSection: "",
 	easing: "easeOutExpo",
 	scrollSpeed: 1100,
 	offset: 0,
 	scrollbars: true,
+	standardScrollElements: ".cat",
 	standardScrollElements: ".footer",
 	setHeights: false,
 	overflowScroll: true,
