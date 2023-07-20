@@ -124,10 +124,6 @@ h6 {
   font-style: italic;
   font-weight: 300;
 }
-.noscroll {
-  overflow: hidden;
-}
-
 .wrapper {
   min-height: 100%;
   width: 100%;
@@ -145,7 +141,7 @@ h6 {
 /*==================================== HEADER ====================================*/
 .header {
   position: fixed;
-  z-index: 1000;
+  z-index: 100;
   width: 100%;
 }
 .header__inner {
@@ -387,12 +383,16 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 .hero__heading {
   opacity: 0;
   -webkit-animation: hero-heading 2s forwards;
           animation: hero-heading 2s forwards;
   height: 100%;
+  cursor: pointer;
+  z-index: 101;
+  position: relative;
 }
 @-webkit-keyframes hero-heading {
   0% {
@@ -427,7 +427,7 @@ h6 {
   text-decoration-line: underline;
 }
 .hero__video {
-  z-index: 1000;
+  z-index: 100;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
@@ -440,23 +440,20 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
-  -o-object-fit: contain;
-     object-fit: contain;
-  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   background: #000;
 }
 .hero__video video {
-  min-width: 100%;
-  min-height: 100%;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 .hero__video--off {
+  visibility: hidden;
   opacity: 0;
-  visibility: 0;
   z-index: -100;
 }
 
@@ -522,8 +519,8 @@ h6 {
 }
 .ms__drops2 {
   position: absolute;
-  top: 810px;
-  left: 230px;
+  top: 730px;
+  left: 330px;
 }
 .ms__drop4 {
   position: absolute;
@@ -707,7 +704,7 @@ h6 {
   opacity: 0;
 }
 .ms__leaf-5 {
-  z-index: -1;
+  z-index: 1;
   position: absolute;
   top: 590px;
   left: 330px;
@@ -3075,6 +3072,9 @@ h6 {
   }
   .logo img {
     width: 200px;
+  }
+  .hero__heading img {
+    width: 300px;
   }
   .ms__heading {
     font-size: 39px;

@@ -769,6 +769,12 @@
 			max-width: 223px;
 			margin: 30px auto 0;
 		}
+
+		// &__video {
+		// 	visibility: hidden;
+		// 	opacity: 0;
+		// 	z-index: -100;
+		// }
 	}
 
 }
@@ -2286,7 +2292,13 @@
 		}
 	}
 
-	.hero {}
+	.hero {
+		&__heading {
+			img {
+				width: 300px;
+			}
+		}
+	}
 
 	.ms {
 		// height: 763px;

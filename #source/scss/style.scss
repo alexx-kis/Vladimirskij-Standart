@@ -3,9 +3,6 @@
 @import "mixins";
 @import "fonts";
 
-.noscroll {
-	overflow: hidden;
-}
 
 .wrapper {
 	min-height: 100%;
@@ -25,7 +22,7 @@
 
 .header {
 	position: fixed;
-	z-index: 1000;
+	z-index: 100;
 	width: 100%;
 
 	&__inner {
@@ -126,6 +123,7 @@
 		visibility: hidden;
 		opacity: 0;
 		transition: all .5s;
+		// z-index: 10000;
 
 		&--open {
 			visibility: visible;
@@ -233,11 +231,16 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 
 	&__heading {
 		opacity: 0;
 		animation: hero-heading 2s forwards;
 		height: 100%;
+		// display: none;
+		cursor: pointer;
+		z-index: 101;
+		position: relative;
 	}
 
 	@keyframes hero-heading {
@@ -272,28 +275,26 @@
 	}
 
 	&__video {
-		z-index: 1000;
+		z-index: 100;
 		transition: all .5s;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		position: fixed;
+		position: absolute;
 		top: 0;
 		bottom: 0;
-		object-fit: contain;
-		min-width: 100%;
+		object-fit: cover;
 		background: #000;
 
 		video {
-			min-width: 100%;
-			min-height: 100%;
-			width: 100%;
+			width: 100vw;
 			height: 100vh;
 		}
 
+
 		&--off {
+			visibility: hidden;
 			opacity: 0;
-			visibility: 0;
 			z-index: -100;
 		}
 	}
@@ -348,8 +349,9 @@
 
 	&__drops2 {
 		position: absolute;
-		top: 810px;
-		left: 230px;
+		top: 730px;
+		left: 330px;
+
 	}
 
 	&__drop4 {
@@ -497,7 +499,7 @@
 	}
 
 	&__leaf-5 {
-		z-index: -1;
+		z-index: 1;
 		position: absolute;
 		top: 590px;
 		left: 330px;

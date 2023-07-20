@@ -16,6 +16,7 @@
 		menuText2.classList.toggle('header__button-text-2--open');
 		menuText1.classList.toggle('header__button-text-1--open');
 		menu.classList.toggle('header__menu--open');
+		logo.style.zIndex = 99;
 	});
 
 
@@ -33,18 +34,18 @@ $(function () {
 		dragable: false,
 		waitForAnimate: false,
 		responsive:
-		[
-			{
-				breakpoint: 1200,
-				settings: {
-					variableWidth: true,
-					slidesToShow: 3,
-				}
-			},
-			{
-				breakpoint: 650,
-				settings: {
-					slidesToShow: 1,
+			[
+				{
+					breakpoint: 1200,
+					settings: {
+						variableWidth: true,
+						slidesToShow: 3,
+					}
+				},
+				{
+					breakpoint: 650,
+					settings: {
+						slidesToShow: 1,
 					}
 				},
 			],
@@ -278,25 +279,45 @@ let videoBox = document.querySelector('.hero__video');
 let video = document.querySelector('.hero__video video');
 let videoBtn = document.querySelector('.hero__button');
 let body = document.querySelector('body');
+let logo = document.querySelector('.hero__heading');
 
+
+logo.addEventListener('click', function logo() {
+	video.play();
+	this.style.display = 'none';
+	videoBox.classList.remove('hero__video--off');
+});
+
+// let muted = document.querySelector('.hero__video-btn');
+
+// muted.addEventListener('click', function () {
+// 	if (video.muted) {
+// 		video.muted = false;
+// 	}
+// 	else {
+// 		video.muted = true;
+// 	}
+// });
 
 video.addEventListener('ended', function () {
 	videoBox.classList.add('hero__video--off');
-	body.classList.remove('noscroll');
+	logo.style.display = 'block';
 });
 
 
 if (window.innerWidth <= 768) {
 	videoBox.classList.add('hero__video--off');
-	video.removeAttribute('autoplay');
 
 	videoBtn.addEventListener('click', function (e) {
+		video.play();
+		logo.style.display = 'none';
 		videoBox.classList.remove('hero__video--off');
-		video.setAttribute('autoplay', '');
 		body.classList.add('noscroll');
-		
 	});
+	logo.removeEventListener('click', logo);
 }
+
+
 
 
 
