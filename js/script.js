@@ -16,7 +16,6 @@
 		menuText2.classList.toggle('header__button-text-2--open');
 		menuText1.classList.toggle('header__button-text-1--open');
 		menu.classList.toggle('header__menu--open');
-		logo.style.zIndex = 99;
 	});
 
 

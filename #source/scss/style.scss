@@ -566,7 +566,7 @@
 		max-width: 730px;
 		margin: 0 auto;
 		height: 75vh;
-		max-height: 700px;
+		max-height: 550px;
 		// min-height: 60vh;
 	}
 
@@ -759,6 +759,24 @@
 	display: flex;
 	align-items: center;
 
+	&__bg {
+		// background: #3996BC;
+		background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(78, 199, 251, 0.69) 0%, rgba(41, 197, 246, 0.00) 90.31%), #3996BC;
+		position: absolute;
+		z-index: -2;
+		top: -22vh;
+		bottom: -100px;
+		right: 0;
+		left: 0;
+		width: 100vw;
+
+		img {
+			width: 100%;
+			height: 100%;
+
+		}
+	}
+
 	&__inner {
 		display: flex;
 		flex-direction: column;
@@ -766,7 +784,7 @@
 		justify-content: center;
 		position: relative;
 		height: 75vh;
-		max-height: 700px;
+		max-height: 550px;
 		padding: 30px 0;
 	}
 
@@ -941,20 +959,14 @@
 /*==================================== CAT ====================================*/
 
 .cat {
-	// background: url('../img/6.cat/cat-bg.png') no-repeat 0 / 100% 100%;
-	background: #3996BC;
-	background: linear-gradient(#3996BC 50%, #fff 50%);
 	padding-top: 338px;
 	padding-bottom: 350px;
-	// margin-top: -338px;
-	// z-index: -1;
-	// height: 100vh;
 	position: relative;
 
 	&__bg {
 		position: absolute;
 		z-index: 0;
-		top: -18vh;
+		top: -20vh;
 		bottom: -100px;
 		right: 0;
 		left: 0;
