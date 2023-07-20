@@ -530,7 +530,6 @@
 /*==================================== SS ====================================*/
 
 .ss {
-	// background: radial-gradient(40.82% 41.08% at 50.03% 50.03%, #FFE072 26.23%, rgba(255, 235, 182, 0.00) 92.95%) -542px 100px, url('../img/4.slivochno-sochnyje/ss-bg.png') no-repeat 0 0 / 100% 100%;
 	background: #ff8e96;
 	background: linear-gradient(#ff8e96 50%, #3996BC 50%);
 	position: relative;
@@ -566,8 +565,7 @@
 		max-width: 730px;
 		margin: 0 auto;
 		height: 75vh;
-		max-height: 550px;
-		// min-height: 60vh;
+		max-height: 750px;
 	}
 
 	&__leaf-1 {
@@ -760,7 +758,6 @@
 	align-items: center;
 
 	&__bg {
-		// background: #3996BC;
 		background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(78, 199, 251, 0.69) 0%, rgba(41, 197, 246, 0.00) 90.31%), #3996BC;
 		position: absolute;
 		z-index: -2;
@@ -784,7 +781,7 @@
 		justify-content: center;
 		position: relative;
 		height: 75vh;
-		max-height: 550px;
+		max-height: 750px;
 		padding: 30px 0;
 	}
 
@@ -977,6 +974,17 @@
 			height: 100%;
 
 		}
+	}
+
+	&__bg2 {
+		position: absolute;
+		z-index: -100;
+		top: -20vh;
+		bottom: -100px;
+		right: 0;
+		left: 0;
+		width: 100vw;
+		background: linear-gradient(#3996BC 50%, #fff 50%);
 	}
 
 	.container {
