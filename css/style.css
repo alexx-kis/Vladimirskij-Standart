@@ -458,9 +458,6 @@ h6 {
      object-fit: cover;
   background: #000;
 }
-.hero__bg video {
-  height: 100vh;
-}
 .hero__video {
   z-index: 0;
   -webkit-transition: all 0.5s;
