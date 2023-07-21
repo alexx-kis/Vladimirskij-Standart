@@ -262,7 +262,7 @@ $.scrollify({
 	scrollbars: true,
 	// standardScrollElements: ".cat",
 	// standardScrollElements: ".footer",
-	setHeights: false,
+	setHeights: true,
 	overflowScroll: true,
 	updateHash: true,
 	touchScroll: true,
