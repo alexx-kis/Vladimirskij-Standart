@@ -79,47 +79,14 @@
 		}
 	}
 
-	.sm {
-		&__img-1 {
-			top: -125px;
-			left: -395px;
-		}
 
-		&__img-2,
-		&__img-2-shadow {
-			top: -108px;
-			right: -862px;
-		}
-
-		&__img-3 {}
-
-		&__drop-1 {
-			// top: 220px;
-			// left: -82px;
-		}
-
-		&__leaf-1 {
-			top: 100px;
-			left: -391px;
-		}
-
-		&__leaf-2 {
-			// top: 505px;
-			// left: -101px;
-		}
-
-		&__leaf-4 {
-			top: 490px;
-			right: -247px;
-		}
-	}
 
 	.cat {
 		background-size: auto 100%;
 
 		&__drop {
-			top: -67px;
-			right: -5px;
+			top: -6vh;
+			right: -5vh;
 		}
 	}
 
@@ -241,16 +208,16 @@
 
 @media (max-width: 1200px) {
 	.cat {
-		padding-top: 140px;
-		padding-bottom: 140px;
+		// padding-top: 140px;
+		// padding-bottom: 140px;
 
 		&__bg {
 			top: -2vh;
 		}
 
 		&__drop {
-			right: -45px;
-			top: -27px;
+			right: -4.5vh;
+			top: 1.3vh;
 		}
 
 		&__slider {
@@ -267,7 +234,7 @@
 		}
 
 		&__slide-img {
-			margin-bottom: -23px;
+			margin-bottom: 0vh;
 		}
 	}
 }
@@ -429,40 +396,47 @@
 
 	.sm {
 		&__img-1 {
-			top: -139px;
-			left: -225px;
+			top: 8vh;
+			left: -29vh;
 
 			img {
-				width: 500px;
+				width: 49vh;
 			}
 		}
 
 		&__img-2,
 		&__img-2-shadow {
-			top: -88px;
-			right: -602px;
+			top: 13vh;
+			right: -69.6vh;
 
 			img {
-				width: 900px;
+				width: 88vh;
 			}
 		}
 
 		&__img-3 {
-			top: 295px;
-			left: -190px;
+			top: 50vh;
+			left: -18vh;
 
 			img {
-				width: 350px;
+				width: 34vh;
 			}
 		}
 
 		&__drop-1 {
-			top: 180px;
-			left: -222px;
+
+			top: 41vh;
+			left: -20vh;
+
 
 			img {
-				width: 250px;
+				width: 21vh;
 			}
+		}
+
+		&__leaf-2 {
+			top: 47vh;
+			left: 4vh;
 		}
 	}
 
@@ -573,58 +547,60 @@
 	}
 
 	.sm {
-		// padding-top: 400px;
 
 		&__logo {
-			// margin-bottom: 36px;
-		}
-
-		&__stamp {
-			// margin-bottom: 40px;
-		}
-
-		&__img-1 {
 			img {
-				width: 85%;
+				width: 55.6vh;
 			}
 		}
 
-		&__img-2 {
-			right: -800px;
+		&__img-1 {
+			top: 12vh;
+			left: -28vh;
 
 			img {
-				width: 85%;
+				width: 46vh;
+			}
+		}
+
+		&__img-2,
+		&__img-2-shadow {
+			top: 24vh;
+			right: -47.6vh;
+
+			img {
+				width: 70vh;
 			}
 		}
 
 		&__img-3 {
-			top: 153px;
-			left: -66px;
+			top: 55vh;
+			left: -14vh;
 
 			img {
-				width: 85%;
+				width: 32vh;
 			}
 		}
 
-		&__drop-1 {
-			top: 99px;
-			left: -115px;
+		&__leaf-2 {
+			top: 49vh;
+			left: 5vh;
 
 			img {
-				width: 85%;
+				width: 24vh;
 			}
 		}
 
+		&__leaf-3 {
+			top: 7vh;
+			right: 2vh;
+		}
 	}
 
 	.cat {
 		&__drop {
-			top: 13px;
-			right: -127px;
-
-			img {
-				width: 80%;
-			}
+			top: 4.3vh;
+			right: -12.7vh;
 		}
 
 		&__slider {
@@ -635,7 +611,7 @@
 			max-width: 200px;
 
 			img {
-				height: 50%;
+				// height: 50%;
 			}
 		}
 	}
@@ -833,11 +809,17 @@
 		}
 	}
 
+	.sm {
+		&__logo {
+			img {
+				width: 44.6vh;
+			}
+		}
+	}
+
 }
 
 /*------------------------------ 740 ------------------------------*/
-
-
 
 @media (max-width: 740px) {
 	.hero {
@@ -847,11 +829,34 @@
 	}
 
 	.sm {
-		&__leaf-3 {
-			top: -145px;
-			right: 30px;
+		&__img-1 {
+			top: 2vh;
+			left: -17vh;
+		}
+
+		&__img-2,
+		&__img-2-shadow {
+			top: 19vh;
+			right: -44.6vh;
+		}
+
+		&__img-3 {
+			top: 42vh;
+			left: -7vh;
+		}
+
+		&__drop-1 {
+			top: 35vh;
+			left: -10vh;
+		}
+
+		&__leaf-2 {
+			top: 59vh;
+			left: -7vh;
 		}
 	}
+
+
 }
 
 
@@ -879,16 +884,16 @@
 		}
 
 		&__drop {
-			top: -47px;
-			right: -127px;
+			top: -1.7vh;
+			right: -12.7vh;
 		}
 
 		&__slider {
-			max-width: 300px;
+			max-width: 500px;
 		}
 
 		&__slide {
-			max-width: 300px;
+			max-width: 500px;
 			padding: 0 20px 0 5px;
 
 			img {
@@ -897,12 +902,12 @@
 		}
 
 		&__slide-img {
-			margin-bottom: -10px;
+			// margin-bottom: -10px;
 		}
 
 
 		&__slide-text {
-			font-size: 18px;
+			// font-size: 18px;
 		}
 
 		&__pop-up {
@@ -1048,7 +1053,7 @@
 	.hero {
 		&__heading {
 			img {
-				width: 400px;
+				width: 40vh;
 			}
 		}
 	}
@@ -1184,83 +1189,54 @@
 	}
 
 	.sm {
-		// padding-bottom: 380px;
-
 		&__logo {
 			img {
-				width: 400px;
+				width: 37vh;
 			}
 		}
 
 		&__img-1 {
-			top: -110px;
-			left: -160px;
 
 			img {
-				width: 65%;
+				width: 34vh;
 			}
 		}
 
 		&__img-2,
 		&__img-2-shadow {
-			right: -920px;
-			top: -80px;
+			top: 25vh;
+			right: -44.6vh;
 
 			img {
-				width: 65%;
+				width: 61.5vh;
 			}
 		}
 
 		&__img-3 {
-			top: 296px;
-			left: -90px;
+			top: 48vh;
+			left: -7vh;
 
 			img {
-				width: 65%;
+				width: 26.2vh;
 			}
 		}
 
 		&__drop-1 {
-			top: 227px;
-			left: -92px;
+			top: 42vh;
+			left: -8vh;
 
 			img {
-				width: 65%;
+				width: 16.3vh;
 			}
 		}
 
-		&__leaf-1 {
-			img {
-				width: 60%;
-			}
-		}
+		&__leaf-1 {}
 
-		&__leaf-2 {
-			top: 482px;
-			left: -81px;
+		&__leaf-2 {}
 
-			img {
-				width: 60%;
-			}
-		}
+		&__leaf-3 {}
 
-		&__leaf-3 {
-			top: -105px;
-			right: -40px;
-
-			img {
-				width: 60%;
-			}
-		}
-
-		&__leaf-4 {
-			top: 400px;
-			right: -297px;
-
-			img {
-				width: 60%;
-			}
-		}
+		&__leaf-4 {}
 	}
 
 	.cat {
@@ -1268,11 +1244,11 @@
 		background-position: -140px 0px;
 
 		&__drop {
-			top: 12px;
-			right: -63px;
+			top: 6.3vh;
+			right: -2.7vh;
 
 			img {
-				width: 130px
+				width: 13vh;
 			}
 		}
 
@@ -1320,6 +1296,7 @@
 				transform: translate(0);
 			}
 		}
+
 		&__logo {
 			img {
 				width: 33vh;
@@ -1374,9 +1351,14 @@
 			margin-bottom: 0;
 		}
 
+		&__img-1 {
+			top: -23vh;
+			right: 0vh;	
+		}
+
 		&__img-2 {
-			top: 414px;
-			left: -13px;
+			top: 35vh;
+			left: -3vh;
 		}
 	}
 }
@@ -1663,61 +1645,68 @@
 			}
 		}
 
-		&__text {
-			font-size: 18px;
-		}
-
 		&__img-1 {
-			top: -40px;
+			top: 15vh;
+			left: -10vh;
 
 			img {
-				width: 65%;
+				width: 21.4vh;
+
 			}
 		}
 
 		&__img-2,
 		&__img-2-shadow {
-			right: -990px;
-			top: -22px;
+			top: 28vh;
+			right: -30.6vh;
 
 			img {
-				width: 45%;
+				width: 43vh;
 			}
 		}
 
 		&__img-3 {
-			top: 275px;
-			left: -50px;
+			top: 44vh;
+			left: -6vh;
 
 			img {
-				width: 60%;
+				width: 18.4vh;
 			}
 		}
 
 		&__drop-1 {
-			top: 222px;
-			left: -74px;
+			top: 40vh;
+			left: -6vh;
 
 			img {
-				width: 45%;
+				width: 10.2vh;
 			}
 		}
 
 		&__leaf-2 {
-			top: 372px;
+			top: 56vh;
+			left: -5vh;
+
+			img {
+				width: 9.9vh;
+			}
 		}
 
 		&__leaf-3 {
-			right: -91px;
-			top: 5px;
+			top: 16vh;
+			right: 2vh;
+
+			img {
+				width: 9.2vh;
+			}
 		}
 
 		&__leaf-4 {
-			top: 360px;
-			right: -337px;
+			top: 61vh;
+			right: -8vh;
 
 			img {
-				width: 40%;
+				width: 13.2vh;
 			}
 		}
 
