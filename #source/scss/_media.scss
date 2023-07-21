@@ -36,7 +36,7 @@
 	.ss {
 
 		&__bg {
-			top: -20vh;
+			// top: -20vh;
 
 			img {
 				width: 100%;
@@ -44,38 +44,38 @@
 		}
 
 		&__img1 {
-			left: -410px;
+			left: -44vh;
 		}
 
 		&__img2 {
-			top: 520px;
-			left: -320px;
+			top: 66vh;
+			left: -35vh;
 		}
 
 		&__leaf-1 {
-			left: -512px;
+			left: -48vh;
 		}
 
 		&__img3 {
-			right: -618px;
+			right: -61vh;
 		}
 
 		&__leaf-5 {
-			right: -61px;
+			right: -7.1vh;
 		}
 
 		&__leaf-2 {
-			left: -254px;
+			left: -35vh;
 		}
 
 		&__leaf-3 {
-			top: 176px;
-			right: -310px;
+			top: 37vh;
+			right: -33vh;
 		}
 
 		&__leaf-4 {
-			top: 529px;
-			right: -428px;
+			top: 80vh;
+			right: -37vh;
 		}
 	}
 
@@ -135,44 +135,61 @@
 
 	.ss {
 		&__img1 {
-			top: -36px;
-			top: 34px;
+			top: 18vh;
+			left: -37.7vh;
 
 			img {
-				width: 80%;
+				width: 50vh;
 			}
 		}
 
 		&__img2 {
-			left: -420px;
-			top: 450px;
-		}
-
-		&__img3 {
-			top: 38px;
-			right: -718px;
+			left: -35vh;
+			top: 63vh;
 
 			img {
-				width: 80%;
+				width: 34.4vh;
 			}
 		}
 
+		&__img3 {
+			top: 28vh;
+			right: -50vh;
+
+			img {
+				width: 70.4vh;
+			}
+		}
+
+		&__leaf-1 {
+			top: 11vh;
+			left: -45vh;
+		}
+
 		&__leaf-2 {
-			left: -354px;
-			top: 713px;
+			top: 83vh;
+			left: -43vh;
 		}
 
 		&__leaf-5 {
-			// top: 445px;
-			// right: 579px;
+			top: 71.7vh;
+			right: -9.1vh;
+		}
+
+		&_leaf-3 {
+			top: 37vh;
+			right: -29.8vh;
+		}
+
+
+		&__pelmen-1 {
+			top: 24.8vh;
+			right: -3.8vh;
 		}
 
 		&__pelmen-2 {
-			top: 58px;
-		}
-
-		&__pelmen-1 {
-			top: 8px;
+			top: 29.8vh;
+			right: -15.8vh;
 		}
 	}
 
@@ -358,13 +375,6 @@
 
 @media (max-width: 1024px) {
 
-	.logo {
-
-		img {
-			width: 36vh;
-		}
-	}
-
 	.text {
 		font-size: 2.4vh;
 	}
@@ -387,8 +397,33 @@
 			bottom: -6vh;
 
 			img {
-				width: 100%;
+				// width: auto;
 			}
+		}
+
+		&__img1 {
+			top: 21vh;
+			left: -28.7vh;
+		}
+
+		&__img2 {
+			left: -22vh;
+			top: 71vh;
+		}
+
+		&__img3 {
+			top: 31vh;
+			right: -42vh;
+		}
+
+		&__leaf-2 {
+			top: 83vh;
+			left: -24vh;
+		}
+
+		&__leaf-5 {
+			top: 71.7vh;
+			right: -2.1vh;
 		}
 	}
 
@@ -445,84 +480,90 @@
 	}
 
 	.ss {
+		&__logo {
+			img {
+				width: 55.6vh;
+			}
+		}
 
 		&__img1 {
-			top: 3px;
-			left: -190px;
+			top: 18vh;
+			left: -19vh;
 
 			img {
-				width: 500px;
+				width: 46.3vh;
 			}
 		}
 
 		&__leaf-1 {
-			top: -180px;
-			left: -112px;
+			top: 16vh;
+			left: -14vh;
 
 			img {
-				width: 200px;
+				width: 18.6vh;
 			}
 		}
 
 		&__img2 {
-			top: 470px;
-			left: -100px;
+			top: 73.7vh;
+			left: -7vh;
 
 			img {
-				width: 300px;
+				width: 27.8vh;
 			}
 		}
 
 		&__img3 {
-			right: -320px;
+			top: 33vh;
+			right: -39vh;
 
 			img {
-				width: 700px;
+				width: 64.8vh;
 			}
 		}
 
 		&__leaf-5 {
-			right: 100px;
-			top: 460px;
+			top: 71vh;
+			right: -1vh;
 
 			img {
-				width: 220px;
+				width: 20.4vh;
 			}
 		}
 
 		&__pelmen-1 {
-			top: -82px;
-			right: 102px;
+			top: 24vh;
+			right: 3vh;
 
 			img {
-				width: 85%;
+				width: 8.7vh;
 			}
 		}
 
 		&__pelmen-2 {
-			top: -32px;
-			right: -58px;
+			top: 31vh;
+			right: -7vh;
 
 			img {
-				width: 85%;
+				width: 11.9vh;
 			}
 		}
 
 		&__leaf-2 {
-			top: 563px;
-			left: -54px;
+			top: 80.3vh;
+			left: -7vh;
 
 			img {
-				width: 60%;
+				width: 30.7vh;
 			}
 		}
 
 		&__leaf-3 {
 			img {
-				width: 60%;
+				width: 10.2vh;
 			}
 
-			right: -140px;
+			right: -14vh;
 		}
 
 		&__leaf-4 {
@@ -781,6 +822,14 @@
 			position: absolute;
 			top: 59vh;
 			right: 73.8vh;
+		}
+	}
+
+	.ss {
+		&__logo {
+			img {
+				width: 44.6vh;
+			}
 		}
 	}
 
@@ -1049,88 +1098,88 @@
 	.ss {
 		&__logo {
 			img {
-				width: 400px;
+				width: 37vh;
 			}
 		}
 
 		&__leaf-1 {
-			top: -130px;
+			top: 18vh;
 
 			img {
-				width: 160px;
+				width: 15vh;
 			}
 		}
 
 		&__img1 {
-			top: -73px;
-			left: -190px;
+			top: 22vh;
+			left: -20vh;
 
 			img {
-				width: 400px;
+				width: 37vh;
 			}
 		}
 
 		&__img2 {
-			top: 260px;
-			left: -70px;
+			top: 54.7vh;
+			left: -11.6vh;
 
 			img {
-				width: 200px;
+				width: 20vh;
 			}
 		}
 
 		&__img3 {
-			right: -350px;
+			top: 26vh;
+			right: -37vh;
 
 			img {
-				width: 600px;
+				width: 58vh;
 			}
 		}
 
 		&__leaf-5 {
-			right: 0px;
-			top: 392px;
+			top: 62vh;
+			right: -2vh;
 
 			img {
-				width: 180px;
+				width: 17vh;
 			}
 		}
 
 		&__pelmen-1 {
-			top: -82px;
-			right: 22px;
+			top: 25vh;
+			right: 1vh;
 
 			img {
-				width: 65%;
+				width: 6.7vh;
 			}
 		}
 
 		&__pelmen-2 {
-			top: -32px;
-			right: -98px;
+			top: 28vh;
+			right: -7vh;
 
 			img {
-				width: 65%;
+				width: 9.1vh;
 			}
 		}
 
 		&__leaf-2 {
-			top: 433px;
-			left: -244px;
+			top: 61vh;
+			left: -11vh;
 
 			img {
-				width: 50%;
+				width: 25vh;
 			}
 		}
 
 		&__leaf-3 {
-			top: -14px;
-			right: -160px;
+			top: 26vh;
+			right: -7vh;
 
 			img {
-				width: 50%;
+				width: 9vh;
 			}
-
 		}
 	}
 
@@ -1271,6 +1320,11 @@
 				transform: translate(0);
 			}
 		}
+		&__logo {
+			img {
+				width: 33vh;
+			}
+		}
 	}
 }
 
@@ -1391,10 +1445,10 @@
 	}
 
 	.logo {
-		margin-bottom: 14px;
+		// margin-bottom: 1.4vh;
 
 		img {
-			width: 200px;
+			width: 25vh;
 		}
 	}
 
@@ -1409,10 +1463,10 @@
 	.ms {
 
 		&__heading {
-			// font-size: 3.7vh;
+			font-size: 3.7vh;
 
 			span {
-				// font-size: 2.2vh;
+				font-size: 2.2vh;
 			}
 		}
 
@@ -1476,106 +1530,101 @@
 		&__stamp {
 			&-outline {
 				img {
-					width: 115px;
+					width: 10.7vh;
 				}
 			}
 
 			&-border {
 				img {
-					width: 103px;
+					width: 9.6vh;
 				}
 			}
 
 			&-content {
-				top: -50px;
-				left: -47px;
+				top: -4.6vh;
+				left: -4.4vh;
 
 				img {
-					width: 75.5px;
+					width: 7vh;
 				}
 			}
 
 			&-text {
-				top: -23px;
-				left: -37px;
+				top: -2.1vh;
+				left: -3.5vh;
 
 				img {
-					width: 85px;
-					height: 70px;
+					width: 7.84vh;
 				}
 			}
 		}
 
 
-		&__text {
-			font-size: 18px;
-		}
-
 		&__leaf-1 {
-			top: -90px;
-			left: -105px;
+			top: 19vh;
+			left: -11vh;
 
 			img {
-				width: 130px;
+				width: 12.1vh;
 			}
 		}
 
 		&__img1 {
-			top: -37px;
-			left: -171px;
+			top: 24vh;
+			left: -13vh;
 
 			img {
-				width: 300px;
+				width: 25vh;
 			}
 		}
 
 		&__img2 {
-			top: 199px;
-			left: -114px;
+			top: 48vh;
+			left: -10vh;
 		}
 
 		&__img3 {
-			top: 10px;
-			right: -245px;
+			top: 31vh;
+			right: -26vh;
 
 			img {
-				width: 400px;
+				width: 41vh;
 			}
 		}
 
 		&__leaf-5 {
-			right: -24px;
-			top: 241px;
+			top: 56vh;
+			right: -1vh;
 
 			img {
-				width: 130px;
+				width: 10.6vh;
 			}
 		}
 
 		&__pelmen-1 {
-			top: -50px;
-			right: 22px;
+			top: 21vh;
+			right: 1vh;
 
 			img {
-				width: 50px;
+				width: 4.6vh;
 			}
 		}
 
 		&__pelmen-2 {
-			top: -20px;
-			right: -45px;
+			top: 23vh;
+			right: -5vh;
 
 			img {
-				width: 62px;
+				width: 5.8vh;
 			}
 		}
 
 		&__leaf-2 {
-			top: 293px;
-			left: -254px;
+			top: 62vh;
+			left: -14vh;
 
 			img {
-				width: 50%;
+				width: 22.1vh;
 			}
 		}
 	}
@@ -1585,33 +1634,31 @@
 		&__stamp {
 			&-outline {
 				img {
-					width: 115px;
+					width: 10.7vh;
 				}
 			}
 
 			&-border {
 				img {
-					width: 103px;
+					width: 9.6vh;
 				}
 			}
 
 			&-content {
-				top: -49px;
-				left: -47px;
+				top: -4.6vh;
+				left: -4.4vh;
 
 				img {
-					width: 78px;
-					height: 80px;
+					width: 7vh;
 				}
 			}
 
 			&-text {
-				top: -35px;
-				left: -43px;
+				top: -2.1vh;
+				left: -3.5vh;
 
 				img {
-					width: 91px;
-					height: 82px;
+					width: 7.84vh;
 				}
 			}
 		}

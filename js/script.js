@@ -145,7 +145,7 @@ function showSlides(n) {
 				let animItem = animItems[i];
 				let animItemHeight = animItem.offsetHeight;
 				let animItemOffset = offset(animItem).top;
-				let animStart = 4
+				let animStart = 8;
 				let animItemPoint = window.innerHeight - (animItemHeight / animStart);
 
 				if (animItemHeight > window.innerHeight) {
