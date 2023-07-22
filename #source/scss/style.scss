@@ -1184,7 +1184,7 @@
 
 .cat {
 	position: relative;
-	height: 100vh;
+	// height: 100vh;
 
 	&__bg {
 		position: absolute;
@@ -1350,6 +1350,7 @@
 
 
 .cat {
+	max-height: 100vh;
 
 	&__pop-up {
 		position: absolute;
