@@ -1244,49 +1244,46 @@
 		transition: all 1s;
 	}
 
+	&__arrows {
+		position: relative;
+		top: 135px;
+
+	}
+
 	&__arrow {
-		position: absolute;
 		cursor: pointer;
+		position: absolute;
+		top: 0px;
+		z-index: 10;
 	}
 
 	&__arrow-prev {
-		top: 15vh;
-		left: -8vh;
+		left: 0px;
 	}
 
 	&__arrow-next {
-		top: 15vh;
-		right: -8vh;
+		right: 0px;
 	}
 
-	&__slider {}
+	&__slider {
+		max-width: 1110px;
+		margin: 0 auto;
+	}
 
 	&__slide {
 		cursor: pointer;
+		padding: 10px;
 	}
 
 	&__slide-img {
 		display: flex;
 		justify-content: center;
-		align-items: center;
-		height: 35vh;
-		margin-bottom: 6vh;
+
+		// align-items: center;
+		margin-bottom: 7vh;
 
 		img {
-			height: 28vh;
-		}
-
-
-		&--1 {
-			background: url('../img/6.cat/card-1-bg.png') no-repeat center / contain;
-		}
-
-		&--2 {
-			background: url('../img/6.cat/card-2-bg.png') no-repeat center / contain;
-		}
-
-		&--3 {
-			background: url('../img/6.cat/card-3-bg.png') no-repeat center / contain;
+			width: 350px;
 		}
 	}
 

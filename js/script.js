@@ -42,8 +42,9 @@ $(function () {
 					}
 				},
 				{
-					breakpoint: 650,
+					breakpoint: 740,
 					settings: {
+						variableWidth: true,
 						slidesToShow: 1,
 					}
 				},
@@ -322,3 +323,4 @@ if (window.innerWidth <= 768) {
 
 
 
+console.log(window.innerWidth);
