@@ -1392,6 +1392,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		height: 100%;
 	}
 
 	&__slide-image-box {
@@ -1405,6 +1406,7 @@
 
 	&__slide-image {
 		width: 100%;
+
 		img {
 			// width: 63.5vh;
 			width: 100%;
@@ -1436,6 +1438,7 @@
 			transform: scale(.9);
 		}
 	}
+
 	&__slide-content {
 		margin-bottom: 1vh;
 	}
@@ -1474,7 +1477,6 @@
 
 	&__slide-info {
 		font-weight: 400;
-		margin-bottom: 10.4vh;
 	}
 
 	&__slide-icons {
