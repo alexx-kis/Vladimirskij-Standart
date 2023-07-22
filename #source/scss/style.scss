@@ -251,7 +251,7 @@
 /*==================================== HERO ====================================*/
 
 .hero {
-	min-height: 100vh;
+	// min-height: 100vh;
 	// background: url('../img/2.hero/hero-bg.png') no-repeat center / cover;
 	display: flex;
 	justify-content: center;
@@ -259,10 +259,17 @@
 	position: relative;
 	// z-index: -3;
 
+	&__inner {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
 	&__heading {
 		opacity: 0;
 		animation: hero-heading 2s forwards;
-		height: 100%;
+		// height: 100%;
 		z-index: 99;
 		position: relative;
 		display: flex;
@@ -365,7 +372,7 @@
 
 .ms {
 	background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(255, 235, 182, 0.56) 0%, rgba(255, 235, 182, 0.00) 93.23%), #ff8e96;
-	height: 100vh;
+	// height: 100vh;
 
 	display: flex;
 	align-items: center;
@@ -637,7 +644,7 @@
 	position: relative;
 	display: flex;
 	align-items: center;
-	height: 100vh;
+	// height: 100vh;
 
 	&__bg {
 		position: absolute;
@@ -917,7 +924,7 @@
 
 .sm {
 	background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(78, 199, 251, 0.69) 0%, rgba(41, 197, 246, 0.00) 90.31%), #3996BC;
-	height: 100vh;
+	// height: 100vh;
 	z-index: -1;
 	position: relative;
 	display: flex;
@@ -1563,6 +1570,7 @@
 	padding-bottom: 27vh;
 	z-index: 2;
 	position: relative;
+	max-height: 640px;
 
 
 	&__inner {

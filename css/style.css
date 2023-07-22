@@ -257,7 +257,6 @@ h6 {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
   z-index: -1;
 }
@@ -276,7 +275,6 @@ h6 {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 .header__menu--open {
@@ -324,7 +322,6 @@ h6 {
   font-style: normal;
   font-weight: 700;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .header__menu-link:hover {
@@ -378,7 +375,6 @@ h6 {
   -webkit-box-shadow: 0px 0px 2px #000;
           box-shadow: 0px 0px 2px #000;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .burger--open .burger__line:first-child {
@@ -397,7 +393,6 @@ h6 {
 /*==================================== HERO ====================================*/
 /*==================================== HERO ====================================*/
 .hero {
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,11 +404,23 @@ h6 {
           align-items: center;
   position: relative;
 }
+.hero__inner {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .hero__heading {
   opacity: 0;
   -webkit-animation: hero-heading 2s forwards;
           animation: hero-heading 2s forwards;
-  height: 100%;
   z-index: 99;
   position: relative;
   display: -webkit-box;
@@ -458,7 +465,6 @@ h6 {
   max-width: 223px;
   margin: 30px auto 0;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .hero__button-icon {
@@ -476,7 +482,6 @@ h6 {
 .hero__bg {
   z-index: 0;
   -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -497,7 +502,6 @@ h6 {
 .hero__video {
   z-index: 0;
   -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -538,9 +542,7 @@ h6 {
 /*==================================== MS ====================================*/
 /*==================================== MS ====================================*/
 .ms {
-  background: -o-radial-gradient(50.04% 53.43%, 48.13% 48.13%, rgba(255, 235, 182, 0.56) 0%, rgba(255, 235, 182, 0) 93.23%), #ff8e96;
   background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(255, 235, 182, 0.56) 0%, rgba(255, 235, 182, 0) 93.23%), #ff8e96;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,13 +562,11 @@ h6 {
   top: 3.2vh;
   left: -4.6vh;
   -webkit-transition: all 1s 0.5s;
-  -o-transition: all 1s 0.5s;
   transition: all 1s 0.5s;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.3s 0.5s cubic-bezier(0.56, 1.67, 0.77, 2);
-  -o-transition: all 0.3s 0.5s cubic-bezier(0.56, 1.67, 0.77, 2);
   transition: all 0.3s 0.5s cubic-bezier(0.56, 1.67, 0.77, 2);
 }
 .ms__drop1 img {
@@ -577,13 +577,11 @@ h6 {
   top: 0;
   left: 0;
   -webkit-transition: all 1s 1s;
-  -o-transition: all 1s 1s;
   transition: all 1s 1s;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.3s 1s cubic-bezier(0.56, 1.67, 0.77, 2);
-  -o-transition: all 0.3s 1s cubic-bezier(0.56, 1.67, 0.77, 2);
   transition: all 0.3s 1s cubic-bezier(0.56, 1.67, 0.77, 2);
 }
 .ms__drop2 img {
@@ -598,7 +596,6 @@ h6 {
       -ms-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.3s 1.5s cubic-bezier(0.56, 1.67, 0.77, 2);
-  -o-transition: all 0.3s 1.5s cubic-bezier(0.56, 1.67, 0.77, 2);
   transition: all 0.3s 1.5s cubic-bezier(0.56, 1.67, 0.77, 2);
 }
 .ms__drop3 img {
@@ -618,7 +615,6 @@ h6 {
       -ms-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.3s 1.5s cubic-bezier(0.56, 1.67, 0.77, 2);
-  -o-transition: all 0.3s 1.5s cubic-bezier(0.56, 1.67, 0.77, 2);
   transition: all 0.3s 1.5s cubic-bezier(0.56, 1.67, 0.77, 2);
 }
 .ms__drop4 img {
@@ -633,7 +629,6 @@ h6 {
       -ms-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.3s 1.7s cubic-bezier(0.56, 1.67, 0.77, 2);
-  -o-transition: all 0.3s 1.7s cubic-bezier(0.56, 1.67, 0.77, 2);
   transition: all 0.3s 1.7s cubic-bezier(0.56, 1.67, 0.77, 2);
 }
 .ms__drop5 img {
@@ -648,7 +643,6 @@ h6 {
       -ms-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.3s 2s cubic-bezier(0.56, 1.67, 0.77, 2);
-  -o-transition: all 0.3s 2s cubic-bezier(0.56, 1.67, 0.77, 2);
   transition: all 0.3s 2s cubic-bezier(0.56, 1.67, 0.77, 2);
 }
 .ms__drop6 img {
@@ -660,7 +654,6 @@ h6 {
   top: 27vh;
   left: -38vh;
   -webkit-transition: all 1s;
-  -o-transition: all 1s;
   transition: all 1s;
   opacity: 0;
   -webkit-transform: translate(-100px, 0);
@@ -703,7 +696,6 @@ h6 {
       -ms-transform: translate(0, 100px);
           transform: translate(0, 100px);
   -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
   padding-bottom: 5vh;
 }
@@ -732,7 +724,6 @@ h6 {
       -ms-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 .ms__logo img {
@@ -750,7 +741,6 @@ h6 {
       -ms-transform: translate(0, 100px);
           transform: translate(0, 100px);
   -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 .ms__img-right {
@@ -759,7 +749,6 @@ h6 {
   right: -66vh;
   top: 20vh;
   -webkit-transition: all 1s 1s;
-  -o-transition: all 1s 1s;
   transition: all 1s 1s;
   opacity: 0;
   -webkit-transform: translate(100px, 0);
@@ -777,7 +766,6 @@ h6 {
   top: -15vh;
   left: -9vh;
   -webkit-transition: opacity 0.5s 1s;
-  -o-transition: opacity 0.5s 1s;
   transition: opacity 0.5s 1s;
   opacity: 0;
 }
@@ -789,7 +777,6 @@ h6 {
   top: -7.2vh;
   left: 40vh;
   -webkit-transition: opacity 0.5s 1s;
-  -o-transition: opacity 0.5s 1s;
   transition: opacity 0.5s 1s;
   opacity: 0;
 }
@@ -802,7 +789,6 @@ h6 {
   left: 16vh;
   z-index: 4;
   -webkit-transition: opacity 0.5s 1s;
-  -o-transition: opacity 0.5s 1s;
   transition: opacity 0.5s 1s;
   opacity: 0;
 }
@@ -815,7 +801,6 @@ h6 {
   top: -1vh;
   right: 59vh;
   -webkit-transition: opacity 0.5s 1s;
-  -o-transition: opacity 0.5s 1s;
   transition: opacity 0.5s 1s;
   opacity: 0;
 }
@@ -828,7 +813,6 @@ h6 {
   top: 59vh;
   left: 33vh;
   -webkit-transition: opacity 0.3s 1s;
-  -o-transition: opacity 0.3s 1s;
   transition: opacity 0.3s 1s;
   opacity: 0;
 }
@@ -846,7 +830,6 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
 }
 .ss__bg {
   position: absolute;
@@ -870,7 +853,6 @@ h6 {
   left: 0;
   width: 100vw;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ff8e96), color-stop(50%, #3996BC));
-  background: -o-linear-gradient(#ff8e96 50%, #3996BC 50%);
   background: linear-gradient(#ff8e96 50%, #3996BC 50%);
 }
 .ss__inner {
@@ -900,7 +882,6 @@ h6 {
   left: -56.2vh;
   z-index: 0;
   -webkit-transition: all 1s 0.3s;
-  -o-transition: all 1s 0.3s;
   transition: all 1s 0.3s;
   opacity: 0;
   -webkit-transform: translate(-100px, 0px);
@@ -916,7 +897,6 @@ h6 {
   left: -44vh;
   z-index: -1;
   -webkit-transition: all 1s;
-  -o-transition: all 1s;
   transition: all 1s;
   opacity: 0;
   -webkit-transform: translate(-100px, -100px);
@@ -932,7 +912,6 @@ h6 {
   left: -37vh;
   z-index: -1;
   -webkit-transition: all 1s 0.5s;
-  -o-transition: all 1s 0.5s;
   transition: all 1s 0.5s;
   opacity: 0;
   -webkit-transform: translate(-100px, 100px);
@@ -948,7 +927,6 @@ h6 {
       -ms-transform: translate(0, 100px);
           transform: translate(0, 100px);
   -webkit-transition: all 1s;
-  -o-transition: all 1s;
   transition: all 1s;
 }
 .ss__logo img {
@@ -958,7 +936,6 @@ h6 {
   margin-bottom: 1.4vh;
   padding: 3vh;
   -webkit-transition: all 1s;
-  -o-transition: all 1s;
   transition: all 1s;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -1025,7 +1002,6 @@ h6 {
 }
 .ss__stamp-inner {
   -webkit-transition: all 1s;
-  -o-transition: all 1s;
   transition: all 1s;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -1039,7 +1015,6 @@ h6 {
   font-weight: 300;
   line-height: normal;
   -webkit-transition: all 1s;
-  -o-transition: all 1s;
   transition: all 1s;
   opacity: 0;
   -webkit-transform: translate(0, 100px);
@@ -1052,7 +1027,6 @@ h6 {
   right: -6.8vh;
   z-index: -1;
   -webkit-transition: all 0.2s 2s linear;
-  -o-transition: all 0.2s 2s linear;
   transition: all 0.2s 2s linear;
   opacity: 0;
   -webkit-transform: scale(0);
@@ -1071,7 +1045,6 @@ h6 {
   right: -19.8vh;
   z-index: -1;
   -webkit-transition: all 0.2s 2.1s linear;
-  -o-transition: all 0.2s 2.1s linear;
   transition: all 0.2s 2.1s linear;
   opacity: 0;
   -webkit-transform: scale(0);
@@ -1090,7 +1063,6 @@ h6 {
   right: -60.8vh;
   z-index: -1;
   -webkit-transition: all 1s 1s;
-  -o-transition: all 1s 1s;
   transition: all 1s 1s;
   opacity: 0;
   -webkit-transform: translate(100px, 40px);
@@ -1106,7 +1078,6 @@ h6 {
   right: -7.6vh;
   z-index: -2;
   -webkit-transition: all 1s 1.5s;
-  -o-transition: all 1s 1.5s;
   transition: all 1s 1.5s;
   opacity: 0;
   -webkit-transform: translate(100px, -10px);
@@ -1121,7 +1092,6 @@ h6 {
   top: 78.3vh;
   left: -37.4vh;
   -webkit-transition: opacity 0.5s 1s;
-  -o-transition: opacity 0.5s 1s;
   transition: opacity 0.5s 1s;
   opacity: 0;
 }
@@ -1133,7 +1103,6 @@ h6 {
   top: 38.5vh;
   right: -32vh;
   -webkit-transition: opacity 0.5s 1s;
-  -o-transition: opacity 0.5s 1s;
   transition: opacity 0.5s 1s;
   opacity: 0;
 }
@@ -1145,7 +1114,6 @@ h6 {
   top: 71vh;
   right: -41.8vh;
   -webkit-transition: opacity 0.5s 1s;
-  -o-transition: opacity 0.5s 1s;
   transition: opacity 0.5s 1s;
   opacity: 0;
 }
@@ -1156,9 +1124,7 @@ h6 {
 /*==================================== SM ====================================*/
 /*==================================== SM ====================================*/
 .sm {
-  background: -o-radial-gradient(50.04% 53.43%, 48.13% 48.13%, rgba(78, 199, 251, 0.69) 0%, rgba(41, 197, 246, 0) 90.31%), #3996BC;
   background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(78, 199, 251, 0.69) 0%, rgba(41, 197, 246, 0) 90.31%), #3996BC;
-  height: 100vh;
   z-index: -1;
   position: relative;
   display: -webkit-box;
@@ -1194,7 +1160,6 @@ h6 {
       -ms-transform: translate(0, 100px);
           transform: translate(0, 100px);
   -webkit-transition: all 1s;
-  -o-transition: all 1s;
   transition: all 1s;
 }
 .sm__logo img {
@@ -1204,7 +1169,6 @@ h6 {
   margin-bottom: 5.4vh;
   padding: 3vh;
   -webkit-transition: all 1s;
-  -o-transition: all 1s;
   transition: all 1s;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -1272,7 +1236,6 @@ h6 {
 }
 .sm__stamp-inner {
   -webkit-transition: all 1s;
-  -o-transition: all 1s;
   transition: all 1s;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -1287,7 +1250,6 @@ h6 {
   line-height: normal;
   max-width: 730px;
   -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
   opacity: 0;
   -webkit-transform: translate(0, 100px);
@@ -1299,7 +1261,6 @@ h6 {
   position: absolute;
   z-index: -1;
   -webkit-transition: all 1s 0.5s;
-  -o-transition: all 1s 0.5s;
   transition: all 1s 0.5s;
   opacity: 0;
   -webkit-transform: translate(-100px, -100px);
@@ -1315,7 +1276,6 @@ h6 {
   position: absolute;
   z-index: -1;
   -webkit-transition: all 1s 2s;
-  -o-transition: all 1s 2s;
   transition: all 1s 2s;
   opacity: 0;
   -webkit-transform: translate(100px, 0);
@@ -1332,7 +1292,6 @@ h6 {
   position: absolute;
   z-index: -2;
   -webkit-transition: all 1s 2s;
-  -o-transition: all 1s 2s;
   transition: all 1s 2s;
   opacity: 0;
   -webkit-transform: translate(100px, 0);
@@ -1348,7 +1307,6 @@ h6 {
   position: absolute;
   z-index: -1;
   -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
   opacity: 0;
   -webkit-transform: translate(-100px, 100px);
@@ -1365,7 +1323,6 @@ h6 {
   position: absolute;
   z-index: -2;
   -webkit-transition: all 0.3s 2s cubic-bezier(0.56, 1.67, 0.77, 1.67);
-  -o-transition: all 0.3s 2s cubic-bezier(0.56, 1.67, 0.77, 1.67);
   transition: all 0.3s 2s cubic-bezier(0.56, 1.67, 0.77, 1.67);
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -1380,7 +1337,6 @@ h6 {
 .sm__leaf-1 {
   position: absolute;
   -webkit-transition: opacity 0.5s 1s;
-  -o-transition: opacity 0.5s 1s;
   transition: opacity 0.5s 1s;
   opacity: 0;
   top: 28vh;
@@ -1392,7 +1348,6 @@ h6 {
 .sm__leaf-2 {
   position: absolute;
   -webkit-transition: opacity 0.5s 1s;
-  -o-transition: opacity 0.5s 1s;
   transition: opacity 0.5s 1s;
   opacity: 0;
   z-index: -1;
@@ -1405,7 +1360,6 @@ h6 {
 .sm__leaf-3 {
   position: absolute;
   -webkit-transition: opacity 0.5s 1s;
-  -o-transition: opacity 0.5s 1s;
   transition: opacity 0.5s 1s;
   opacity: 0;
   top: 10vh;
@@ -1417,7 +1371,6 @@ h6 {
 .sm__leaf-4 {
   position: absolute;
   -webkit-transition: opacity 0.5s 1s;
-  -o-transition: opacity 0.5s 1s;
   transition: opacity 0.5s 1s;
   opacity: 0;
   z-index: -1;
@@ -1456,7 +1409,6 @@ h6 {
   left: 0;
   width: 100vw;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #3996BC), color-stop(50%, #fff));
-  background: -o-linear-gradient(#3996BC 50%, #fff 50%);
   background: linear-gradient(#3996BC 50%, #fff 50%);
 }
 .cat .container {
@@ -1483,7 +1435,6 @@ h6 {
       -ms-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 0.5s 1s cubic-bezier(0.56, 1.67, 0.77, 1.67);
-  -o-transition: all 0.5s 1s cubic-bezier(0.56, 1.67, 0.77, 1.67);
   transition: all 0.5s 1s cubic-bezier(0.56, 1.67, 0.77, 1.67);
 }
 .cat__drop img {
@@ -1496,7 +1447,6 @@ h6 {
       -ms-transform: translate(-1000px, 0);
           transform: translate(-1000px, 0);
   -webkit-transition: all 1s;
-  -o-transition: all 1s;
   transition: all 1s;
 }
 .cat__arrow {
@@ -1592,7 +1542,6 @@ h6 {
 .cat__dots .slick-active button::before {
   background-color: #424551;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -1608,7 +1557,6 @@ h6 {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .cat__pop-up--active {
@@ -1620,7 +1568,6 @@ h6 {
   background: url("../img/6.cat/pop-up/pop-up-bg.png") no-repeat bottom/contain, #fff;
   padding: 4.6vh 10.3vh 5.6vh 10.5vh;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   display: none;
   font-family: "Gotham-Pro";
@@ -1676,7 +1623,6 @@ h6 {
   margin-bottom: 3vh;
   cursor: pointer;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .pop-up__slide-back:active {
@@ -1767,7 +1713,6 @@ h6 {
           align-items: center;
   cursor: pointer;
   -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 .pop-up__slide-arrow:active {
@@ -1797,7 +1742,6 @@ h6 {
   right: 0;
   background: rgba(0, 0, 0, 0.3960784314);
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   visibility: hidden;
   opacity: 0;
@@ -1816,6 +1760,7 @@ h6 {
   padding-bottom: 27vh;
   z-index: 2;
   position: relative;
+  max-height: 640px;
 }
 .footer__inner {
   display: -webkit-box;
@@ -1826,7 +1771,6 @@ h6 {
           justify-content: space-between;
   position: relative;
   -webkit-transition: all 1s;
-  -o-transition: all 1s;
   transition: all 1s;
   opacity: 0;
   -webkit-transform: translate(0, 100px);
@@ -1901,7 +1845,6 @@ h6 {
   z-index: -1;
   opacity: 0;
   -webkit-transition: all 1s 1s;
-  -o-transition: all 1s 1s;
   transition: all 1s 1s;
   -webkit-transform: translate(-100px, 100px);
       -ms-transform: translate(-100px, 100px);
@@ -1917,7 +1860,6 @@ h6 {
   z-index: -1;
   opacity: 0;
   -webkit-transition: all 1s 1s;
-  -o-transition: all 1s 1s;
   transition: all 1s 1s;
   -webkit-transform: translate(10px, 10px);
       -ms-transform: translate(10px, 10px);
@@ -2707,7 +2649,6 @@ h6 {
   .cat__dots .slick-active button::before {
     background-color: #424551;
     -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
   }
   .pop-up__slide-text {
@@ -3223,6 +3164,12 @@ h6 {
   }
   .cat__slide img {
     height: 29vh;
+  }
+  .cat__arrow-next {
+    right: -3vh;
+  }
+  .cat__arrow-prev {
+    left: -1.9vh;
   }
   .footer__list-link {
     font-size: 15px;
