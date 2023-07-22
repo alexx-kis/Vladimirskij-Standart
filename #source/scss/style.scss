@@ -1354,12 +1354,12 @@
 		opacity: 0;
 		transition: all .3s;
 		height: 100%;
-		display: none;
+		// display: none;
 
 		&--active {
 			visibility: visible;
 			opacity: 1;
-			display: block;
+			// display: block;
 		}
 	}
 }
@@ -1397,14 +1397,17 @@
 	&__slide-image-box {
 		// background: url('/img/6.cat/pop-up/pop-up-img-bg.png') no-repeat 0px 40px / contain;
 		width: 536px;
+		width: 50%;
 		display: flex;
 		align-items: flex-end;
 		justify-content: center;
 	}
 
 	&__slide-image {
+		width: 100%;
 		img {
-			width: 63.5vh;
+			// width: 63.5vh;
+			width: 100%;
 		}
 	}
 
@@ -1432,6 +1435,9 @@
 		&:active {
 			transform: scale(.9);
 		}
+	}
+	&__slide-content {
+		margin-bottom: 1vh;
 	}
 
 	&__slide-arrow {

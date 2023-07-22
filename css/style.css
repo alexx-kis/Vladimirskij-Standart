@@ -1557,12 +1557,10 @@ h6 {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   height: 100%;
-  display: none;
 }
 .cat__pop-up--active {
   visibility: visible;
   opacity: 1;
-  display: block;
 }
 
 .pop-up__slider {
@@ -1604,6 +1602,7 @@ h6 {
 }
 .pop-up__slide-image-box {
   width: 536px;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1614,8 +1613,11 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.pop-up__slide-image {
+  width: 100%;
+}
 .pop-up__slide-image img {
-  width: 63.5vh;
+  width: 100%;
 }
 .pop-up__slide-body {
   width: 50%;
@@ -1650,6 +1652,9 @@ h6 {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
           transform: scale(0.9);
+}
+.pop-up__slide-content {
+  margin-bottom: 1vh;
 }
 .pop-up__slide-arrow img {
   width: 12.1vh;
@@ -2299,6 +2304,16 @@ h6 {
   .cat__arrows {
     top: 100px;
   }
+}
+@media (max-width: 1024px) and (min-height: 1000px) {
+  .pop-up__slide-heading {
+    font-size: 2.9vh;
+  }
+}
+@media (max-width: 1024px) {
+  .pop-up__slide-subtitle {
+    font-size: 2.3vh;
+  }
   .pop-up__slide-inner {
     width: 100%;
     display: block;
@@ -2322,6 +2337,13 @@ h6 {
   .pop-up__slide-info {
     max-width: 940px;
   }
+}
+@media (max-width: 1024px) and (min-height: 1000px) {
+  .pop-up__slide-info {
+    margin-bottom: 2.4vh;
+  }
+}
+@media (max-width: 1024px) {
   .pop-up__slide-image-box--normal {
     display: none;
   }
@@ -2329,12 +2351,35 @@ h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .pop-up__slide-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .pop-up__slide-image img {
     width: 31.5vh;
+  }
+}
+@media (max-width: 1024px) and (min-height: 1290px) {
+  .pop-up__slide-text {
+    font-size: 1.7vh;
+  }
+}
+@media (max-width: 1024px) and (min-height: 1290px) {
+  .pop-up__slide-text span {
+    font-size: 1.8vh;
+  }
+}
+@media (max-width: 1024px) and (min-height: 1290px) {
+  .pop-up__slide-icon img {
+    width: 7vh;
   }
 }
 /*------------------------------ 880 ------------------------------*/
@@ -2866,7 +2911,7 @@ h6 {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    margin-bottom: 0vh;
+    margin-bottom: 6vh;
   }
   .pop-up__slide-image img {
     width: 23.5vh;
