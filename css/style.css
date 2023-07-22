@@ -1684,6 +1684,7 @@ h6 {
 }
 .pop-up__slide-info {
   font-weight: 400;
+  margin-bottom: 1.4vh;
 }
 .pop-up__slide-icons {
   display: -webkit-box;
