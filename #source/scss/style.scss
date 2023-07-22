@@ -372,7 +372,6 @@
 
 .ms {
 	background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(255, 235, 182, 0.56) 0%, rgba(255, 235, 182, 0.00) 93.23%), #ff8e96;
-	// height: 100vh;
 
 	display: flex;
 	align-items: center;
@@ -639,12 +638,9 @@
 /*==================================== SS ====================================*/
 
 .ss {
-	// background: #ff8e96;
-	// background: linear-gradient(#ff8e96 50%, #3996BC 50%);
 	position: relative;
 	display: flex;
 	align-items: center;
-	// height: 100vh;
 
 	&__bg {
 		position: absolute;
@@ -924,7 +920,6 @@
 
 .sm {
 	background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(78, 199, 251, 0.69) 0%, rgba(41, 197, 246, 0.00) 90.31%), #3996BC;
-	// height: 100vh;
 	z-index: -1;
 	position: relative;
 	display: flex;
@@ -1184,7 +1179,6 @@
 
 .cat {
 	position: relative;
-	// height: 100vh;
 
 	&__bg {
 		position: absolute;
@@ -1388,7 +1382,9 @@
 		height: 100%;
 
 		&--active {
-			display: block;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 
@@ -1415,6 +1411,9 @@
 	&__slide-body {
 		width: 50%;
 		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	&__slide-top {}

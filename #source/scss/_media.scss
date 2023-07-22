@@ -410,6 +410,7 @@
 
 		&__slide-image-box--small {
 			display: flex;
+			align-items: center;
 		}
 
 		&__slide-image {
@@ -1709,16 +1710,20 @@
 		&__slide {
 			max-width: 300px;
 		}
+
 		&__arrows {
 			top: 138px;
 		}
+
 		&__arrow {
 			img {
 				width: 12px;
 			}
+
 			&-prev {
 				left: -14px;
 			}
+
 			&-next {
 				right: -14px;
 			}
@@ -1726,7 +1731,6 @@
 	}
 
 	.footer {
-		// padding-bottom: 0;
 
 		&__list-link {
 			font-size: 15px;
@@ -1765,43 +1769,6 @@
 
 // /*==================================== HEIGHT ====================================*/
 
-/*------------------------------ 940 ------------------------------*/
-
-// @media (max-height: 940px) {
-// 	.ms {
-// 		&__heading {
-// 			font-size: 70px;
-
-// 			span {
-// 				font-size: 50px;
-// 			}
-// 		}
-// 	}
-// }
-
-// /*------------------------------ 860 ------------------------------*/
-
-// @media (max-height: 860px) {
-// 	.ms {
-// 		&__heading {
-// 			font-size: 60px;
-
-// 			span {
-// 				font-size: 40px;
-// 			}
-// 		}
-// 	}
-
-// 	.logo {
-// 		img {
-// 			width: 300px;
-// 		}
-// 	}
-
-// 	.text {
-// 		font-size: 24px;
-// 	}
-// }
 
 // /*------------------------------ 675 ------------------------------*/
 
