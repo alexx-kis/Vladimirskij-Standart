@@ -1362,6 +1362,7 @@
 		visibility: hidden;
 		opacity: 0;
 		transition: all .3s;
+		height: 100%;
 
 		&--active {
 			visibility: visible;
@@ -1372,7 +1373,9 @@
 
 .pop-up {
 
-	&__slider {}
+	&__slider {
+		height: 100%;
+	}
 
 	&__slide {
 		background: url('../img/6.cat/pop-up/pop-up-bg.png') no-repeat bottom / contain, #fff;
@@ -1383,7 +1386,7 @@
 		color: #225AAA;
 		font-style: normal;
 		width: 100vw;
-		height: 100vh;
+		height: 100%;
 		border: 1px solid black;
 
 		&--active {
