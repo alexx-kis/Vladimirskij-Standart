@@ -187,7 +187,7 @@
 
 	.pop-up {
 		&__slide {
-			padding: 4.5vh 4.5vh 3.6vh 4.5vh;
+			padding: 6.5vh 4.5vh 8.6vh 4.5vh;
 		}
 	}
 }
@@ -399,6 +399,7 @@
 		&__slide-top {
 			display: flex;
 			justify-content: center;
+			align-items: center;
 		}
 
 		&__slide-body {
@@ -465,7 +466,7 @@
 
 	.pop-up {
 		&__slide-info {
-			margin-bottom: 7.4vh;
+			// margin-bottom: 7.4vh;
 		}
 	}
 }
@@ -935,14 +936,6 @@
 			transition: all .3s;
 		}
 	}
-
-	.pop-up {
-		&__slide-top {
-			margin-bottom: 10.4vh;
-		}
-	}
-
-
 }
 
 
@@ -1241,8 +1234,7 @@
 	.pop-up {
 		&__slide-top {
 			flex-direction: column-reverse;
-
-			margin-bottom: 6vh;
+			align-items: start;
 		}
 
 		&__slide-image {
@@ -1350,7 +1342,8 @@
 
 	.pop-up {
 		&__slide {
-			padding: 4.5vh 1.5vh 3.6vh 1.5vh;
+			padding-right: 1.5vh;
+			padding-left: 1.5vh;
 		}
 
 		&__slide-heading {
