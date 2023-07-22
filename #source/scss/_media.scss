@@ -683,8 +683,8 @@
 		}
 
 		&__menu {
-			padding-top: 140px;
-			padding-bottom: 80px;
+			padding-top: 16vh;
+			padding-bottom: 10vh;
 		}
 
 		&__menu-link {
@@ -1417,9 +1417,7 @@
 		}
 
 		&__menu {
-
-			padding-top: 80px;
-
+			padding-top: 12vh;
 		}
 
 		&__menu-item {
@@ -1820,9 +1818,6 @@
 
 @media (max-height: 480px) {
 	.header {
-		&__menu {
-			padding-top: 180px;
-		}
 
 		&__menu-list {
 			margin-bottom: 20px;
