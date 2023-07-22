@@ -1557,10 +1557,12 @@ h6 {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   height: 100%;
+  display: none;
 }
 .cat__pop-up--active {
   visibility: visible;
   opacity: 1;
+  display: block;
 }
 
 .pop-up__slider {
@@ -1577,7 +1579,6 @@ h6 {
   font-style: normal;
   width: 100vw;
   height: 100%;
-  border: 1px solid black;
 }
 .pop-up__slide--active {
   display: block;

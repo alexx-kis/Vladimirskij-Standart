@@ -73,9 +73,17 @@ $('.cat__arrow-next').on('click', function (e) {
 		let backs = document.querySelectorAll('.pop-up__slide-back');
 
 
+
+
 		slider.addEventListener('click', function () {
 			popUpSlider.classList.add('cat__pop-up--active');
 			popUpOverlay.classList.add('pop-up-overlay--show');
+			if (popUpSlider.classList.contains('cat__pop-up--active')) {
+				popUpSlider.classList.add('scroll');
+			}
+			else {
+				popUpSlider.classList.remove('scroll');
+			}
 
 		});
 		popUpOverlay.addEventListener('click', function () {
@@ -87,6 +95,12 @@ $('.cat__arrow-next').on('click', function (e) {
 			back.addEventListener('click', function () {
 				popUpSlider.classList.remove('cat__pop-up--active');
 				popUpOverlay.classList.remove('pop-up-overlay--show');
+				if (popUpSlider.classList.contains('cat__pop-up--active')) {
+					popUpSlider.classList.add('scroll');
+				}
+				else {
+					popUpSlider.classList.remove('scroll');
+				}
 			});
 		}
 
@@ -245,15 +259,6 @@ window.onload = function () {
 
 /*==================================== SCROLL ====================================*/
 
-
-// if (window.innerWidth <= 768) {
-// 	document.querySelector('.sm').classList.remove('scroll');
-// 	document.querySelector('.hero').classList.remove('scroll');
-// 	document.querySelector('.ms').classList.remove('scroll');
-// 	document.querySelector('.ss').classList.remove('scroll');
-// 	document.querySelector('.cat').classList.remove('scroll');
-
-// }
 $.scrollify({
 	section: ".scroll",
 	interstitialSection: "",
@@ -274,6 +279,9 @@ $.scrollify({
 });
 
 
+
+
+
 /*==================================== VIDEO ====================================*/
 
 let videoBox = document.querySelector('.hero__video');
@@ -282,16 +290,6 @@ let videoBtn = document.querySelector('.hero__button');
 let body = document.querySelector('body');
 let logo = document.querySelector('.hero__heading');
 let heroBg = document.querySelector('.hero__bg');
-
-
-
-// logo.addEventListener('click', function logo() {
-// 	video.play();
-// 	this.style.display = 'none';
-// 	videoBox.classList.remove('hero__video--off');
-// 	video.setAttribute('controls', '');
-// 	videoBtn.style.display = 'none';
-// });
 
 video.addEventListener('ended', function () {
 	videoBox.classList.add('hero__video--off');
