@@ -165,7 +165,7 @@
 
 	&__menu-list {
 		text-align: center;
-		margin-bottom: 80px;
+		margin-bottom: 8vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -195,7 +195,7 @@
 		justify-content: space-evenly;
 		align-items: center;
 		max-width: 400px;
-		margin: 0 auto 20px;
+		margin: 0 auto 2vh;
 	}
 
 	&__menu-socials-item {
@@ -251,13 +251,10 @@
 /*==================================== HERO ====================================*/
 
 .hero {
-	// min-height: 100vh;
-	// background: url('../img/2.hero/hero-bg.png') no-repeat center / cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	// z-index: -3;
 
 	&__inner {
 		height: 100%;
@@ -269,7 +266,6 @@
 	&__heading {
 		opacity: 0;
 		animation: hero-heading 2s forwards;
-		// height: 100%;
 		z-index: 99;
 		position: relative;
 		display: flex;
@@ -326,9 +322,13 @@
 		position: absolute;
 		top: 0;
 		bottom: 0;
-		object-fit: cover;
+		right: 0;
+		left: 0;
+		object-fit: fill;
 		background: #000;
-
+		video {
+			height: 100%;
+		}
 	}
 
 	&__video {
@@ -361,7 +361,6 @@
 		top: 0;
 		left: 50%;
 		bottom: 0;
-		// right: 0;
 		z-index: -1;
 		transform: translate(-50%, 0);
 	}
@@ -641,6 +640,7 @@
 	position: relative;
 	display: flex;
 	align-items: center;
+	z-index: 1;
 
 	&__bg {
 		position: absolute;
@@ -795,9 +795,6 @@
 				width: 10.84vh;
 			}
 		}
-
-
-
 	}
 
 	&__stamp-inner {
@@ -920,31 +917,13 @@
 
 .sm {
 	background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(78, 199, 251, 0.69) 0%, rgba(41, 197, 246, 0.00) 90.31%), #3996BC;
-	z-index: -1;
+	z-index: 0;
 	position: relative;
 	display: flex;
 	align-items: center;
 
-	// &__bg {
-	// 	background: radial-gradient(48.13% 48.13% at 50.04% 53.43%, rgba(78, 199, 251, 0.69) 0%, rgba(41, 197, 246, 0.00) 90.31%), #3996BC;
-	// 	position: absolute;
-	// 	z-index: -3;
-	// 	top: -22vh;
-	// 	bottom: -100px;
-	// 	right: 0;
-	// 	left: 0;
-	// 	width: 100vw;
-
-	// 	img {
-	// 		width: 100%;
-	// 		height: 100%;
-
-	// 	}
-	// }
-
 	&__inner {
 		position: relative;
-		// z-index: 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
