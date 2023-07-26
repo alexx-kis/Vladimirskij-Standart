@@ -462,7 +462,6 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 223px;
   margin: 30px auto 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -473,7 +472,7 @@ h6 {
 .hero__button-text {
   color: #fff;
   font-family: "Gotham-Pro";
-  font-size: 24px;
+  font-size: 2.3vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -880,7 +879,7 @@ h6 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  max-width: 73vh;
+  max-width: 69.2vh;
   height: 100%;
   padding-top: 17.5vh;
   padding-bottom: 15vh;
@@ -1068,8 +1067,8 @@ h6 {
 }
 .ss__img3 {
   position: absolute;
-  top: 24vh;
-  right: -60.8vh;
+  top: 23vh;
+  right: -64.1vh;
   z-index: -1;
   -webkit-transition: all 1s 1s;
   transition: all 1s 1s;
@@ -1083,7 +1082,7 @@ h6 {
 }
 .ss__leaf-5 {
   position: absolute;
-  top: 78.7vh;
+  top: 73.7vh;
   right: -7.6vh;
   z-index: -2;
   -webkit-transition: all 1s 1.5s;
@@ -1114,6 +1113,7 @@ h6 {
   -webkit-transition: opacity 0.5s 1s;
   transition: opacity 0.5s 1s;
   opacity: 0;
+  z-index: 2;
 }
 .ss__leaf-3 img {
   width: 15.2vh;
@@ -1337,8 +1337,8 @@ h6 {
       -ms-transform: scale(0);
           transform: scale(0);
   z-index: -3;
-  top: 45vh;
-  left: -31vh;
+  top: 47.1vh;
+  left: -33.1vh;
 }
 .sm__drop-1 img {
   width: 25vh;
@@ -1398,8 +1398,8 @@ h6 {
 .cat__bg {
   position: absolute;
   z-index: 0;
-  top: -9vh;
-  bottom: -10vh;
+  top: -3.9vh;
+  bottom: -10.3vh;
   right: 0;
   left: 0;
   width: 100vw;
@@ -1437,8 +1437,8 @@ h6 {
 }
 .cat__drop {
   position: absolute;
-  top: -3vh;
-  right: -0.5vh;
+  top: 0.5vh;
+  right: -4.7vh;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
@@ -1938,6 +1938,7 @@ h6 {
   position: relative;
   -webkit-animation: scale 0.3s linear 0s forwards;
           animation: scale 0.3s linear 0s forwards;
+  border: 1px solid black;
 }
 .preloader__img-outline {
   position: absolute;
@@ -1999,8 +2000,8 @@ h6 {
             transform: scale(0);
   }
   100% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @keyframes scale {
@@ -2009,8 +2010,8 @@ h6 {
             transform: scale(0);
   }
   100% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @-webkit-keyframes content {

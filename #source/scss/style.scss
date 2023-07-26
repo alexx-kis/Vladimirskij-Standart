@@ -288,7 +288,6 @@
 		cursor: pointer;
 		display: flex;
 		align-items: center;
-		max-width: 223px;
 		margin: 30px auto 0;
 		transition: all .3s;
 
@@ -301,7 +300,7 @@
 	&__button-text {
 		color: #fff;
 		font-family: "Gotham-Pro";
-		font-size: 24px;
+		font-size: 2.3vh;
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;
@@ -670,7 +669,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-evenly;
-		max-width: 73vh;
+		max-width: 69.2vh;
 		height: 100%;
 		padding-top: 17.5vh;
 		padding-bottom: 15vh;
@@ -840,8 +839,8 @@
 
 	&__img3 {
 		position: absolute;
-		top: 24vh;
-		right: -60.8vh;
+		top: 23vh;
+		right: -64.1vh;
 		z-index: -1;
 		transition: all 1s 1s;
 		opacity: 0;
@@ -854,7 +853,7 @@
 
 	&__leaf-5 {
 		position: absolute;
-		top: 78.7vh;
+		top: 73.7vh;
 		right: -7.6vh;
 		z-index: -2;
 		transition: all 1s 1.5s;
@@ -884,6 +883,7 @@
 		right: -32vh;
 		transition: opacity .5s 1s;
 		opacity: 0;
+		z-index: 2;
 
 		img {
 			width: 15.2vh;
@@ -1083,8 +1083,8 @@
 		transition: all .3s 2s cubic-bezier(0.56, 1.67, 0.77, 1.67);
 		transform: scale(0);
 		z-index: -3;
-		top: 45vh;
-		left: -31vh;
+		top: 47.1vh;
+		left: -33.1vh;
 
 		img {
 			width: 25vh;
@@ -1152,8 +1152,8 @@
 	&__bg {
 		position: absolute;
 		z-index: 0;
-		top: -9vh;
-		bottom: -10vh;
+		top: -3.9vh;
+		bottom: -10.3vh;
 		right: 0;
 		left: 0;
 		width: 100vw;
@@ -1188,8 +1188,8 @@
 
 	&__drop {
 		position: absolute;
-		top: -3vh;
-		right: -0.5vh;
+		top: 0.5vh;
+		right: -4.7vh;
 		transform: scale(0);
 		transition: all .5s 1s cubic-bezier(0.56, 1.67, 0.77, 1.67);
 
@@ -1657,6 +1657,7 @@
 		align-items: center;
 		position: relative;
 		animation: scale .3s linear 0s forwards;
+		border: 1px solid black;
 	}
 
 	&__img-outline {
@@ -1702,7 +1703,7 @@
 		}
 
 		100% {
-			transform: scale(2);
+			transform: scale(1);
 		}
 	}
 
