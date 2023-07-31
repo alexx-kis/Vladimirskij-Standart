@@ -981,11 +981,11 @@ h6 {
 }
 .ss__stamp-border {
   position: absolute;
-  -webkit-animation: rotate 8s linear infinite;
-          animation: rotate 8s linear infinite;
+  -webkit-animation: rotate 10s linear infinite;
+          animation: rotate 10s linear infinite;
 }
 .ss__stamp-border img {
-  width: 13.4vh;
+  width: 13.9vh;
 }
 .ss__stamp-content {
   position: absolute;
@@ -1216,11 +1216,11 @@ h6 {
 }
 .sm__stamp-border {
   position: absolute;
-  -webkit-animation: rotate 8s linear infinite;
-          animation: rotate 8s linear infinite;
+  -webkit-animation: rotate 10s linear infinite;
+          animation: rotate 10s linear infinite;
 }
 .sm__stamp-border img {
-  width: 13.4vh;
+  width: 13.9vh;
 }
 .sm__stamp-content {
   position: absolute;
@@ -3103,7 +3103,7 @@ h6 {
     width: 10.7vh;
   }
   .ss__stamp-border img {
-    width: 9.6vh;
+    width: 10vh;
   }
   .ss__stamp-content {
     top: -4.6vh;
@@ -3176,7 +3176,7 @@ h6 {
     width: 10.7vh;
   }
   .sm__stamp-border img {
-    width: 9.6vh;
+    width: 10vh;
   }
   .sm__stamp-content {
     top: -4.6vh;
