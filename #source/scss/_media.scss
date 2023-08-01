@@ -312,8 +312,8 @@
 		}
 
 		&__img-3 {
-			top: 50vh;
-			left: -18vh;
+			top: 52vh;
+			left: -21vh;
 
 			img {
 				width: 34vh;
@@ -332,8 +332,8 @@
 		}
 
 		&__leaf-2 {
-			top: 47vh;
-			left: 4vh;
+			top: 51vh;
+			left: 2vh;
 		}
 	}
 
@@ -377,7 +377,7 @@
 			flex-direction: row;
 			justify-content: space-evenly;
 			align-items: center;
-			margin-bottom: 5vh;
+			margin-bottom: 2vh;
 		}
 
 		&__slide-body {
@@ -539,6 +539,10 @@
 	}
 
 	.sm {
+		&__inner {
+			padding-top: 12.5vh;
+			max-width: 55.6vh;
+		}
 
 		&__logo {
 			img {
@@ -547,8 +551,8 @@
 		}
 
 		&__img-1 {
-			top: 12vh;
-			left: -28vh;
+			top: 6vh;
+			left: -27vh;
 
 			img {
 				width: 46vh;
@@ -557,8 +561,8 @@
 
 		&__img-2,
 		&__img-2-shadow {
-			top: 24vh;
-			right: -47.6vh;
+			top: 17vh;
+			right: -46.6vh;
 
 			img {
 				width: 70vh;
@@ -773,6 +777,8 @@
 	.pop-up {
 		&__slide-heading {
 			font-size: 2.7vh;
+			line-height: 3.4vh;
+			margin-bottom: 1vh;
 		}
 
 		&__slide-subtitle {
@@ -790,8 +796,10 @@
 					max-width: 12vh;
 				}
 			}
+
 			&-text {
 				font-size: 1.4vh;
+
 				span {
 					font-size: 1.3vh;
 				}
@@ -802,10 +810,6 @@
 			width: 34vh;
 		}
 
-		&__slide-heading {
-			line-height: 3.4vh;
-			margin-bottom: 2.3vh;
-		}
 	}
 
 }
@@ -966,7 +970,7 @@
 		&__slide-link {
 			font-size: 1.6vh;
 		}
-		
+
 		&__slide-top {
 			flex-direction: column-reverse;
 			align-items: start;
@@ -1054,8 +1058,8 @@
 		}
 
 		&__img-right {
-			top: 50vh;
-			right: -34.5vh;
+			top: 39vh;
+			right: -33.5vh;
 		}
 
 		&__img2 {
@@ -1077,8 +1081,8 @@
 		}
 
 		&__leaf-4 {
-			top: -16.8vh;
-			right: 39vh;
+			top: -10.8vh;
+			right: 34vh;
 
 			img {
 				width: 10vh;
@@ -1177,6 +1181,8 @@
 		}
 
 		&__img-1 {
+			top: 7vh;
+			left: -12vh;
 
 			img {
 				width: 34vh;
@@ -1185,8 +1191,8 @@
 
 		&__img-2,
 		&__img-2-shadow {
-			top: 25vh;
-			right: -44.6vh;
+			top: 18vh;
+			right: -40.6vh;
 
 			img {
 				width: 61.5vh;
