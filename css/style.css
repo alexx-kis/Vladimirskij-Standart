@@ -254,6 +254,8 @@ h6 {
   height: 100vh;
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   z-index: -1;
 }
 .header__overlay--show {
@@ -270,6 +272,8 @@ h6 {
   height: 100vh;
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .header__menu--open {
   visibility: visible;
@@ -315,6 +319,8 @@ h6 {
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .header__menu-link:hover {
   text-decoration: underline;
@@ -366,6 +372,8 @@ h6 {
   background: #fff;
   -webkit-box-shadow: 0px 0px 2px #000;
           box-shadow: 0px 0px 2px #000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .burger--open .burger__line:first-child {
   -webkit-transform: rotate(45deg) translateY(10px);
@@ -453,6 +461,8 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   margin: 30px auto 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .hero__button-icon {
   margin-right: 11px;
@@ -468,6 +478,8 @@ h6 {
 }
 .hero__bg {
   z-index: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,6 +506,8 @@ h6 {
 }
 .hero__video {
   z-index: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,9 +566,13 @@ h6 {
   position: absolute;
   top: 3.2vh;
   left: -4.6vh;
+  -webkit-transition: all 1s 0.5s;
+  transition: all 1s 0.5s;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
+  -webkit-transition: all 0.3s 0.5s cubic-bezier(0.56, 1.67, 0.77, 2);
+  transition: all 0.3s 0.5s cubic-bezier(0.56, 1.67, 0.77, 2);
 }
 .ms__drop1 img {
   width: 4vh;
@@ -563,9 +581,13 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-transition: all 1s 1s;
+  transition: all 1s 1s;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
+  -webkit-transition: all 0.3s 1s cubic-bezier(0.56, 1.67, 0.77, 2);
+  transition: all 0.3s 1s cubic-bezier(0.56, 1.67, 0.77, 2);
 }
 .ms__drop2 img {
   width: 7vh;
@@ -578,6 +600,8 @@ h6 {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
+  -webkit-transition: all 0.3s 1.5s cubic-bezier(0.56, 1.67, 0.77, 2);
+  transition: all 0.3s 1.5s cubic-bezier(0.56, 1.67, 0.77, 2);
 }
 .ms__drop3 img {
   width: 3.4vh;
@@ -595,6 +619,8 @@ h6 {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
+  -webkit-transition: all 0.3s 1.5s cubic-bezier(0.56, 1.67, 0.77, 2);
+  transition: all 0.3s 1.5s cubic-bezier(0.56, 1.67, 0.77, 2);
 }
 .ms__drop4 img {
   width: 4vh;
@@ -607,6 +633,8 @@ h6 {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
+  -webkit-transition: all 0.3s 1.7s cubic-bezier(0.56, 1.67, 0.77, 2);
+  transition: all 0.3s 1.7s cubic-bezier(0.56, 1.67, 0.77, 2);
 }
 .ms__drop5 img {
   width: 7vh;
@@ -619,6 +647,8 @@ h6 {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
+  -webkit-transition: all 0.3s 2s cubic-bezier(0.56, 1.67, 0.77, 2);
+  transition: all 0.3s 2s cubic-bezier(0.56, 1.67, 0.77, 2);
 }
 .ms__drop6 img {
   width: 3.4vh;
@@ -628,6 +658,8 @@ h6 {
   z-index: -1;
   top: 27vh;
   left: -38vh;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   opacity: 0;
   -webkit-transform: translate(-100px, 0);
       -ms-transform: translate(-100px, 0);
@@ -668,6 +700,8 @@ h6 {
   -webkit-transform: translate(0, 100px);
       -ms-transform: translate(0, 100px);
           transform: translate(0, 100px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   padding-bottom: 5vh;
 }
 .ms__heading .comma {
@@ -694,6 +728,8 @@ h6 {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .ms__logo img {
   width: 42vh;
@@ -709,12 +745,16 @@ h6 {
   -webkit-transform: translate(0, 100px);
       -ms-transform: translate(0, 100px);
           transform: translate(0, 100px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .ms__img-right {
   z-index: -1;
   position: absolute;
   right: -66vh;
   top: 20vh;
+  -webkit-transition: all 1s 1s;
+  transition: all 1s 1s;
   opacity: 0;
   -webkit-transform: translate(100px, 0);
       -ms-transform: translate(100px, 0);
@@ -730,6 +770,8 @@ h6 {
   position: absolute;
   top: -15vh;
   left: -9vh;
+  -webkit-transition: opacity 0.5s 1s;
+  transition: opacity 0.5s 1s;
   opacity: 0;
 }
 .ms__leaf-1 img {
@@ -739,6 +781,8 @@ h6 {
   position: absolute;
   top: -7.2vh;
   left: 40vh;
+  -webkit-transition: opacity 0.5s 1s;
+  transition: opacity 0.5s 1s;
   opacity: 0;
 }
 .ms__leaf-2 img {
@@ -749,6 +793,8 @@ h6 {
   top: 40vh;
   left: 16vh;
   z-index: 4;
+  -webkit-transition: opacity 0.5s 1s;
+  transition: opacity 0.5s 1s;
   opacity: 0;
 }
 .ms__leaf-3 img {
@@ -759,6 +805,8 @@ h6 {
   position: absolute;
   top: -1vh;
   right: 59vh;
+  -webkit-transition: opacity 0.5s 1s;
+  transition: opacity 0.5s 1s;
   opacity: 0;
 }
 .ms__leaf-4 img {
@@ -769,6 +817,8 @@ h6 {
   position: absolute;
   top: 59vh;
   left: 33vh;
+  -webkit-transition: opacity 0.3s 1s;
+  transition: opacity 0.3s 1s;
   opacity: 0;
 }
 .ms__leaf-5 img {
@@ -845,6 +895,8 @@ h6 {
   top: 12vh;
   left: -56.2vh;
   z-index: 0;
+  -webkit-transition: all 1s 0.3s;
+  transition: all 1s 0.3s;
   opacity: 0;
   -webkit-transform: translate(-100px, 0px);
       -ms-transform: translate(-100px, 0px);
@@ -858,6 +910,8 @@ h6 {
   top: 18vh;
   left: -44vh;
   z-index: -1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   opacity: 0;
   -webkit-transform: translate(-100px, -100px);
       -ms-transform: translate(-100px, -100px);
@@ -871,6 +925,8 @@ h6 {
   top: 68vh;
   left: -37vh;
   z-index: -1;
+  -webkit-transition: all 1s 0.5s;
+  transition: all 1s 0.5s;
   opacity: 0;
   -webkit-transform: translate(-100px, 100px);
       -ms-transform: translate(-100px, 100px);
@@ -884,6 +940,8 @@ h6 {
   -webkit-transform: translate(0, 100px);
       -ms-transform: translate(0, 100px);
           transform: translate(0, 100px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 .ss__logo img {
   width: 67.6vh;
@@ -891,6 +949,8 @@ h6 {
 .ss__stamp {
   margin-bottom: 1.4vh;
   padding: 3vh;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
@@ -955,6 +1015,8 @@ h6 {
   width: 10.84vh;
 }
 .ss__stamp-inner {
+  -webkit-transition: all 1s;
+  transition: all 1s;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
@@ -966,6 +1028,8 @@ h6 {
   font-style: italic;
   font-weight: 300;
   line-height: normal;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   opacity: 0;
   -webkit-transform: translate(0, 100px);
       -ms-transform: translate(0, 100px);
@@ -976,6 +1040,8 @@ h6 {
   top: 21.8vh;
   right: -6.8vh;
   z-index: -1;
+  -webkit-transition: all 0.2s 2s linear;
+  transition: all 0.2s 2s linear;
   opacity: 0;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -992,6 +1058,8 @@ h6 {
   top: 25.8vh;
   right: -19.8vh;
   z-index: -1;
+  -webkit-transition: all 0.2s 2.1s linear;
+  transition: all 0.2s 2.1s linear;
   opacity: 0;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -1008,6 +1076,8 @@ h6 {
   top: 23vh;
   right: -64.1vh;
   z-index: -1;
+  -webkit-transition: all 1s 1s;
+  transition: all 1s 1s;
   opacity: 0;
   -webkit-transform: translate(100px, 40px);
       -ms-transform: translate(100px, 40px);
@@ -1021,6 +1091,8 @@ h6 {
   top: 73.7vh;
   right: -7.6vh;
   z-index: -2;
+  -webkit-transition: all 1s 1.5s;
+  transition: all 1s 1.5s;
   opacity: 0;
   -webkit-transform: translate(100px, -10px);
       -ms-transform: translate(100px, -10px);
@@ -1033,6 +1105,8 @@ h6 {
   position: absolute;
   top: 78.3vh;
   left: -37.4vh;
+  -webkit-transition: opacity 0.5s 1s;
+  transition: opacity 0.5s 1s;
   opacity: 0;
 }
 .ss__leaf-2 img {
@@ -1042,6 +1116,8 @@ h6 {
   position: absolute;
   top: 38.5vh;
   right: -32vh;
+  -webkit-transition: opacity 0.5s 1s;
+  transition: opacity 0.5s 1s;
   opacity: 0;
   z-index: 2;
 }
@@ -1052,6 +1128,8 @@ h6 {
   position: absolute;
   top: 71vh;
   right: -41.8vh;
+  -webkit-transition: opacity 0.5s 1s;
+  transition: opacity 0.5s 1s;
   opacity: 0;
 }
 .ss__leaf-4 img {
@@ -1096,6 +1174,8 @@ h6 {
   -webkit-transform: translate(0, 100px);
       -ms-transform: translate(0, 100px);
           transform: translate(0, 100px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 .sm__logo img {
   width: 67.6vh;
@@ -1103,6 +1183,8 @@ h6 {
 .sm__stamp {
   margin-bottom: 5.4vh;
   padding: 3vh;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
@@ -1168,6 +1250,8 @@ h6 {
   width: 11.44vh;
 }
 .sm__stamp-inner {
+  -webkit-transition: all 1s;
+  transition: all 1s;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
@@ -1180,6 +1264,8 @@ h6 {
   font-weight: 300;
   line-height: normal;
   max-width: 730px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   opacity: 0;
   -webkit-transform: translate(0, 100px);
       -ms-transform: translate(0, 100px);
@@ -1189,6 +1275,8 @@ h6 {
 .sm__img-1 {
   position: absolute;
   z-index: -1;
+  -webkit-transition: all 1s 0.5s;
+  transition: all 1s 0.5s;
   opacity: 0;
   -webkit-transform: translate(-100px, -100px);
       -ms-transform: translate(-100px, -100px);
@@ -1202,6 +1290,8 @@ h6 {
 .sm__img-2 {
   position: absolute;
   z-index: -1;
+  -webkit-transition: all 1s 2s;
+  transition: all 1s 2s;
   opacity: 0;
   -webkit-transform: translate(100px, 0);
       -ms-transform: translate(100px, 0);
@@ -1216,6 +1306,8 @@ h6 {
   mix-blend-mode: multiply;
   position: absolute;
   z-index: -2;
+  -webkit-transition: all 1s 2s;
+  transition: all 1s 2s;
   opacity: 0;
   -webkit-transform: translate(100px, 0);
       -ms-transform: translate(100px, 0);
@@ -1229,6 +1321,8 @@ h6 {
 .sm__img-3 {
   position: absolute;
   z-index: -1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   opacity: 0;
   -webkit-transform: translate(-100px, 100px);
       -ms-transform: translate(-100px, 100px);
@@ -1243,6 +1337,8 @@ h6 {
 .sm__drop-1 {
   position: absolute;
   z-index: -2;
+  -webkit-transition: all 0.3s 2s cubic-bezier(0.56, 1.67, 0.77, 1.67);
+  transition: all 0.3s 2s cubic-bezier(0.56, 1.67, 0.77, 1.67);
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
@@ -1255,6 +1351,8 @@ h6 {
 }
 .sm__leaf-1 {
   position: absolute;
+  -webkit-transition: opacity 0.5s 1s;
+  transition: opacity 0.5s 1s;
   opacity: 0;
   top: 33vh;
   left: -39vh;
@@ -1264,6 +1362,8 @@ h6 {
 }
 .sm__leaf-2 {
   position: absolute;
+  -webkit-transition: opacity 0.5s 1s;
+  transition: opacity 0.5s 1s;
   opacity: 0;
   z-index: -1;
   top: 52vh;
@@ -1274,6 +1374,8 @@ h6 {
 }
 .sm__leaf-3 {
   position: absolute;
+  -webkit-transition: opacity 0.5s 1s;
+  transition: opacity 0.5s 1s;
   opacity: 0;
   top: 10vh;
   right: -8vh;
@@ -1283,6 +1385,8 @@ h6 {
 }
 .sm__leaf-4 {
   position: absolute;
+  -webkit-transition: opacity 0.5s 1s;
+  transition: opacity 0.5s 1s;
   opacity: 0;
   z-index: -1;
   top: 61vh;
@@ -1344,6 +1448,8 @@ h6 {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
+  -webkit-transition: all 0.5s 1s cubic-bezier(0.56, 1.67, 0.77, 1.67);
+  transition: all 0.5s 1s cubic-bezier(0.56, 1.67, 0.77, 1.67);
 }
 .cat__drop img {
   width: 33vh;
@@ -1354,6 +1460,8 @@ h6 {
   -webkit-transform: translate(-1000px, 0);
       -ms-transform: translate(-1000px, 0);
           transform: translate(-1000px, 0);
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 .cat__arrows {
   position: relative;
@@ -1443,6 +1551,8 @@ h6 {
 }
 .cat__dots .slick-active button::before {
   background-color: #424551;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 /*==================================== POP UP ====================================*/
@@ -1459,6 +1569,8 @@ h6 {
   right: 0;
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   height: 100%;
 }
 .cat__pop-up--active {
@@ -1472,6 +1584,8 @@ h6 {
 .pop-up__slide {
   background: url("../img/6.cat/pop-up/pop-up-branch.png") no-repeat 120vh 60vh, url("../img/6.cat/pop-up/pop-up-bg.png") no-repeat bottom/contain, #fff;
   padding: 7.6vh 12.5vh 7.6vh 12.5vh;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   display: none;
   font-family: "Gotham-Pro";
   color: #225AAA;
@@ -1529,6 +1643,7 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 80vh;
 }
 .pop-up__slide-top {
   display: -webkit-box;
@@ -1554,6 +1669,8 @@ h6 {
           align-items: center;
   margin-bottom: 3vh;
   cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .pop-up__slide-back:active {
   -webkit-transform: scale(0.9);
@@ -1607,19 +1724,6 @@ h6 {
 .pop-up__slide-info {
   font-weight: 400;
   margin-bottom: 1.4vh;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 40vh;
-          flex: 0 1 40vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 .pop-up__slide-icons {
   display: -webkit-box;
@@ -1700,6 +1804,8 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .pop-up__slide-arrow:active {
   -webkit-transform: scale(0.9);
@@ -1728,6 +1834,8 @@ h6 {
   bottom: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.3960784314);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   visibility: hidden;
   opacity: 0;
   z-index: 99;
@@ -1755,6 +1863,8 @@ h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   opacity: 0;
   -webkit-transform: translate(0, 100px);
       -ms-transform: translate(0, 100px);
@@ -1827,6 +1937,8 @@ h6 {
   right: 19vh;
   z-index: -1;
   opacity: 0;
+  -webkit-transition: all 1s 1s;
+  transition: all 1s 1s;
   -webkit-transform: translate(-100px, 100px);
       -ms-transform: translate(-100px, 100px);
           transform: translate(-100px, 100px);
@@ -1840,6 +1952,8 @@ h6 {
   left: -7.3vh;
   z-index: -1;
   opacity: 0;
+  -webkit-transition: all 1s 1s;
+  transition: all 1s 1s;
   -webkit-transform: translate(10px, 10px);
       -ms-transform: translate(10px, 10px);
           transform: translate(10px, 10px);
