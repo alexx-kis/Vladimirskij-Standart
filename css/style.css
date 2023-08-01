@@ -3024,6 +3024,9 @@ h6 {
 }
 /*------------------------------ 470 ------------------------------*/
 @media (max-width: 470px) {
+  .pop-up__slide {
+    padding-top: 3.5vh;
+  }
   .pop-up__slide-gost {
     font-size: 1.8vh;
   }
