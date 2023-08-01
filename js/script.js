@@ -8,6 +8,19 @@
 	let menuText1 = document.querySelector('.header__button-text-1');
 	let menuText2 = document.querySelector('.header__button-text-2');
 
+	let links = document.querySelectorAll('.header__menu-link');
+	for (let link of links) {
+		link.addEventListener('click', function () {
+			overlay.classList.remove('header__overlay--show');
+			burger.classList.remove('burger--open');
+			menuText2.classList.remove('header__button-text-2--open');
+			menuText1.classList.remove('header__button-text-1--open');
+			menu.classList.remove('header__menu--open');
+			menu.classList.remove('scroll');
+		});
+	}
+	
+
 	let overlay = document.querySelector('.header__overlay');
 
 	burger.addEventListener('click', function () {

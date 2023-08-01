@@ -18,7 +18,7 @@
 }
 
 .logo {
-	padding-bottom: 30px;
+	padding-bottom: 2vh;
 }
 
 .text {
@@ -660,6 +660,15 @@
 		left: 0;
 		width: 100vw;
 		background: linear-gradient(#ff8e96 50%, #3996BC 50%);
+	}
+
+	&__bg3 {
+		position: absolute;
+		width: 678.558px;
+		height: 678.558px;
+		border-radius: 678.558px;
+		background: radial-gradient(40.82% 41.08% at 50.03% 50.03%, #FFE072 26.23%, rgba(255, 235, 182, 0.00) 92.95%);
+		background-blend-mode: multiply;
 	}
 
 	&__inner {
@@ -1334,9 +1343,8 @@
 	}
 
 	&__slide {
-		background: url('../img/6.cat/pop-up/pop-up-bg.png') no-repeat bottom / contain, #fff;
-		padding: 4.6vh 10.3vh 5.6vh 10.5vh;
-		transition: all .3s;
+		background: url('../img/6.cat/pop-up/pop-up-branch.png') no-repeat 120vh 60vh, url('../img/6.cat/pop-up/pop-up-bg.png') no-repeat bottom / contain, #fff;
+		padding: 7.6vh 12.5vh 7.6vh 12.5vh; transition: all .3s;
 		display: none;
 		font-family: "Gotham-Pro";
 		color: #225AAA;
@@ -1367,10 +1375,11 @@
 	}
 
 	&__slide-image {
-		width: 100%;
+		// width: 100%;
 
 		img {
-			width: 100%;
+			width: 64.5vh;
+			max-width: 550px;
 		}
 	}
 
@@ -1379,7 +1388,13 @@
 		height: 100%;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		// justify-content: space-between;
+	}
+
+	&__slide-top {
+		display: flex;
+		flex-direction: column;
+		flex: 0 1 40vh;
 	}
 
 	&__slide-image-box--small {
@@ -1399,25 +1414,34 @@
 	}
 
 	&__slide-content {
-		margin-bottom: 1vh;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-bottom: 2vh;
+	}
+
+	&__slide-arrows {
+		margin-top: auto;
 	}
 
 	&__slide-arrow {
 		img {
 			width: 12.1vh;
+			max-width: 100px;
 		}
 	}
 
 	&__slide-link {
 		margin-left: 22px;
 		text-align: center;
-		font-size: 1.9vh;
+		font-size: clamp(1px, 1.9vh, 16px);
 		font-weight: 400;
 		text-transform: uppercase;
 	}
 
 	&__slide-heading {
-		font-size: 4.8vh;
+		font-size: clamp(1px, 4.8vh, 40px);
 		font-weight: 700;
 		margin-bottom: 0.3vh;
 		line-height: 48.28px;
@@ -1425,25 +1449,30 @@
 	}
 
 	&__slide-subtitle {
-		font-size: 2.9vh;
+		font-size: clamp(1px, 2.9vh, 24px);
 		font-weight: 700;
 		margin-bottom: 1.1vh;
 	}
 
 	&__slide-gost {
-		font-size: 2.2vh;
+		font-size: clamp(1px, 2.2vh, 18px);
 		margin-bottom: 1vh;
 	}
 
 	&__slide-info {
 		font-weight: 400;
 		margin-bottom: 1.4vh;
+		flex: 0 1 40vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
 	}
 
 	&__slide-icons {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		height: 17.2vh;
 	}
 
 	&__slide-animals {
@@ -1453,24 +1482,47 @@
 
 	&__slide-icon {
 		margin-right: 2vh;
+		display: flex;
+		position: relative;
+		justify-content: center;
+		align-items: center;
 
 		img {
-			width: 9.8vh;
+			width: 100%;
+			max-width: 9.8vh;
+		}
+
+		&--weight {
+			img {
+				width: 100%;
+				max-width: 17.2vh;
+			}
+		}
+
+		&-text {
+			position: absolute;
+			text-align: center;
+			font-size: clamp(1px, 1.9vh, 16px);
+			font-style: normal;
+			font-weight: 400;
+			line-height: 120.7%;
+			margin-top: 6vh;
+
+			span {
+				font-size: clamp(1px, 2.1vh, 18px);
+				line-height: 4vh;
+			}
 		}
 
 	}
 
 	&__slide-text {
-		font-size: 2.2vh;
+		font-size: clamp(1px, 2.2vh, 18px);
 		font-weight: 400;
 		margin-bottom: 1.2vh;
 
-		&--small {
-			font-size: 1.9vh;
-		}
-
 		span {
-			font-size: 2.5vh;
+			font-size: clamp(1px, 2.5vh, 20px);
 			font-weight: 500;
 		}
 	}
@@ -1492,6 +1544,7 @@
 
 		img {
 			width: 12.1vh;
+			max-width: 100px;
 		}
 	}
 
@@ -1501,7 +1554,7 @@
 
 	&__slide-arrow-text {
 		text-align: center;
-		font-size: 1.9vh;
+		font-size: clamp(1px, 1.9vh, 16px);
 		font-weight: 400;
 		text-transform: uppercase;
 		margin-right: 22px;
