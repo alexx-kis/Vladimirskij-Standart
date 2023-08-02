@@ -1871,9 +1871,6 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -1960,8 +1957,8 @@ h6 {
 }
 .footer__img-2 {
   position: absolute;
-  top: 6.6vh;
-  left: -7.3vh;
+  top: 9.6vh;
+  left: -6.3vh;
   z-index: -1;
   opacity: 0;
   -webkit-transition: all 1s 1s;

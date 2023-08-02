@@ -1599,7 +1599,6 @@
 		// height: 100%;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
 		position: relative;
 		transition: all 1s;
 		opacity: 0;
@@ -1683,8 +1682,8 @@
 
 	&__img-2 {
 		position: absolute;
-		top: 6.6vh;
-		left: -7.3vh;
+		top: 9.6vh;
+		left: -6.3vh;
 		z-index: -1;
 		opacity: 0;
 		transition: all 1s 1s;
