@@ -2228,8 +2228,13 @@ h6 {
     top: -2vh;
   }
   .cat__drop {
+    top: 3.4vh;
     right: -4.5vh;
-    top: 1.3vh;
+  }
+  .cat__drop img {
+    -webkit-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+            transform: rotate(-10deg);
   }
   .cat__slider {
     max-width: 900px;
@@ -2361,6 +2366,15 @@ h6 {
   .sm__leaf-2 {
     top: 51vh;
     left: 2vh;
+  }
+  .cat__drop {
+    top: 3.5vh;
+    right: -7.5vh;
+  }
+  .cat__drop img {
+    -webkit-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+            transform: rotate(-10deg);
   }
   .cat__slider {
     max-width: 750px;
@@ -2569,8 +2583,14 @@ h6 {
     right: 2vh;
   }
   .cat__drop {
-    top: 4.3vh;
-    right: -12.7vh;
+    top: 7.2vh;
+    right: -4.5vh;
+  }
+  .cat__drop img {
+    width: 25vh;
+    -webkit-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+            transform: rotate(-10deg);
   }
   .cat__slider {
     max-width: 600px;

@@ -158,8 +158,12 @@
 		}
 
 		&__drop {
+			top: 3.4vh;
 			right: -4.5vh;
-			top: 1.3vh;
+
+			img {
+				transform: rotate(-10deg);
+			}
 		}
 
 		&__slider {
@@ -342,6 +346,14 @@
 	}
 
 	.cat {
+		&__drop {
+			top: 3.5vh;
+			right: -7.5vh;
+
+			img {
+				transform: rotate(-10deg);
+			}
+		}
 
 		&__slider {
 			max-width: 750px;
@@ -599,8 +611,13 @@
 
 	.cat {
 		&__drop {
-			top: 4.3vh;
-			right: -12.7vh;
+			top: 7.2vh;
+			right: -4.5vh;
+
+			img {
+				width: 25vh;
+				transform: rotate(-10deg);
+			}
 		}
 
 		&__slider {
