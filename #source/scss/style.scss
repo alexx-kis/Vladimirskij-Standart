@@ -93,6 +93,7 @@
 		width: 100px;
 		text-align: right;
 		text-shadow: 0px 0px 2px#000;
+		transition: all .3s;
 
 		&-1 {
 			position: absolute;
@@ -111,6 +112,7 @@
 			&--open {
 				visibility: visible;
 				opacity: 1;
+				color: #225aaa;
 			}
 		}
 
@@ -232,12 +234,13 @@
 		.burger__line:first-child {
 			transform: rotate(45deg) translateY(10px);
 			width: 80px;
-
+			background: #225aaa;
 		}
 
 		.burger__line:last-child {
 			transform: rotate(-45deg) translateY(-10px);
 			width: 80px;
+			background: #225aaa;
 		}
 	}
 }
@@ -1198,13 +1201,15 @@
 
 	&__drop {
 		position: absolute;
-		top: 0.5vh;
-		right: -4.7vh;
+		top: 1.6vh;
+		right: -4.2vh;
 		transform: scale(0);
 		transition: all .5s 1s cubic-bezier(0.56, 1.67, 0.77, 1.67);
 
 		img {
-			width: 33vh;
+			width: 31.3vh;
+			display: block;
+			transform: rotate(2deg);
 		}
 	}
 
@@ -1343,7 +1348,8 @@
 	}
 
 	&__slide {
-		background: url('../img/6.cat/pop-up/pop-up-branch.png') no-repeat 120vh 60vh, url('../img/6.cat/pop-up/pop-up-bg.png') no-repeat bottom / contain, #fff;
+		background: url('../img/6.cat/pop-up/pop-up-bg.png') no-repeat bottom / contain, #fff;
+		// background: #fff;
 		padding: 7.6vh 12.5vh 7.6vh 12.5vh;
 		transition: all .3s;
 		display: none;
@@ -1364,7 +1370,8 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		height: 80vh;
+		max-width: 1280px;
+		margin: auto;
 	}
 
 	&__slide-image-box {
@@ -1461,7 +1468,7 @@
 
 	&__slide-info {
 		font-weight: 400;
-		margin-bottom: 1.4vh;
+		margin-bottom: 4vh;
 	}
 
 	&__slide-icons {
@@ -1581,15 +1588,18 @@
 
 .footer {
 	background: url('../img/7.footer/footer-bg.png') no-repeat center / 100% 100%;
-	padding-top: 27vh;
+	padding-top: 31vh;
 	padding-bottom: 27vh;
-	z-index: 2;
+	z-index: 3;
 	position: relative;
-	max-height: 640px;
+	max-height: 727px;
+	overflow: hidden;
 
 	&__inner {
+		// height: 100%;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		position: relative;
 		transition: all 1s;
 		opacity: 0;
@@ -1673,7 +1683,7 @@
 
 	&__img-2 {
 		position: absolute;
-		top: 12.6vh;
+		top: 6.6vh;
 		left: -7.3vh;
 		z-index: -1;
 		opacity: 0;
