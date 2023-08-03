@@ -303,7 +303,7 @@
 	&__button-text {
 		color: #fff;
 		font-family: "Gotham-Pro";
-		font-size: 2.3vh;
+		font-size: 1.53vh;
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;
@@ -1348,8 +1348,7 @@
 	}
 
 	&__slide {
-		background: url('../img/6.cat/pop-up/pop-up-bg.png') no-repeat bottom / contain, #fff;
-		// background: #fff;
+		background: #fff;
 		padding: 7.6vh 12.5vh 7.6vh 12.5vh;
 		transition: all .3s;
 		display: none;
@@ -1358,6 +1357,8 @@
 		font-style: normal;
 		width: 100vw;
 		height: 100%;
+		position: relative;
+		overflow: hidden;
 
 		&--active {
 			display: flex;
@@ -1365,78 +1366,108 @@
 			align-items: center;
 		}
 	}
+	&__slide-bg {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -11vh;
+		z-index: 99;
+		img {
+			width: 100vw;
+			// object-fit: contain;
+		}
+	}
+
+	&__slide-branch {
+		position: absolute;
+		bottom: -11vh;
+		right: 11vh;
+		z-index: 100;
+
+		img {
+			width: 48.6vh;
+		}
+	}
 
 	&__slide-inner {
-		// display: flex;
-		// justify-content: space-between;
-		// align-items: center;
+
 		display: grid;
-		// grid-template-columns: 50% 50%;
 		grid-template-areas: "image top"
 			"image info";
-		max-width: 1280px;
+		max-width: 129vh;
 		margin: auto;
+		position: relative;
+		z-index: 101;
 	}
 
 	&__slide-image-box {
-		// max-width: 550px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 41.9vw;
-		// width: 100%;
+		width: 60vh;
 		grid-area: image;
+		margin: 0 auto;
 
 
 		&-1 {
-			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat center / contain;
+			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat 0 0/ contain;
 		}
 
 		&-2 {
-			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat contain;
+			background: url('../img/6.cat/pop-up/bg-blue.png') no-repeat 0 0 / contain;
 		}
 
 		&-3 {
-			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat contain;
+			background: url('../img/6.cat/pop-up/bg-yellow.png') no-repeat 0 0 / contain;
 		}
 
 		&-4 {
-			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat contain;
+			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat 0 0 /contain;
 		}
 
 		&-5 {
-			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat contain;
+			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat 0 0vh /contain;
 		}
 
 		&-6 {
-			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat contain;
+			background: url('../img/6.cat/pop-up/bg-green.png') no-repeat 0 0 / contain;
 		}
 
 		&-7 {
-			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat contain;
+			background: url('../img/6.cat/pop-up/bg-blue.png') no-repeat 0 0 / contain;
 		}
 
 		&-8 {
-			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat contain;
+			background: url('../img/6.cat/pop-up/bg-yellow.png') no-repeat 0 0 / contain;
 		}
 
 		&-9 {
-			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat contain;
+			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat 0 0 / contain;
 		}
 	}
 
 	&__slide-image {
 		// width: 100%;
-		width: 41.9vw;
+		width: 60vh;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		// position: relative;
+		// transform: translate(0, 8vh);
+		min-height: 100%;
 
 		img {
-			width: 240px;
+			width: 100%;
 			// height: 200px;
 			margin: 0 auto;
 		}
+	}
+
+	&__slide-weight {
+		text-align: center;
+		margin-top: 8vh;
+		font-size: 2.9vh;
+
 	}
 
 	&__slide-top {
@@ -1453,6 +1484,25 @@
 
 		&:active {
 			transform: scale(.9);
+		}
+	}
+
+	&__slide-close {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: auto;
+		&-line  {
+			width: 54px;
+			height: 2px;
+			background: #225aaa;
+			position: absolute;
+			&:first-child {
+				transform: rotate(45deg);
+			}
+			&:last-child {
+				transform: rotate(-45deg);
+			}
 		}
 	}
 
@@ -1505,12 +1555,17 @@
 	&__slide-info {
 		font-weight: 400;
 		grid-area: info;
+		display: flex;
+		flex-direction: column;
+
 	}
 
 	&__slide-icons {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		margin-top: -1vh;
+		margin-bottom: 1vh;
 	}
 
 	&__slide-animals {
