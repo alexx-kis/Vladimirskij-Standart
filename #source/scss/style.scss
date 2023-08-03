@@ -1367,47 +1367,82 @@
 	}
 
 	&__slide-inner {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		// display: flex;
+		// justify-content: space-between;
+		// align-items: center;
+		display: grid;
+		// grid-template-columns: 50% 50%;
+		grid-template-areas: "image top"
+			"image info";
 		max-width: 1280px;
 		margin: auto;
 	}
 
 	&__slide-image-box {
-		width: 536px;
-		width: 50%;
+		// max-width: 550px;
 		display: flex;
-		align-items: flex-end;
+		align-items: center;
 		justify-content: center;
-	}
-	
-	&__slide-image {
+		width: 41.9vw;
 		// width: 100%;
-		
-		img {
-			width: 100%;
-			max-width: 550px;
+		grid-area: image;
+
+
+		&-1 {
+			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat center / contain;
+		}
+
+		&-2 {
+			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat contain;
+		}
+
+		&-3 {
+			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat contain;
+		}
+
+		&-4 {
+			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat contain;
+		}
+
+		&-5 {
+			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat contain;
+		}
+
+		&-6 {
+			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat contain;
+		}
+
+		&-7 {
+			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat contain;
+		}
+
+		&-8 {
+			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat contain;
+		}
+
+		&-9 {
+			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat contain;
 		}
 	}
-	
-	&__slide-body {
+
+	&__slide-image {
+		// width: 100%;
+		width: 41.9vw;
 		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		width: 50%;
-		height: 100%;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			width: 240px;
+			// height: 200px;
+			margin: 0 auto;
+		}
 	}
 
 	&__slide-top {
-		display: flex;
-		flex-direction: column;
-		flex: 0 1 40vh;
+		grid-area: top;
 	}
 
-	&__slide-image-box--small {
-		display: none;
-	}
 
 	&__slide-back {
 		display: flex;
@@ -1469,23 +1504,25 @@
 
 	&__slide-info {
 		font-weight: 400;
-		margin-bottom: 4vh;
+		grid-area: info;
 	}
 
 	&__slide-icons {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		height: 14.2vh;
 	}
 
 	&__slide-animals {
 		display: flex;
 		align-items: center;
+
+		.pop-up__slide-icon {
+			margin-right: 5vh;
+		}
 	}
 
 	&__slide-icon {
-		margin-right: 2vh;
 		display: flex;
 		position: relative;
 		justify-content: center;
@@ -1532,6 +1569,7 @@
 	}
 
 	&__slide-arrows {
+		margin-top: 4vh;
 		display: flex;
 		justify-content: space-between;
 	}

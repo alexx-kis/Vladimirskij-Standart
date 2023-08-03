@@ -19,7 +19,7 @@
 			menu.classList.remove('scroll');
 		});
 	}
-	
+
 
 	let overlay = document.querySelector('.header__overlay');
 
@@ -156,7 +156,108 @@ function showSlides(n) {
 
 	slides[slideIndex - 1].style.display = "flex";
 	dots[slideIndex - 1].className += " __active";
+
+
+	// if (slides[slideIndex - 1].style.display == "flex") {
+		
+	// 		$('.pop-up__slide-image').slick({
+	// 			arrows: false,
+	// 			slidesToShow: 1,
+	// 			infinite: true,
+	// 			dragable: false,
+	// 			waitForAnimate: false,
+	// 			arrows: false,
+	// 			// dots: true,
+	// 			// appendDots: ('.cat__dots'),
+	// 		})
+	// } 
 }
+
+/*==================================== Slide slider ====================================*/
+
+; (function () {
+	$('.pop-up__slide-image-box-1').slick({
+		variableWidth: true,
+		arrows: false,
+		slidesToShow: 1,
+		infinite: true,
+		dragable: false,
+		waitForAnimate: false,
+		arrows: false,
+	})
+	$('.pop-up__slide-image-box-2').slick({
+		variableWidth: true,
+		arrows: false,
+		slidesToShow: 1,
+		infinite: true,
+		dragable: false,
+		waitForAnimate: false,
+		arrows: false,
+	})
+	$('.pop-up__slide-image-box-3').slick({
+		variableWidth: true,
+		arrows: false,
+		slidesToShow: 1,
+		infinite: true,
+		dragable: false,
+		waitForAnimate: false,
+		arrows: false,
+	})
+	$('.pop-up__slide-image-box-4').slick({
+		variableWidth: true,
+		arrows: false,
+		slidesToShow: 1,
+		infinite: true,
+		dragable: false,
+		waitForAnimate: false,
+		arrows: false,
+	})
+	$('.pop-up__slide-image-box-5').slick({
+		variableWidth: true,
+		arrows: false,
+		slidesToShow: 1,
+		infinite: true,
+		dragable: false,
+		waitForAnimate: false,
+		arrows: false,
+	})
+	$('.pop-up__slide-image-box-6').slick({
+		variableWidth: true,
+		arrows: false,
+		slidesToShow: 1,
+		infinite: true,
+		dragable: false,
+		waitForAnimate: false,
+		arrows: false,
+	})
+	$('.pop-up__slide-image-box-7').slick({
+		variableWidth: true,
+		arrows: false,
+		slidesToShow: 1,
+		infinite: true,
+		dragable: false,
+		waitForAnimate: false,
+		arrows: false,
+	})
+	$('.pop-up__slide-image-box-8').slick({
+		variableWidth: true,
+		arrows: false,
+		slidesToShow: 1,
+		infinite: true,
+		dragable: false,
+		waitForAnimate: false,
+		arrows: false,
+	})
+	$('.pop-up__slide-image-box-9').slick({
+		variableWidth: true,
+		arrows: false,
+		slidesToShow: 1,
+		infinite: true,
+		dragable: false,
+		waitForAnimate: false,
+		arrows: false,
+	})
+})();
 
 
 
