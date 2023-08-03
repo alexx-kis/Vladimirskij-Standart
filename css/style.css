@@ -1640,7 +1640,7 @@ h6 {
           justify-content: center;
 }
 .pop-up__slide-image img {
-  width: 64.5vh;
+  width: 100%;
   max-width: 550px;
 }
 .pop-up__slide-body {
@@ -1654,6 +1654,7 @@ h6 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  width: 50%;
   height: 100%;
 }
 .pop-up__slide-top {
