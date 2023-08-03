@@ -1366,12 +1366,14 @@
 			align-items: center;
 		}
 	}
+
 	&__slide-bg {
 		position: absolute;
 		left: 0;
 		right: 0;
 		bottom: -11vh;
 		z-index: 99;
+
 		img {
 			width: 100vw;
 			// object-fit: contain;
@@ -1409,41 +1411,7 @@
 		margin: 0 auto;
 
 
-		&-1 {
-			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat 0 0/ contain;
-		}
 
-		&-2 {
-			background: url('../img/6.cat/pop-up/bg-blue.png') no-repeat 0 0 / contain;
-		}
-
-		&-3 {
-			background: url('../img/6.cat/pop-up/bg-yellow.png') no-repeat 0 0 / contain;
-		}
-
-		&-4 {
-			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat 0 0 /contain;
-		}
-
-		&-5 {
-			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat 0 0vh /contain;
-		}
-
-		&-6 {
-			background: url('../img/6.cat/pop-up/bg-green.png') no-repeat 0 0 / contain;
-		}
-
-		&-7 {
-			background: url('../img/6.cat/pop-up/bg-blue.png') no-repeat 0 0 / contain;
-		}
-
-		&-8 {
-			background: url('../img/6.cat/pop-up/bg-yellow.png') no-repeat 0 0 / contain;
-		}
-
-		&-9 {
-			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat 0 0 / contain;
-		}
 	}
 
 	&__slide-image {
@@ -1460,6 +1428,42 @@
 			width: 100%;
 			// height: 200px;
 			margin: 0 auto;
+		}
+
+		&-1 {
+			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat top/ contain;
+		}
+
+		&-2 {
+			background: url('../img/6.cat/pop-up/bg-blue.png') no-repeat 0 top / contain;
+		}
+
+		&-3 {
+			background: url('../img/6.cat/pop-up/bg-yellow.png') no-repeat 0 top / contain;
+		}
+
+		&-4 {
+			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat 0 top /contain;
+		}
+
+		&-5 {
+			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat 0 top /contain;
+		}
+
+		&-6 {
+			background: url('../img/6.cat/pop-up/bg-green.png') no-repeat 0 top / contain;
+		}
+
+		&-7 {
+			background: url('../img/6.cat/pop-up/bg-blue.png') no-repeat 0 top / contain;
+		}
+
+		&-8 {
+			background: url('../img/6.cat/pop-up/bg-yellow.png') no-repeat 0 top / contain;
+		}
+
+		&-9 {
+			background: url('../img/6.cat/pop-up/bg-pink.png') no-repeat 0 top / contain;
 		}
 	}
 
@@ -1492,14 +1496,17 @@
 		align-items: center;
 		justify-content: center;
 		margin-left: auto;
-		&-line  {
+
+		&-line {
 			width: 54px;
 			height: 2px;
 			background: #225aaa;
 			position: absolute;
+
 			&:first-child {
 				transform: rotate(45deg);
 			}
+
 			&:last-child {
 				transform: rotate(-45deg);
 			}
