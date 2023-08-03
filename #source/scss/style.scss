@@ -1407,16 +1407,15 @@
 		align-items: center;
 		justify-content: center;
 		width: 60vh;
+		max-width: 60vw;
 		grid-area: image;
 		margin: 0 auto;
-
-
-
 	}
-
+	
 	&__slide-image {
 		// width: 100%;
 		width: 60vh;
+		// max-width: 30vw;
 		display: flex;
 		align-items: center;
 		justify-content: center;

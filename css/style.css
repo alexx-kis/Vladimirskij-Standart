@@ -1653,6 +1653,7 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   width: 60vh;
+  max-width: 60vw;
   grid-area: image;
   margin: 0 auto;
 }
@@ -2473,12 +2474,15 @@ h6 {
   }
   .pop-up__slide-image-box {
     width: 40vh;
+    max-width: 40vw;
   }
   .pop-up__slide-image {
     width: 40vh;
+    max-width: 40vw;
   }
   .pop-up__slide-image img {
     width: 40vh;
+    max-width: 40vw;
   }
 }
 @media (max-width: 1024px) and (min-height: 1000px) {
@@ -2948,6 +2952,12 @@ h6 {
   }
   .cat__pop-up {
     width: 400px;
+  }
+  .pop-up__slide-branch {
+    bottom: -4vh;
+  }
+  .pop-up__slide-branch img {
+    width: 26vh;
   }
   .pop-up__slide-text {
     font-size: 1.7vh;

@@ -381,13 +381,16 @@
 
 		&__slide-image-box {
 			width: 40vh;
+			max-width: 40vw;
 		}
-
+		
 		&__slide-image {
 			width: 40vh;
-
+			max-width: 40vw;
+			
 			img {
 				width: 40vh;
+				max-width: 40vw;
 			}
 		}
 
@@ -1022,6 +1025,15 @@
 	}
 
 	.pop-up {
+
+		&__slide-branch {
+			bottom: -4vh;
+
+			img {
+				width: 26vh;
+			}
+		}
+
 		&__slide-text {
 			font-size: 1.7vh;
 			margin-bottom: 1vh;
@@ -1042,9 +1054,6 @@
 		}
 
 		&__slide-inner {
-			// grid-template-areas: "image"
-			// "top"
-			// "info";
 			display: flex;
 			flex-direction: column;
 		}
@@ -1081,6 +1090,7 @@
 		&__slide-icons {
 			margin-bottom: 0;
 		}
+
 		&__slide-animals {
 			.pop-up__slide-icon {
 				img {
@@ -1088,6 +1098,7 @@
 				}
 			}
 		}
+
 		&__slide-icon--weight {
 			img {
 				max-width: 8vh;
@@ -1107,6 +1118,7 @@
 		&__slide-icon-text {
 			font-size: 1vh;
 			margin-top: 3.5vh;
+
 			span {
 				font-size: 0.8vh;
 				line-height: 2vh;
