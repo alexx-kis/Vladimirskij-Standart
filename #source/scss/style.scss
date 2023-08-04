@@ -1426,6 +1426,11 @@
 	&__slide-image-arrow {
 		position: absolute;
 		cursor: pointer;
+		transition: all .5s;
+
+		&:active {
+			transform: scale(.5);
+		}
 
 		img {
 			width: clamp(1px, 2.6vh, 22px);
