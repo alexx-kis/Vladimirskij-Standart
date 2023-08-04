@@ -156,21 +156,6 @@ function showSlides(n) {
 
 	slides[slideIndex - 1].style.display = "flex";
 	dots[slideIndex - 1].className += " __active";
-
-
-	// if (slides[slideIndex - 1].style.display == "flex") {
-		
-	// 		$('.pop-up__slide-image').slick({
-	// 			arrows: false,
-	// 			slidesToShow: 1,
-	// 			infinite: true,
-	// 			dragable: false,
-	// 			waitForAnimate: false,
-	// 			arrows: false,
-	// 			// dots: true,
-	// 			// appendDots: ('.cat__dots'),
-	// 		})
-	// } 
 }
 
 /*==================================== Slide slider ====================================*/
@@ -211,6 +196,12 @@ function showSlides(n) {
 		dragable: false,
 		waitForAnimate: false,
 		arrows: false,
+	})
+	$('.pop-up__slide-image-arrow--prev').on('click', function (e) {
+		$('.pop-up__slide-image-box').slick('slickPrev')
+	})
+	$('.pop-up__slide-image-arrow--next').on('click', function (e) {
+		$('.pop-up__slide-image-box').slick('slickNext')
 	})
 	$('.pop-up__slide-image-box-5').slick({
 		variableWidth: true,
