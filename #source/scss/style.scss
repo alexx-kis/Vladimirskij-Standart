@@ -1349,8 +1349,8 @@
 
 	&__slide {
 		background: #fff;
-		// padding: 7.6vh 12.5vh 7.6vh 12.5vh;
-		padding: clamp(1px, 7.6vh, 63px) clamp(10px, 12.5vh, 104px);
+		padding: clamp(1px, 7.6vh, 63px) clamp(10px, 4vh, 104px) clamp(1px, 4vh, 63px) clamp(10px, 4vh, 104px);
+
 		transition: all .3s;
 		display: none;
 		font-family: "Gotham-Pro";
@@ -1397,7 +1397,6 @@
 		display: grid;
 		grid-template-areas: "image top"
 			"image info";
-		max-width: 129vh;
 		margin: auto;
 		position: relative;
 		z-index: 101;
@@ -1409,18 +1408,18 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		margin-right: 5vh;
 	}
 
 	&__slide-image-box {
-		width: clamp(1px, 60vh, 500px);
-		// grid-area: image;
-		margin-right: 5vh;
+		width: clamp(1px, 80vh, 45vw);
 	}
 
 	&__slide-image-arrows {
 		position: absolute;
 		top: 40%;
 		display: flex;
+		width: 100%;
 	}
 
 	&__slide-image-arrow {
@@ -1437,18 +1436,17 @@
 		}
 
 		&--prev {
-			left: clamp(-305px, -37vh, 1px)
+			left: -30px;
 		}
 
 		&--next {
-			right: clamp(-248px, -30vh, 30px);
+			right: -30px;
 		}
 
 	}
 
-
 	&__slide-image {
-		width: clamp(1px, 60vh, 500px);
+		width: clamp(1px, 80vh, 45vw);
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -1505,8 +1503,8 @@
 
 	&__slide-top {
 		grid-area: top;
+		max-width: 41vw;
 	}
-
 
 	&__slide-back {
 		display: flex;
@@ -1525,10 +1523,12 @@
 		align-items: center;
 		justify-content: center;
 		margin-left: auto;
+		width: 6vh;
+		height: 6vh;
 
 		&-line {
-			width: 54px;
-			height: 2px;
+			width: 6vh;
+			height: 0.2vh;
 			background: #225aaa;
 			position: absolute;
 
@@ -1593,7 +1593,7 @@
 		grid-area: info;
 		display: flex;
 		flex-direction: column;
-
+		max-width: 41vw;
 	}
 
 	&__slide-icons {
