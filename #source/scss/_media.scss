@@ -311,8 +311,11 @@
 
 		}
 
-		&__slide-animals .pop-up__slide-icon {
-			margin-right: 2vh;
+		&__slide-animals  {
+			margin-left: 0;
+			.pop-up__slide-icon{
+				margin-right: 2vh;
+			}
 		}
 	}
 }
