@@ -32,6 +32,17 @@
 	}
 }
 
+
+/*------------------------------ 1630 ------------------------------*/
+
+@media (max-width: 1630px) {
+	.cat {
+		&__bg {
+			top: 7.3dvh;
+		}
+	}
+}
+
 /*------------------------------ 1450 ------------------------------*/
 
 @media (max-width: 1450px) {
@@ -165,6 +176,17 @@
 		&__pelmen-2 {
 			top: 29.8dvh;
 			right: -15.8dvh;
+		}
+	}
+}
+
+
+/*------------------------------ 1210 ------------------------------*/
+
+@media (max-width: 1210px) {
+	.cat {
+		&__bg2 {
+			background: linear-gradient(#3996BC 46dvh, #fff 20dvh);
 		}
 	}
 }
@@ -906,15 +928,15 @@
 		}
 
 		&__slide-image-box {
-			width: 32dvh;
+			width: 35dvh;
 		}
 
 		&__slide-image {
-			width: 32dvh;
+			width: 35dvh;
 			margin: 0 auto;
 
 			img {
-				width: 32dvh;
+				width: 35dvh;
 			}
 		}
 
@@ -1068,6 +1090,14 @@
 
 	.pop-up {
 
+		&__slide-bg {
+			bottom: 0;
+
+			img {
+				width: 180vw;
+			}
+		}
+
 		&__slide-branch {
 			bottom: -4dvh;
 
@@ -1099,7 +1129,7 @@
 			flex-direction: column;
 			justify-content: space-between;
 			height: 100%;
-			margin-top: 10dvh;
+			margin-top: 5dvh;
 		}
 
 		&__slide-top {
@@ -1112,7 +1142,7 @@
 		&__slide-back {
 			position: absolute;
 			width: 100%;
-			top: -8dvh;
+			top: -7dvh;
 		}
 
 		&__slide-info {
@@ -1121,8 +1151,10 @@
 
 		&__slide-image {
 			width: 40dvh;
+			max-width: none;
 
 			&-box {
+				max-width: none;
 				width: 40dvh;
 				margin: 0 auto;
 				margin-bottom: 2dvh;
@@ -1130,12 +1162,14 @@
 
 			img {
 				width: 40dvh;
+				max-width: none;
 			}
 		}
 
 		&__slide-image-box-inner {
 			order: 1;
 			margin-right: 0;
+			flex: 1 1 auto;
 		}
 
 		&__slide-content {
@@ -1144,7 +1178,7 @@
 		}
 
 		&__slide-icons {
-			margin-bottom: 0;
+			margin-bottom: 1dvh;
 		}
 
 		&__slide-animals {
@@ -1178,6 +1212,12 @@
 			span {
 				font-size: 0.8dvh;
 				line-height: 2dvh;
+			}
+		}
+
+		&__slide-image-arrow {
+			img {
+				width: 2.4dvh;
 			}
 		}
 	}
@@ -1445,6 +1485,11 @@
 		}
 	}
 
+	.cat {
+		&__bg2 {
+			background: linear-gradient(#3996BC 41dvh, #fff 20dvh);
+		}
+	}
 
 }
 
@@ -1497,6 +1542,24 @@
 		}
 	}
 
+	.cat {
+		&__bg {
+			top: 4.3dvh;
+
+			&-desktop {
+				display: none;
+			}
+
+			&-mob {
+				display: block;
+			}
+		}
+
+		&__bg2 {
+			background: linear-gradient(#3996BC 57dvh, #fff 20dvh);
+		}
+	}
+
 	.pop-up {
 		&__slide {
 			padding-right: 1.5dvh;
@@ -1522,17 +1585,13 @@
 		}
 
 		&__slide-image {
-			width: 50dvh;
 
 			&-box {
-				width: 50dvh;
 				margin: 0 auto;
 				margin-bottom: 2dvh;
 			}
 
-			img {
-				width: 50dvh;
-			}
+			img {}
 		}
 	}
 
@@ -1620,7 +1679,6 @@
 			}
 		}
 	}
-
 
 	.hero {
 		&__heading {
@@ -1915,6 +1973,8 @@
 	}
 
 	.cat {
+
+
 
 		&__drop {
 			top: 14.4dvh;

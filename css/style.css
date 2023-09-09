@@ -145,6 +145,11 @@ h6 {
   font-size: 2.8dvh;
 }
 
+.no-scroll {
+  height: 100dvh;
+  overflow: hidden;
+}
+
 /*==================================== HEADER ====================================*/
 /*==================================== HEADER ====================================*/
 .header {
@@ -1416,7 +1421,10 @@ h6 {
 .cat__bg img {
   position: absolute;
   right: 0;
-  width: auto;
+  width: 100%;
+}
+.cat__bg-mob {
+  display: none;
 }
 .cat__bg2 {
   position: absolute;
@@ -1426,8 +1434,8 @@ h6 {
   right: 0;
   left: 0;
   width: 100vw;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #3996BC), color-stop(50%, #fff));
-  background: linear-gradient(#3996BC 50%, #fff 50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(58dvh, #3996BC), color-stop(20dvh, #fff));
+  background: linear-gradient(#3996BC 58dvh, #fff 20dvh);
 }
 .cat .container {
   max-width: 1280px;
@@ -2259,6 +2267,12 @@ h6 {
     background-size: auto 100%;
   }
 }
+/*------------------------------ 1630 ------------------------------*/
+@media (max-width: 1630px) {
+  .cat__bg {
+    top: 7.3dvh;
+  }
+}
 /*------------------------------ 1450 ------------------------------*/
 @media (max-width: 1450px) {
   .cat__slider {
@@ -2352,6 +2366,13 @@ h6 {
   .ss__pelmen-2 {
     top: 29.8dvh;
     right: -15.8dvh;
+  }
+}
+/*------------------------------ 1210 ------------------------------*/
+@media (max-width: 1210px) {
+  .cat__bg2 {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(46dvh, #3996BC), color-stop(20dvh, #fff));
+    background: linear-gradient(#3996BC 46dvh, #fff 20dvh);
   }
 }
 /*------------------------------ 1200 ------------------------------*/
@@ -2863,14 +2884,14 @@ h6 {
     font-size: 1.3dvh;
   }
   .pop-up__slide-image-box {
-    width: 32dvh;
+    width: 35dvh;
   }
   .pop-up__slide-image {
-    width: 32dvh;
+    width: 35dvh;
     margin: 0 auto;
   }
   .pop-up__slide-image img {
-    width: 32dvh;
+    width: 35dvh;
   }
   .pop-up__slide-image-arrow img {
     width: 1dvh;
@@ -2984,6 +3005,12 @@ h6 {
   .cat__pop-up {
     width: 400px;
   }
+  .pop-up__slide-bg {
+    bottom: 0;
+  }
+  .pop-up__slide-bg img {
+    width: 180vw;
+  }
   .pop-up__slide-branch {
     bottom: -4dvh;
   }
@@ -3014,7 +3041,7 @@ h6 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     height: 100%;
-    margin-top: 10dvh;
+    margin-top: 5dvh;
   }
   .pop-up__slide-top {
     -webkit-box-ordinal-group: 3;
@@ -3027,7 +3054,7 @@ h6 {
   .pop-up__slide-back {
     position: absolute;
     width: 100%;
-    top: -8dvh;
+    top: -7dvh;
   }
   .pop-up__slide-info {
     -webkit-box-ordinal-group: 4;
@@ -3036,27 +3063,33 @@ h6 {
   }
   .pop-up__slide-image {
     width: 40dvh;
+    max-width: none;
   }
   .pop-up__slide-image-box {
+    max-width: none;
     width: 40dvh;
     margin: 0 auto;
     margin-bottom: 2dvh;
   }
   .pop-up__slide-image img {
     width: 40dvh;
+    max-width: none;
   }
   .pop-up__slide-image-box-inner {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
     margin-right: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
   }
   .pop-up__slide-content {
     margin-bottom: 0;
     max-width: none;
   }
   .pop-up__slide-icons {
-    margin-bottom: 0;
+    margin-bottom: 1dvh;
   }
   .pop-up__slide-animals .pop-up__slide-icon img {
     max-width: 5.6dvh;
@@ -3077,6 +3110,9 @@ h6 {
   .pop-up__slide-icon-text span {
     font-size: 0.8dvh;
     line-height: 2dvh;
+  }
+  .pop-up__slide-image-arrow img {
+    width: 2.4dvh;
   }
 }
 /*------------------------------ 550 ------------------------------*/
@@ -3256,6 +3292,10 @@ h6 {
         -ms-transform: translate(0);
             transform: translate(0);
   }
+  .cat__bg2 {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(41dvh, #3996BC), color-stop(20dvh, #fff));
+    background: linear-gradient(#3996BC 41dvh, #fff 20dvh);
+  }
 }
 /*------------------------------ 470 ------------------------------*/
 @media (max-width: 470px) {
@@ -3283,6 +3323,19 @@ h6 {
   .hero__heading img {
     width: 34dvh;
   }
+  .cat__bg {
+    top: 4.3dvh;
+  }
+  .cat__bg-desktop {
+    display: none;
+  }
+  .cat__bg-mob {
+    display: block;
+  }
+  .cat__bg2 {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(57dvh, #3996BC), color-stop(20dvh, #fff));
+    background: linear-gradient(#3996BC 57dvh, #fff 20dvh);
+  }
   .pop-up__slide {
     padding-right: 1.5dvh;
     padding-left: 1.5dvh;
@@ -3301,16 +3354,9 @@ h6 {
   .pop-up__slide-arrow-icon img {
     width: 6dvh;
   }
-  .pop-up__slide-image {
-    width: 50dvh;
-  }
   .pop-up__slide-image-box {
-    width: 50dvh;
     margin: 0 auto;
     margin-bottom: 2dvh;
-  }
-  .pop-up__slide-image img {
-    width: 50dvh;
   }
   .footer {
     padding-bottom: 15px;
