@@ -1452,6 +1452,7 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 14dvh;
 }
 .cat__drop {
   position: absolute;
@@ -3324,7 +3325,7 @@ h6 {
     width: 34dvh;
   }
   .cat__bg {
-    top: 4.3dvh;
+    top: 2.3dvh;
   }
   .cat__bg-desktop {
     display: none;
