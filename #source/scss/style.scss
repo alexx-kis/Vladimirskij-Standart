@@ -1172,9 +1172,11 @@
 		z-index: 0;
 		top: -0.7dvh;
 		right: 0;
+		bottom: 0;
 		width: 100vw;
-
+		
 		img {
+			background-image: linear-gradient(#3996BC 50%, #fff 50%);
 			position: absolute;
 			right: 0;
 			width: 100%;
