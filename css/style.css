@@ -1224,12 +1224,16 @@ h6 {
 }
 .sm__stamp-outline {
   position: absolute;
+  -webkit-animation: rotate 8s linear infinite;
+          animation: rotate 8s linear infinite;
 }
 .sm__stamp-outline img {
   width: 14.9dvh;
 }
 .sm__stamp-border {
   position: absolute;
+  -webkit-animation: rotate 10s linear infinite;
+          animation: rotate 10s linear infinite;
 }
 .sm__stamp-border img {
   width: 13.9dvh;
