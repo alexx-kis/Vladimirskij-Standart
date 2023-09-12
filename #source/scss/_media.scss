@@ -214,10 +214,6 @@
 	}
 
 	.pop-up {
-		&__slide {
-			// padding: clamp(1px, 7.6dvh, 63px) clamp(10px, 2dvh, 104px) clamp(1px, 4dvh, 63px) clamp(10px, 2dvh, 104px);
-
-		}
 
 		&__slide-image-arrow {
 
@@ -248,8 +244,6 @@
 				max-width: 40vw;
 			}
 		}
-
-		&__slide-image-arrows {}
 
 		&__slide-image-arrow {
 
@@ -367,15 +361,6 @@
 		&__slide-image {
 			// width: 48.5dvh;
 			margin: 0 auto;
-
-			img {
-				// width: 48.5dvh;
-			}
-		}
-
-		&__slide-image-box {
-			// width: 50dvh;
-			// margin-right: 3dvh;
 		}
 
 		&__slide-image-arrow {
@@ -1526,12 +1511,6 @@
 
 @media (max-width: 430px) {
 
-	.logo {
-		img {
-			// width: 35dvh;
-		}
-	}
-
 	.hero {
 		&__heading {
 			margin-bottom: 80px;
@@ -1590,8 +1569,6 @@
 				margin: 0 auto;
 				margin-bottom: 2dvh;
 			}
-
-			img {}
 		}
 	}
 
@@ -1950,7 +1927,7 @@
 		&__img-2,
 		&__img-2-shadow {
 			top: 17dvh;
-			right: -54.6dvh;
+			right: -57.6dvh;
 
 			img {
 				width: 81.4dvh;
