@@ -1304,8 +1304,8 @@
 		}
 
 		&__leaf-4 {
-				top: -16.8dvh;
-					right: 32dvh;
+			top: -16.8dvh;
+			right: 32dvh;
 
 			img {
 				width: 10dvh;
@@ -1719,7 +1719,7 @@
 		}
 
 		&__img-right {
-			top: 53dvh;
+			top: 45dvh;
 			right: -34 .6dvh;
 		}
 
@@ -1770,6 +1770,38 @@
 			img {
 				width: 48.8dvh;
 				max-width: 278px;
+			}
+		}
+
+		&__stamp {
+			&-outline {
+				img {
+					width: 20.1dvh;
+				}
+			}
+
+			&-border {
+				img {
+					width: 18.2dvh;
+				}
+			}
+
+			&-content {
+				top: -8.1dvh;
+				left: -7.7dvh;
+
+				img {
+					width: 12.5dvh;
+				}
+			}
+
+			&-text {
+				top: -3.9dvh;
+				left: -6.5dvh;
+
+				img {
+					width: 14.64dvh;
+				}
 			}
 		}
 
@@ -1868,37 +1900,37 @@
 			padding-bottom: 0;
 		}
 
-		// &__stamp {
-		// 	&-outline {
-		// 		img {
-		// 			width: 10.7dvh;
-		// 		}
-		// 	}
+		&__stamp {
+			&-outline {
+				img {
+					width: 20.1dvh;
+				}
+			}
 
-		// 	&-border {
-		// 		img {
-		// 			width: 10dvh;
-		// 		}
-		// 	}
+			&-border {
+				img {
+					width: 18.2dvh;
+				}
+			}
 
-		// 	&-content {
-		// 		top: -4.6dvh;
-		// 		left: -4.4dvh;
+			&-content {
+				top: -8.1dvh;
+				left: -7.7dvh;
 
-		// 		img {
-		// 			width: 7dvh;
-		// 		}
-		// 	}
+				img {
+					width: 13dvh;
+				}
+			}
 
-		// 	&-text {
-		// 		top: -2.9dvh;
-		// 		left: -3.7dvh;
+			&-text {
+				top: -5.8dvh;
+				left: -7.3dvh;
 
-		// 		img {
-		// 			width: 7.84dvh;
-		// 		}
-		// 	}
-		// }
+				img {
+					width: 15.44dvh;
+				}
+			}
+		}
 
 		&__logo img {
 			width: 48.8dvh;

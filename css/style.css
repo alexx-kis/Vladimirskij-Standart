@@ -1224,16 +1224,12 @@ h6 {
 }
 .sm__stamp-outline {
   position: absolute;
-  -webkit-animation: rotate 8s linear infinite;
-          animation: rotate 8s linear infinite;
 }
 .sm__stamp-outline img {
   width: 14.9dvh;
 }
 .sm__stamp-border {
   position: absolute;
-  -webkit-animation: rotate 10s linear infinite;
-          animation: rotate 10s linear infinite;
 }
 .sm__stamp-border img {
   width: 13.9dvh;
@@ -3439,7 +3435,7 @@ h6 {
     max-width: 231px;
   }
   .ms__img-right {
-    top: 53dvh;
+    top: 45dvh;
     right: -34 0.6dvh;
   }
   .ms__img2 img {
@@ -3474,6 +3470,26 @@ h6 {
   .ss__logo img {
     width: 48.8dvh;
     max-width: 278px;
+  }
+  .ss__stamp-outline img {
+    width: 20.1dvh;
+  }
+  .ss__stamp-border img {
+    width: 18.2dvh;
+  }
+  .ss__stamp-content {
+    top: -8.1dvh;
+    left: -7.7dvh;
+  }
+  .ss__stamp-content img {
+    width: 12.5dvh;
+  }
+  .ss__stamp-text {
+    top: -3.9dvh;
+    left: -6.5dvh;
+  }
+  .ss__stamp-text img {
+    width: 14.64dvh;
   }
   .ss__leaf-1 {
     top: 6.2dvh;
@@ -3548,6 +3564,26 @@ h6 {
   }
   .sm__inner {
     padding-bottom: 0;
+  }
+  .sm__stamp-outline img {
+    width: 20.1dvh;
+  }
+  .sm__stamp-border img {
+    width: 18.2dvh;
+  }
+  .sm__stamp-content {
+    top: -8.1dvh;
+    left: -7.7dvh;
+  }
+  .sm__stamp-content img {
+    width: 13dvh;
+  }
+  .sm__stamp-text {
+    top: -5.8dvh;
+    left: -7.3dvh;
+  }
+  .sm__stamp-text img {
+    width: 15.44dvh;
   }
   .sm__logo img {
     width: 48.8dvh;
