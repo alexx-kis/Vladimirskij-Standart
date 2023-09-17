@@ -1817,10 +1817,6 @@ h6 {
           justify-content: space-between;
   margin-bottom: 2dvh;
 }
-.pop-up__slide-arrow img {
-  width: 12.1dvh;
-  max-width: 100px;
-}
 .pop-up__slide-link {
   margin-left: 22px;
   text-align: center;
@@ -1834,6 +1830,7 @@ h6 {
   margin-bottom: 0.3dvh;
   line-height: 48.28px;
   line-height: 5.8dvh;
+  text-wrap: balance;
 }
 .pop-up__slide-subtitle {
   font-size: clamp(1px, 2.9dvh, 24px);
@@ -1931,6 +1928,7 @@ h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  margin-top: auto;
 }
 .pop-up__slide-arrow {
   display: -webkit-box;
@@ -1940,8 +1938,13 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.pop-up__slide-arrow:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 .pop-up__slide-arrow:active {
   -webkit-transform: scale(0.9);

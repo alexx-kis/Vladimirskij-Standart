@@ -1563,13 +1563,6 @@
 		margin-bottom: 2dvh;
 	}
 
-	&__slide-arrow {
-		img {
-			width: 12.1dvh;
-			max-width: 100px;
-		}
-	}
-
 	&__slide-link {
 		margin-left: 22px;
 		text-align: center;
@@ -1584,6 +1577,7 @@
 		margin-bottom: 0.3dvh;
 		line-height: 48.28px;
 		line-height: 5.8dvh;
+		text-wrap: balance;
 	}
 
 	&__slide-subtitle {
@@ -1673,14 +1667,18 @@
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
-		// flex: 1 0 10dvh;
+		margin-top: auto;
 	}
 
 	&__slide-arrow {
 		display: flex;
 		align-items: center;
 		cursor: pointer;
-		transition: all .5s;
+		transition: all .3s;
+
+		&:hover {
+			transform: scale(1.05);
+		}
 
 		&:active {
 			transform: scale(.9);
