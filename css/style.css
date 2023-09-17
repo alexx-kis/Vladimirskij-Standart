@@ -1670,7 +1670,7 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 5dvh;
+  margin-right: 6dvh;
 }
 .pop-up__slide-image-box {
   width: clamp(1px, 80dvh, 45vw);
